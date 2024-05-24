@@ -83,8 +83,6 @@ const Page = () => {
 
   return (
     <>
-      <Hero />
-
       <Products />
       <Brands />
 

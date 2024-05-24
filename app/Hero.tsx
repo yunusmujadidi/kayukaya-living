@@ -1,10 +1,8 @@
-"use client";
 import {
   CarouselItem,
   CarouselContent,
   Carousel,
 } from "@/components/ui/carousel";
-import { useRef } from "react";
 import Image from "next/image";
 
 const Hero = () => {
