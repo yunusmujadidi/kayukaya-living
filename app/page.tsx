@@ -1,6 +1,5 @@
 "use client";
 import Brands from "./brands";
-import Hero from "./hero";
 import Products from "./products";
 import styles from "./page.module.scss";
 import Image from "next/image";
