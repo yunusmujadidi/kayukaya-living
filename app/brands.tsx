@@ -7,7 +7,7 @@ export default function Brands() {
       <div className="container grid gap-8 px-4 md:px-6">
         <div className="space-y-4 md:space-y-6">
           <h2 className="text-md font-light tracking-tighter sm:text-3xl md:text-4xl">
-            Explore Our Gallery
+            Explore Our Brands
           </h2>
           <hr />
           <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
@@ -16,7 +16,7 @@ export default function Brands() {
           </p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
-          {Array.from({ length: 8 }, (_, i) => (
+          {Array.from({ length: 12 }, (_, i) => (
             <div key={i} className="relative group overflow-hidden rounded-lg">
               <Link className="absolute inset-0 z-10" href="#">
                 <span className="sr-only">View</span>

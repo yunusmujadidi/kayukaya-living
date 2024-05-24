@@ -5,6 +5,8 @@ import styles from "./page.module.scss";
 import Image from "next/image";
 import Lenis from "@studio-freight/lenis";
 import About from "./about";
+import Hero from "./Hero";
+import Footer from "./footer";
 
 import { useEffect, useRef, useState } from "react";
 
@@ -82,6 +84,7 @@ const Page = () => {
 
   return (
     <>
+      <Hero />
       <Products />
       <Brands />
 
@@ -105,6 +108,11 @@ const Page = () => {
             className="relative shadow-sm"
             paragraph="In response to customer needs, we expanded our offerings in 2008 to include professional shades, umbrellas, and selected furniture brands. As the Sole Authorized Agent for Glatz in Asia, we offer a range of products, including umbrellas from Glatz Swiss (High wind proof Umbrella)   Jardinico Belgium (Resort type Umbrellas) , and Coro Italia. (outdoor yacht furniture )"
           />
+
+          <h2 className="text-md font-light tracking-tighter sm:text-3xl md:text-4xl text-white text-right">
+            About KayuKaya
+          </h2>
+          <hr />
           <About
             className="relative shadow-sm"
             paragraph="Our impressive portfolio includes collaborations with high-end hotels, resorts, F&B establishments, public spaces, and condominiums worldwide, such as the Ritz Carlton in the Maldives, The Patina Maldives, The Royal Atlantis in Dubai, The Langham in Pasadena, Four Seasons in Bora Bora, Shangri La, HK  and many others across the globe, including Singapore.
@@ -127,9 +135,9 @@ const Page = () => {
               <Column images={[images[9], images[10], images[11]]} y={y4} />
             </div>
           </div>
-          <div className={styles.spacer}></div>
         </div>
       </section>
+      <Footer />
     </>
   );
 };

@@ -9,17 +9,26 @@ import React, { useEffect, useState } from "react";
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 0);
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY) {
+        setIsVisible(false); // Scrolling down
+      } else {
+        setIsVisible(true); // Scrolling up
+      }
+      setLastScrollY(currentScrollY);
+      setIsScrolled(currentScrollY > 0);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [lastScrollY]);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -29,7 +38,8 @@ const Navbar = () => {
     <div
       className={cn(
         "z-50 sticky h-24 w-full inset-x-0 items-center transition-all top-0",
-        isScrolled && "h-16 bg-slate-50/50 backdrop-blur-md shadow-md"
+        isScrolled && "h-16 bg-white backdrop-blur-md shadow-md ",
+        !isVisible && "-top-24"
       )}
     >
       <div className="h-full w-full mx-auto max-w-7xl px-2.5 md:px-20">
