@@ -19,7 +19,7 @@ const images = [
 
 const Paralax = () => {
   return (
-    <main className={styles.main}>
+    <div className={styles.main}>
       <div className={styles.spacer}></div>
       <div className={styles.galery}>
         <div className={styles.galleryWrapper}>
@@ -30,7 +30,7 @@ const Paralax = () => {
         </div>
       </div>
       <div className={styles.spacer}></div>
-    </main>
+    </div>
   );
 };
 

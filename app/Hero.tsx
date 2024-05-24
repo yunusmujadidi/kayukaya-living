@@ -5,21 +5,12 @@ import {
   Carousel,
 } from "@/components/ui/carousel";
 import { useRef } from "react";
-import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 
-export default function Hero() {
-  const plugin = useRef(
-    Autoplay({
-      delay: 5000,
-      startFrom: 0,
-      speed: 500,
-      loop: true,
-    })
-  );
+const Hero = () => {
   return (
     <div className="w-full px-[-4px] bg-slate-200 mb-10">
-      <Carousel plugins={[plugin.current]}>
+      <Carousel>
         <CarouselContent>
           <CarouselItem>
             <Image
@@ -64,4 +55,6 @@ export default function Hero() {
       </Carousel>
     </div>
   );
-}
+};
+
+export default Hero;

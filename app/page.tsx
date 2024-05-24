@@ -121,7 +121,7 @@ const Page = () => {
         </div>
       </section>
       <section>
-        <main className={styles.main}>
+        <div className={styles.main}>
           <div className={styles.gallery}>
             <div className={styles.galleryWrapper}>
               <Column images={[images[0], images[1], images[2]]} y={y} />
@@ -131,7 +131,7 @@ const Page = () => {
             </div>
           </div>
           <div className={styles.spacer}></div>
-        </main>
+        </div>
       </section>
     </>
   );

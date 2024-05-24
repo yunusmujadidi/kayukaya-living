@@ -10,7 +10,7 @@ export default function Products() {
     setShowMore(!showMore);
   };
 
-  const renderCard = (sig, title) => (
+  const renderCard = (sig: number, title: string) => (
     <div key={sig} className="relative group overflow-hidden rounded-lg">
       <Link className="absolute inset-0 z-10" href="#">
         <span className="sr-only">View</span>
