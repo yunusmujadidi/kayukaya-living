@@ -2,12 +2,13 @@
 
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { Search } from "lucide-react";
+import { MenuIcon, X } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,7 +19,12 @@ const Navbar = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  });
+  }, []);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <div
       className={cn(
@@ -31,13 +37,25 @@ const Navbar = () => {
           <Link
             href="#"
             className={cn(
-              "flex font-semibold tracking-tight transition-all duration-300 ease-in-out text-sm md:text-2xl text-slate-700",
+              "flex font-light tracking-tight transition-all duration-300 ease-in-out text-sm md:text-2xl text-slate-700",
               isScrolled && "text-sm md:text-xl"
             )}
           >
             {isScrolled ? "KayuKaya" : "KayuKaya Living"}
           </Link>
-          <div className="flex items-center space-x-4 font-semibold">
+          <div className="flex items-center md:hidden">
+            <button
+              onClick={toggleMenu}
+              className="text-slate-700 focus:outline-none"
+            >
+              {isMenuOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <MenuIcon className="h-6 w-6" />
+              )}
+            </button>
+          </div>
+          <div className="hidden md:flex items-center space-x-4 font-semibold">
             <Link
               href="/#"
               className={buttonVariants({
@@ -81,6 +99,57 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      {isMenuOpen && (
+        <div className="md:hidden bg-white shadow-md">
+          <div className="flex flex-col items-start space-y-4 p-4">
+            <Link
+              href="/#"
+              className={buttonVariants({
+                variant: "ghost",
+              })}
+              onClick={toggleMenu}
+            >
+              Home
+            </Link>
+            <Link
+              href="/#"
+              className={buttonVariants({
+                variant: "ghost",
+              })}
+              onClick={toggleMenu}
+            >
+              Interiors & mill works
+            </Link>
+            <Link
+              href="/#"
+              className={buttonVariants({
+                variant: "ghost",
+              })}
+              onClick={toggleMenu}
+            >
+              Umbrella
+            </Link>
+            <Link
+              href="/#"
+              className={buttonVariants({
+                variant: "ghost",
+              })}
+              onClick={toggleMenu}
+            >
+              Factory
+            </Link>
+            <Link
+              href="/#"
+              className={buttonVariants({
+                variant: "ghost",
+              })}
+              onClick={toggleMenu}
+            >
+              Office
+            </Link>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

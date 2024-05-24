@@ -19,7 +19,7 @@ export default function Component() {
     })
   );
   return (
-    <div className="w-full px-[-4px]">
+    <div className="w-full px-[-4px] bg-slate-200 mb-10">
       <Carousel plugins={[plugin.current]}>
         <CarouselContent>
           <CarouselItem>
