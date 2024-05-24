@@ -61,11 +61,11 @@ export default function Products() {
         {showMore &&
           cards.slice(8).map((card) => renderCard(card.sig, card.title))}
       </div>
-      {/* <div className="mt-8 text-center">
+      <div className="mt-8 text-center">
         <Button onClick={handleToggleShowMore}>
           {showMore ? "Show Less" : "Show More"}
         </Button>
-      </div> */}
+      </div>
     </section>
   );
 }

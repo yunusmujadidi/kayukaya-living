@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Brands() {
   return (
-    <section className="w-full py-12 px-20 md:py-24 lg:py-32 -mt-10 bg-slate-100">
+    <section className="w-full py-12 px-2 md:px-20 md:py-24 lg:py-32 -mt-10 bg-slate-100">
       <div className="grid gap-8 px-4 md:px-6">
         <div className="space-y-4 md:space-y-6">
           <h2 className="text-md font-light tracking-tighter sm:text-3xl md:text-4xl">
