@@ -4,7 +4,7 @@ import {
   CarouselContent,
   Carousel,
 } from "@/components/ui/carousel";
-import Navbar from "./Navbar";
+import Navbar from "./navbar";
 import { useRef } from "react";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
@@ -19,8 +19,8 @@ export default function Component() {
     })
   );
   return (
-    <header className="relative w-full">
-      <Carousel plugins={[plugin.current]} className="absolute inset-0 z-0">
+    <div className="w-full px-[-4px]">
+      <Carousel plugins={[plugin.current]}>
         <CarouselContent>
           <CarouselItem>
             <Image
@@ -63,7 +63,6 @@ export default function Component() {
           </CarouselItem>
         </CarouselContent>
       </Carousel>
-      <Navbar />
-    </header>
+    </div>
   );
 }

@@ -22,8 +22,8 @@ const Navbar = () => {
   return (
     <div
       className={cn(
-        "sticky h-24 w-full inset-x-0 items-center transition-all top-0",
-        isScrolled && "h-16  text-white "
+        "z-50 sticky h-24 w-full inset-x-0 items-center transition-all top-0",
+        isScrolled && "h-16 bg-slate-50/50 backdrop-blur-md shadow-md"
       )}
     >
       <div className="h-full w-full mx-auto max-w-7xl px-2.5 md:px-20">
@@ -31,13 +31,11 @@ const Navbar = () => {
           <Link
             href="#"
             className={cn(
-              "flex font-semibold tracking-tight transition-all duration-300 ease-in-out text-sm md:text-2xl",
-              isScrolled
-                ? "text-sm md:text-xl text-white"
-                : "text-sm md:text-2xl"
+              "flex font-semibold tracking-tight transition-all duration-300 ease-in-out text-sm md:text-2xl text-slate-700",
+              isScrolled && "text-sm md:text-xl"
             )}
           >
-            KayuKaya
+            {isScrolled ? "KayuKaya" : "KayuKaya Living"}
           </Link>
           <div className="flex items-center space-x-4 font-semibold">
             <Link
