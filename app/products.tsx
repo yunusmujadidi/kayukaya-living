@@ -17,10 +17,10 @@ export default function Products() {
       </Link>
       <Image
         alt={`Image ${sig}`}
-        className="object-cover w-full aspect-[4/3] transition-transform duration-300 ease-in-out group-hover:scale-105"
+        className="object-cover w-full aspect-[4/5] transition-transform duration-300 ease-in-out group-hover:scale-105"
         height="300"
         src={`https://source.unsplash.com/random/?interior?sig=${sig}`}
-        width="400"
+        width="700"
       />
       <div className="bg-white p-3 dark:bg-gray-950">
         <h3 className="font-semibold text-base">{title}</h3>
@@ -42,20 +42,24 @@ export default function Products() {
     { sig: 10, title: "Vintage Radio" },
     { sig: 11, title: "Luxury Wallet" },
     { sig: 12, title: "Modern Lamp" },
+    { sig: 13, title: "Designer Chair" },
+    { sig: 14, title: "Stylish Sunglasses" },
+    { sig: 15, title: "Leather Crossbody Bag" },
+    { sig: 16, title: "Wireless Headphones" },
   ];
 
   return (
-    <section className="px-4 md:px-6 py-12 md:py-16">
+    <section className="px-4 md:px-20 py-12 md:py-16">
       <div className="space-y-4 md:space-y-6 px-5 py-5">
         <h2 className="text-md font-light tracking-tighter sm:text-3xl md:text-4xl">
           Featured Projects
         </h2>
         <hr />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
-        {cards.slice(0, 6).map((card) => renderCard(card.sig, card.title))}
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+        {cards.slice(0, 8).map((card) => renderCard(card.sig, card.title))}
         {showMore &&
-          cards.slice(6).map((card) => renderCard(card.sig, card.title))}
+          cards.slice(8).map((card) => renderCard(card.sig, card.title))}
       </div>
       <div className="mt-8 text-center">
         <Button onClick={handleToggleShowMore}>

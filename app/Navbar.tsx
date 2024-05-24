@@ -42,7 +42,7 @@ const Navbar = () => {
         !isVisible && "-top-24"
       )}
     >
-      <div className="h-full w-full mx-auto max-w-7xl px-2.5 md:px-20">
+      <div className="h-full w-full mx-10 max-w-7xl px-2.5">
         <div className="flex h-full items-center justify-between">
           <Link
             href="#"

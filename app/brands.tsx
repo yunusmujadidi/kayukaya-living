@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function Brands() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 -mt-10 bg-slate-100">
-      <div className="container grid gap-8 px-4 md:px-6">
+    <section className="w-full py-12 px-20 md:py-24 lg:py-32 -mt-10 bg-slate-100">
+      <div className="grid gap-8 px-4 md:px-6">
         <div className="space-y-4 md:space-y-6">
           <h2 className="text-md font-light tracking-tighter sm:text-3xl md:text-4xl">
             Explore Our Brands
@@ -15,8 +15,8 @@ export default function Brands() {
             essence of our world.
           </p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
-          {Array.from({ length: 12 }, (_, i) => (
+        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 md:gap-3 lg:gap-4">
+          {Array.from({ length: 24 }, (_, i) => (
             <div key={i} className="relative group overflow-hidden rounded-lg">
               <Link className="absolute inset-0 z-10" href="#">
                 <span className="sr-only">View</span>
