@@ -9,7 +9,7 @@ import { useRef } from "react";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 
-export default function Component() {
+export default function Hero() {
   const plugin = useRef(
     Autoplay({
       delay: 5000,
