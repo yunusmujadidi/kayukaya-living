@@ -4,7 +4,6 @@ import {
   CarouselContent,
   Carousel,
 } from "@/components/ui/carousel";
-import Navbar from "./navbar";
 import { useRef } from "react";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
