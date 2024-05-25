@@ -5,7 +5,6 @@ import styles from "./page.module.scss";
 import Image from "next/image";
 import Lenis from "@studio-freight/lenis";
 import About from "./about";
-import Hero from "./hero";
 import Footer from "./footer";
 
 import { useEffect, useRef, useState } from "react";
@@ -84,7 +83,6 @@ const Page = () => {
 
   return (
     <>
-      <Hero />
       <Products />
       <Brands />
 
