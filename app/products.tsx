@@ -18,7 +18,7 @@ export default function Products() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 20 }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 1 }}
     >
       <Link className="absolute inset-0 z-10" href="#">
         <span className="sr-only">View</span>

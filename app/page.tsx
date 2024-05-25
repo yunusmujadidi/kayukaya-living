@@ -6,6 +6,7 @@ import Image from "next/image";
 import Lenis from "@studio-freight/lenis";
 import About from "./about";
 import Footer from "./footer";
+import Hero from "./hero";
 
 import { useEffect, useRef, useState } from "react";
 
@@ -83,6 +84,7 @@ const Page = () => {
 
   return (
     <>
+      <Hero />
       <Products />
       <Brands />
 

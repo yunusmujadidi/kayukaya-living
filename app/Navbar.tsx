@@ -47,7 +47,7 @@ const Navbar = () => {
           <Link
             href="#"
             className={cn(
-              "flex font-bold  tracking-tight transition-all duration-300 ease-in-out text-2xl md:text-2xl text-slate-700",
+              "flex font-bold  tracking-tight transition-all duration-300 ease-in-out text-4xl md:text-2xl text-slate-700",
               isScrolled && "text-xl md:text-2xl"
             )}
           >

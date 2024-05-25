@@ -30,7 +30,7 @@ export default function Brands() {
       opacity: 1,
       y: 0,
       transition: {
-        delay: i * 0.1, // Adjust the delay to control stagger timing
+        delay: i * 0.2, // Adjust the delay to control stagger timing
         duration: 0.5,
       },
     }),
@@ -64,7 +64,7 @@ export default function Brands() {
             >
               <Image
                 alt={`Image ${i + 1}`}
-                className="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-105 group-hover:blur-sm"
+                className="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-105 group-hover:blur-md"
                 height={400}
                 src={`https://source.unsplash.com/random/?furniture?sig=${
                   i + 1
