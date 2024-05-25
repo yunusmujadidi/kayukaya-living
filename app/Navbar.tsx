@@ -37,9 +37,9 @@ const Navbar = () => {
   return (
     <div
       className={cn(
-        "z-50 sticky h-24 w-full inset-x-0 items-center transition-all top-0",
-        isScrolled && "h-16 bg-white backdrop-blur-md shadow-md ",
-        !isVisible && "-top-24"
+        "z-50 sticky h-24 w-full inset-x-0 items-center transition-all top-0 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 backdrop-blur-md shadow-md",
+        isScrolled && "h-20 bg-white backdrop-blur-md shadow-md block",
+        !isVisible && "-top-24 block"
       )}
     >
       <div className="h-full w-full mx-auto max-w-7xl px-2.5">
@@ -47,8 +47,8 @@ const Navbar = () => {
           <Link
             href="#"
             className={cn(
-              "flex font-bold  tracking-tight transition-all duration-300 ease-in-out text-sm md:text-2xl text-slate-700",
-              isScrolled && "text-sm md:text-xl"
+              "flex font-bold  tracking-tight transition-all duration-300 ease-in-out text-2xl md:text-2xl text-slate-700",
+              isScrolled && "text-xl md:text-2xl"
             )}
           >
             {isScrolled ? "KayuKaya" : "KayuKaya Living"}

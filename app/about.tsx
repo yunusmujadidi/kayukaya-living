@@ -1,6 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import React, { useRef } from "react";
 import styles from "./style.module.scss";
+import { cn } from "@/lib/utils";
 
 export default function Paragraph({
   paragraph,
@@ -18,7 +19,7 @@ export default function Paragraph({
   return (
     <motion.p
       ref={container}
-      className={styles.paragraph}
+      className={cn(className, styles.paragraph)}
       style={{ opacity: scrollYProgress }}
     >
       {paragraph}

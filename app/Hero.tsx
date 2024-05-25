@@ -1,14 +1,24 @@
+"use client";
 import {
   CarouselItem,
   CarouselContent,
   Carousel,
 } from "@/components/ui/carousel";
 import Image from "next/image";
+import AutoPlay from "embla-carousel-autoplay";
+import { useRef } from "react";
 
 const Hero = () => {
+  const plugin = useRef(
+    AutoPlay({ delay: 5000, stopOnInteraction: true, loop: true })
+  );
   return (
     <div className="w-full px-[-4px] bg-slate-200 mb-10">
-      <Carousel>
+      <Carousel
+        plugins={[plugin.current]}
+        onMouseEnter={plugin.current.stop}
+        onMouseLeave={plugin.current.reset}
+      >
         <CarouselContent>
           <CarouselItem>
             <Image
