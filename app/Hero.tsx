@@ -24,8 +24,8 @@ export default function Hero() {
                 width={1920}
               />
 
-              <div className="absolute bottom-4 left-20 rounded-md p-2 text-white">
-                <h2 className="text-2xl font-light tracking-tighter sm:text-3xl md:text-4xl">
+              <div className="absolute bottom-4 left-20 rounded-md p-2 text-white bg-transparent">
+                <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl">
                   Featured Projects
                 </h2>
                 <p className="text-sm pt-3">Unlock your artistic potential.</p>
@@ -38,7 +38,7 @@ export default function Hero() {
                 alt="Carousel Image 2"
                 className="h-[400px] w-full object-cover object-center md:h-[800px]"
                 height={1080}
-                src="/2.jpg"
+                src="/3.jpg"
                 style={{
                   aspectRatio: "1920/1080",
                   objectFit: "cover",
@@ -46,8 +46,8 @@ export default function Hero() {
                 width={1920}
               />
 
-              <div className="absolute bottom-4 left-20 rounded-md p-2 text-white">
-                <h2 className="text-2xl font-light tracking-tighter sm:text-3xl md:text-4xl">
+              <div className="absolute bottom-4 left-20 rounded-md p-2 text-white bg-transparent">
+                <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl">
                   Featured Projects
                 </h2>
                 <p className="text-sm pt-3">Unlock your artistic potential.</p>
@@ -60,7 +60,7 @@ export default function Hero() {
                 alt="Carousel Image 2"
                 className="h-[400px] w-full object-cover object-center md:h-[800px]"
                 height={1080}
-                src="/2.jpg"
+                src="/1.jpg"
                 style={{
                   aspectRatio: "1920/1080",
                   objectFit: "cover",
@@ -68,8 +68,8 @@ export default function Hero() {
                 width={1920}
               />
 
-              <div className="absolute bottom-4 left-20 rounded-md p-2 text-white">
-                <h2 className="text-2xl font-light tracking-tighter sm:text-3xl md:text-4xl">
+              <div className="absolute bottom-4 left-20 rounded-md p-2 text-white bg-transparent">
+                <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl">
                   Featured Projects
                 </h2>
                 <p className="text-sm pt-3">Unlock your artistic potential.</p>

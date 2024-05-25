@@ -94,7 +94,7 @@ const Page = () => {
             <h2 className="text-2xl font-light tracking-tighter sm:text-3xl md:text-4xl text-slate-100">
               About KayuKaya Living
             </h2>
-            <hr />
+            <hr className="border-gray-300 border-2" />
             <About
               className="relative shadow-sm text-xl lg:text-2xl text-slate-100 tracking-tighter"
               paragraph=" KayuKaya specializes in bespoke hospitality furniture solutions, catering to the commercial FF&E market with a focus on OEM or VE requirements for both exterior and interior applications.     Our expertise lies in large-scale manufacturing with shorter lead times and on-budget delivery. We utilize premium materials to meet the evolving demands of the market, and our flexible approach allows us to work closely with clients' concepts, designs, and briefs."

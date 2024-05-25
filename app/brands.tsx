@@ -46,7 +46,7 @@ export default function Brands() {
           <h2 className="text-md font-light tracking-tighter sm:text-3xl md:text-4xl">
             Explore Our Brands
           </h2>
-          <hr />
+          <hr className="border-gray-300 border-2" />
           <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
             Discover a curated collection of stunning images that capture the
             essence of our world.

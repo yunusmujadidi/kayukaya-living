@@ -64,7 +64,7 @@ export default function Products() {
         <h2 className="text-2xl font-light tracking-tighter sm:text-3xl md:text-4xl">
           Featured Projects
         </h2>
-        <hr />
+        <hr className="border-gray-300 border-2" />
       </div>
       <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 md:gap-6">
         {cards.slice(0, 8).map((card) => renderCard(card.sig, card.title))}
