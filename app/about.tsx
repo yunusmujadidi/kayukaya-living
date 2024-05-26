@@ -5,14 +5,14 @@ import React from "react";
 
 const about = () => {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 px-2 md:px-20 -mt-10 bg-slate-100 text-black">
+    <section className="w-full py-12 md:py-24 lg:py-32 px-2 md:px-20 bg-slate-100 text-black">
       <div className=" grid gap-8 px-4 md:px-6">
         <div className="space-y-4 md:space-y-6">
           <Link href="/about">
             <h2 className="text-2xl font-light tracking-tighter sm:text-3xl md:text-4xl ">
               About KayuKaya Living
               <span>
-                <ArrowUpRight className="inline mb-5 w-6 h-6 text-gray-500" />
+                <ArrowUpRight className="inline mb-5 w-4 h-4 text-gray-500" />
               </span>
             </h2>
           </Link>
