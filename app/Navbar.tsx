@@ -14,6 +14,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import Image from "next/image";
 
 interface NavigationItem {
   title: string;
@@ -233,11 +234,28 @@ const Navbar: React.FC = () => {
           <Link
             href="/"
             className={cn(
-              "flex font-bold tracking-tight transition-all duration-300 ease-in-out text-xl md:text-3xl text-emerald-800",
+              "flex font-bold tracking-tight transition-all duration-300 ease-in-out text-xl md:text-3xl text-emerald-800 ",
               isScrolled && "text-xl md:text-2xl"
             )}
           >
-            {isScrolled ? "KayuKaya" : "KayuKaya Living"}
+            {isScrolled ? (
+              <Image
+                alt="Logo"
+                src="https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1585542631378-98UBWDIV711MR3CNJLRJ/favicon.ico?format=100w"
+                width={50}
+                height={50}
+              />
+            ) : (
+              <Image
+                alt="Logo"
+                src="https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/cad8ef74-7370-4494-929b-2c62cb4c6d27/Screenshot+2022-09-24+at+6.15.29+PM.jpg?format=1500w"
+                width={250}
+                height={200}
+                className={cn(
+                  "transition-all duration-200 ease-in-out delay-75"
+                )}
+              />
+            )}
           </Link>
           <div className="flex items-center lg:hidden">
             <button
@@ -254,7 +272,7 @@ const Navbar: React.FC = () => {
           <div className="hidden lg:flex items-center space-x-4 font-semibold">
             <NavigationMenu>
               <NavigationMenuList>
-                <NavigationMenuItem>
+                {/* <NavigationMenuItem>
                   <Link href="/docs" legacyBehavior passHref>
                     <NavigationMenuLink
                       className={navigationMenuTriggerStyle()}
@@ -262,7 +280,7 @@ const Navbar: React.FC = () => {
                       Home
                     </NavigationMenuLink>
                   </Link>
-                </NavigationMenuItem>
+                </NavigationMenuItem> */}
                 {navigationItems.map((item) => (
                   <CustomNavigationMenuItem key={item.title} item={item} />
                 ))}
@@ -301,7 +319,9 @@ const CustomNavigationMenuItem: React.FC<{ item: NavigationItem }> = ({
   item,
 }) => (
   <NavigationMenuItem>
-    <NavigationMenuTrigger>{item.title}</NavigationMenuTrigger>
+    <Link href={item.href} passHref>
+      <NavigationMenuTrigger>{item.title}</NavigationMenuTrigger>
+    </Link>
     {item.children && (
       <NavigationMenuContent>
         <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
