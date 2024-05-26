@@ -5,57 +5,194 @@ import { cn } from "@/lib/utils";
 import { MenuIcon, X } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
 import {
   NavigationMenu,
   NavigationMenuContent,
-  NavigationMenuIndicator,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  NavigationMenuViewport,
+  navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 
-const components: { title: string; href: string; description: string }[] = [
+interface NavigationItem {
+  title: string;
+  href: string;
+  description: string;
+  children?: NavigationItem[];
+}
+
+const navigationItems: NavigationItem[] = [
   {
-    title: "Alert Dialog",
-    href: "/docs/primitives/alert-dialog",
+    title: "Products",
+    href: "/products",
     description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+      "Browse our exclusive range of bespoke furniture and products.",
+    children: [
+      {
+        title: "Custom Furniture",
+        href: "/products/custom-furniture",
+        description:
+          "Discover our bespoke furniture solutions for luxury projects.",
+      },
+      {
+        title: "Umbrellas and Shades",
+        href: "/products/umbrellas-shades",
+        description:
+          "Explore our premium umbrellas and shades for various applications.",
+        children: [
+          {
+            title: "Glatz Swiss",
+            href: "/products/umbrellas-shades/glatz-swiss",
+            description: "Durable, high wind-proof umbrellas by Glatz Swiss.",
+          },
+          {
+            title: "Jardinico Belgium",
+            href: "/products/umbrellas-shades/jardinico-belgium",
+            description: "Elegant resort-style umbrellas by Jardinico Belgium.",
+          },
+          {
+            title: "Coro Italia",
+            href: "/products/umbrellas-shades/coro-italia",
+            description: "Luxury outdoor yacht furniture by Coro Italia.",
+          },
+        ],
+      },
+      {
+        title: "Mill Works",
+        href: "/products/mill-works",
+        description:
+          "Custom millwork services featuring exquisite woodwork and finishes.",
+      },
+    ],
   },
   {
-    title: "Hover Card",
-    href: "/docs/primitives/hover-card",
+    title: "Projects",
+    href: "/projects",
     description:
-      "For sighted users to preview content available behind a link.",
+      "Explore our portfolio of completed projects showcasing our craftsmanship.",
+    children: [
+      {
+        title: "Hotels and Resorts",
+        href: "/projects/hotels-resorts",
+        description:
+          "View our work in luxury hotels and resorts like The Mulia Bali and One & Only Desaru.",
+      },
+      {
+        title: "Public and Commercial Spaces",
+        href: "/projects/public-commercial",
+        description:
+          "See our projects in public and commercial spaces such as Frasers Tower rooftop and Dubai Jebel Ali Park rooftop.",
+      },
+      {
+        title: "Luxury Condominiums",
+        href: "/projects/luxury-condominiums",
+        description:
+          "Browse our luxury condominium projects like St Thomas and V on Shenton.",
+      },
+    ],
   },
   {
-    title: "Progress",
-    href: "/docs/primitives/progress",
+    title: "Materials",
+    href: "/materials",
     description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+      "Learn about the premium materials we use and our commitment to sustainability.",
+    children: [
+      {
+        title: "High-Quality Materials",
+        href: "/materials/high-quality",
+        description:
+          "Details on our premium materials, including FSC-certified hardwoods and recyclable metals.",
+      },
+      {
+        title: "Sustainability Efforts",
+        href: "/materials/sustainability",
+        description:
+          "Learn about our practices for reducing waste and minimizing our carbon footprint.",
+      },
+    ],
   },
   {
-    title: "Scroll-area",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
+    title: "About Us",
+    href: "/about",
+    description: "Discover KayuKaya Living's mission, values, and practices.",
+    children: [
+      {
+        title: "Overview",
+        href: "/about/overview",
+        description: "An introduction to KayuKaya Living and our core values.",
+      },
+      {
+        title: "Our Mission",
+        href: "/about/mission",
+        description: "Explore our mission and vision for a sustainable future.",
+      },
+      {
+        title: "Sustainability Practices",
+        href: "/about/sustainability",
+        description:
+          "Learn about our environmental and social responsibility initiatives.",
+      },
+      {
+        title: "Manufacturing Facilities",
+        href: "/about/facilities",
+        description:
+          "Get details on our state-of-the-art facilities in Indonesia and beyond.",
+      },
+    ],
   },
   {
-    title: "Tabs",
-    href: "/docs/primitives/tabs",
-    description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-  },
-  {
-    title: "Tooltip",
-    href: "/docs/primitives/tooltip",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+    title: "Contact",
+    href: "/contact",
+    description: "Reach out to us for any inquiries or support.",
+    children: [
+      {
+        title: "Headquarters",
+        href: "/contact/headquarters",
+        description: "Find contact information for our Singapore headquarters.",
+      },
+      {
+        title: "Regional Offices",
+        href: "/contact/regional-offices",
+        description:
+          "Get in touch with our offices in Semarang, Indonesia, and Karuizawa, Japan.",
+      },
+    ],
   },
 ];
 
-const Navbar = () => {
+const navigationItemsMobile = [
+  {
+    title: "Products",
+    href: "/products",
+    description:
+      "Browse our exclusive range of bespoke furniture and products.",
+  },
+  {
+    title: "Projects",
+    href: "/projects",
+    description:
+      "Explore our portfolio of completed projects showcasing our craftsmanship.",
+  },
+  {
+    title: "Materials",
+    href: "/materials",
+    description:
+      "Learn about the premium materials we use and our commitment to sustainability.",
+  },
+  {
+    title: "About Us",
+    href: "/about",
+    description: "Discover KayuKaya Living's mission, values, and practices.",
+  },
+  {
+    title: "Contact",
+    href: "/contact",
+    description: "Reach out to us for any inquiries or support.",
+  },
+];
+
+const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
@@ -96,13 +233,13 @@ const Navbar = () => {
           <Link
             href="/"
             className={cn(
-              "flex font-bold  tracking-tight transition-all duration-300 ease-in-out text-xl md:text-3xl text-slate-700",
+              "flex font-bold tracking-tight transition-all duration-300 ease-in-out text-xl md:text-3xl text-emerald-800",
               isScrolled && "text-xl md:text-2xl"
             )}
           >
             {isScrolled ? "KayuKaya" : "KayuKaya Living"}
           </Link>
-          <div className="flex items-center md:hidden">
+          <div className="flex items-center lg:hidden">
             <button
               onClick={toggleMenu}
               className="text-slate-700 focus:outline-none"
@@ -114,99 +251,39 @@ const Navbar = () => {
               )}
             </button>
           </div>
-          <div className="hidden md:flex items-center space-x-4 font-semibold">
+          <div className="hidden lg:flex items-center space-x-4 font-semibold">
             <NavigationMenu>
-              <NavigationMenuItem>
-                <NavigationMenuTrigger>Dropdown</NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                    {components.map((component) => (
-                      <ListItem
-                        key={component.title}
-                        title={component.title}
-                        href={component.href}
-                      >
-                        {component.description}
-                      </ListItem>
-                    ))}
-                  </ul>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <Link href="/docs" legacyBehavior passHref>
+                    <NavigationMenuLink
+                      className={navigationMenuTriggerStyle()}
+                    >
+                      Home
+                    </NavigationMenuLink>
+                  </Link>
+                </NavigationMenuItem>
+                {navigationItems.map((item) => (
+                  <CustomNavigationMenuItem key={item.title} item={item} />
+                ))}
+              </NavigationMenuList>
             </NavigationMenu>
-            <Link
-              href="/#"
-              className={buttonVariants({
-                variant: "ghost",
-              })}
-            >
-              Brands
-            </Link>
-            <Link
-              href="/products"
-              className={buttonVariants({
-                variant: "ghost",
-              })}
-            >
-              Products
-            </Link>
-            <Link
-              href="/category"
-              className={buttonVariants({
-                variant: "ghost",
-              })}
-            >
-              Category
-            </Link>
-            <Link
-              href="/about"
-              className={buttonVariants({
-                variant: "ghost",
-              })}
-            >
-              About us
-            </Link>
           </div>
         </div>
       </div>
       {isMenuOpen && (
         <div className="md:hidden bg-white shadow-md">
           <div className="flex flex-col items-start space-y-4 p-4">
-            <Link
-              href="/brands"
-              className={buttonVariants({
-                variant: "ghost",
-              })}
-              onClick={toggleMenu}
-            >
-              Brands
-            </Link>
-            <Link
-              href="/products"
-              className={buttonVariants({
-                variant: "ghost",
-              })}
-              onClick={toggleMenu}
-            >
-              Products
-            </Link>
-            <Link
-              href="/category"
-              className={buttonVariants({
-                variant: "ghost",
-              })}
-              onClick={toggleMenu}
-            >
-              Category
-            </Link>
-            <Link
-              href="/About"
-              className={buttonVariants({
-                variant: "ghost",
-              })}
-              onClick={toggleMenu}
-            >
-              About
-            </Link>
+            {navigationItemsMobile.map((item) => (
+              <Link
+                key={item.title}
+                href={item.href}
+                className={buttonVariants({ variant: "ghost" })}
+                onClick={toggleMenu}
+              >
+                {item.title}
+              </Link>
+            ))}
           </div>
         </div>
       )}
@@ -214,11 +291,51 @@ const Navbar = () => {
   );
 };
 
-const ListItem = React.forwardRef<
-  React.ElementRef<"a">,
-  React.ComponentPropsWithoutRef<"a">
->(({ className, title, children, ...props }, ref) => {
-  return (
+interface ListItemProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+  title: string;
+  href: string;
+  children: React.ReactNode;
+}
+
+const CustomNavigationMenuItem: React.FC<{ item: NavigationItem }> = ({
+  item,
+}) => (
+  <NavigationMenuItem>
+    <NavigationMenuTrigger>{item.title}</NavigationMenuTrigger>
+    {item.children && (
+      <NavigationMenuContent>
+        <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+          {item.children.map((child) => (
+            <ListItem
+              className="font-bold text-emerald-800"
+              key={child.title}
+              title={child.title}
+              href={child.href}
+            >
+              <p className="font-normal">{child.description}</p>
+              {child.children && (
+                <ul>
+                  {child.children.map((subChild) => (
+                    <ListItem
+                      key={subChild.title}
+                      title={subChild.title}
+                      href={subChild.href}
+                    >
+                      {subChild.description}
+                    </ListItem>
+                  ))}
+                </ul>
+              )}
+            </ListItem>
+          ))}
+        </ul>
+      </NavigationMenuContent>
+    )}
+  </NavigationMenuItem>
+);
+
+const ListItem = React.forwardRef<HTMLAnchorElement, ListItemProps>(
+  ({ className, title, children, ...props }, ref) => (
     <li>
       <NavigationMenuLink asChild>
         <a
@@ -236,8 +353,8 @@ const ListItem = React.forwardRef<
         </a>
       </NavigationMenuLink>
     </li>
-  );
-});
+  )
+);
 ListItem.displayName = "ListItem";
 
 export default Navbar;
