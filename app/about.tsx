@@ -1,14 +1,21 @@
 import TextMotion from "@/components/ui/text-motion";
+import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
-const About = () => {
+const about = () => {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 px-2 md:px-20 -mt-10 bg-[#2D2D2D]">
       <div className="container grid gap-8 px-4 md:px-6">
         <div className="space-y-4 md:space-y-6">
-          <h2 className="text-2xl font-light tracking-tighter sm:text-3xl md:text-4xl text-slate-100">
-            About KayuKaya Living
-          </h2>
+          <Link href="/about">
+            <h2 className="text-2xl font-light tracking-tighter sm:text-3xl md:text-4xl text-slate-100">
+              About KayuKaya Living
+              <span>
+                <ArrowUpRight className="inline mb-5 w-6 h-6 text-gray-500" />
+              </span>
+            </h2>
+          </Link>
           <hr />
           <TextMotion
             className="relative shadow-sm text-xl lg:text-2xl text-slate-100 tracking-tighter"
@@ -24,4 +31,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default about;

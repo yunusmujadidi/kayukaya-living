@@ -3,6 +3,7 @@ import Image from "next/image";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+import { ArrowUpRight } from "lucide-react";
 
 export default function Brands() {
   const controls = useAnimation();
@@ -43,9 +44,14 @@ export default function Brands() {
     >
       <div className="grid gap-8 px-4 md:px-6">
         <div className="space-y-4 md:space-y-6">
-          <h2 className="text-2xl font-light tracking-tighter sm:text-3xl md:text-4xl">
-            Explore Our Brands
-          </h2>
+          <Link href="/brands">
+            <h2 className="text-2xl font-light tracking-tighter sm:text-3xl md:text-4xl">
+              Explore Our Category
+              <span>
+                <ArrowUpRight className="inline mb-5 w-6 h-6 text-gray-500" />
+              </span>
+            </h2>
+          </Link>
           <hr />
           <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
             Discover a curated collection of stunning images that capture the
