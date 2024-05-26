@@ -15,7 +15,7 @@ export default function Contact() {
     <section className="w-full py-12 md:py-24 px-2 md:px-20 bg-[#2D2D2D]">
       <div className="container grid gap-8 px-4 md:px-6">
         <div className="space-y-4 md:space-y-6">
-          <Link href="/contact/headquarters">
+          <Link className="hover:underline" href="/contact/headquarters">
             <h2 className="text-2xl font-light tracking-tighter sm:text-3xl md:text-4xl text-slate-100">
               Visit our showroom office
               <span>

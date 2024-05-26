@@ -13,7 +13,7 @@ export default function Products() {
   };
 
   const renderCard = (imgSrc: string, src: string, title: string) => (
-    <Link href={`/products/${src}`} key={src}>
+    <Link className="hover:underline" href={`/products/${src}`} key={src}>
       <motion.div
         key={src}
         className="relative group overflow-hidden rounded-lg"

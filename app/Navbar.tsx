@@ -232,6 +232,7 @@ const Navbar: React.FC = () => {
       <div className="h-full w-full mx-auto max-w-7xl px-2.5">
         <div className="flex h-full items-center justify-between">
           <Link
+            className="hover:underline"
             href="/"
             className={cn(
               "flex font-bold tracking-tight transition-all duration-300 ease-in-out text-xl md:text-3xl text-emerald-800 ",
@@ -273,7 +274,7 @@ const Navbar: React.FC = () => {
             <NavigationMenu>
               <NavigationMenuList>
                 {/* <NavigationMenuItem>
-                  <Link href="/docs" legacyBehavior passHref>
+                  <Link className="hover:underline" href="/docs" legacyBehavior passHref>
                     <NavigationMenuLink
                       className={navigationMenuTriggerStyle()}
                     >
@@ -294,6 +295,7 @@ const Navbar: React.FC = () => {
           <div className="flex flex-col items-start space-y-4 p-4">
             {navigationItemsMobile.map((item) => (
               <Link
+                className="hover:underline"
                 key={item.title}
                 href={item.href}
                 className={buttonVariants({ variant: "ghost" })}
@@ -319,7 +321,7 @@ const CustomNavigationMenuItem: React.FC<{ item: NavigationItem }> = ({
   item,
 }) => (
   <NavigationMenuItem>
-    <Link href={item.href} passHref>
+    <Link className="hover:underline" href={item.href} passHref>
       <NavigationMenuTrigger>{item.title}</NavigationMenuTrigger>
     </Link>
     {item.children && (

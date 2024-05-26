@@ -44,7 +44,7 @@ export default function Brands() {
     >
       <div className="grid gap-8 px-4 md:px-6">
         <div className="space-y-4 md:space-y-6">
-          <Link href="/category">
+          <Link className="hover:underline" href="/category">
             <h2 className="text-2xl font-light tracking-tighter sm:text-3xl md:text-4xl">
               Explore Our Category
               <span>
