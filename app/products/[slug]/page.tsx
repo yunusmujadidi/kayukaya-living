@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import cards from "@/lib/card";
 import Title from "@/app/title";
+import Products from "@/app/products";
 
 export default function Page({ params }: { params: any }) {
   const { slug } = params;
@@ -32,6 +33,7 @@ export default function Page({ params }: { params: any }) {
         </h1>
       </section>
       <Title>{slug.toUpperCase()}</Title>
+      <Products />
     </div>
   );
 }
