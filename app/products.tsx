@@ -39,7 +39,7 @@ export default function Products() {
   );
 
   return (
-    <section className="px-4 md:px-20 md:py-16">
+    <section className="px-4 md:px-20 md:pb-5">
       <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 md:gap-6">
         {cards
           .slice(0, 8)

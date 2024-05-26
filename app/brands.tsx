@@ -40,7 +40,7 @@ export default function Brands() {
   return (
     <section
       ref={ref}
-      className="w-full py-12 px-2 md:px-20 md:py-24 lg:py-32 bg-slate-100"
+      className="w-full py-12 px-2 md:px-20 md:py-24 bg-slate-100"
     >
       <div className="grid gap-8 px-4 md:px-6">
         <div className="space-y-4 md:space-y-6">

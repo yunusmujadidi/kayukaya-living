@@ -45,7 +45,7 @@ const carouselItems = [
 
 export default function Hero() {
   return (
-    <section className="w-full px-[-4px] mb-10">
+    <section className="w-full px-[-4px]">
       <CarouselWrapper>
         <CarouselContent>
           {carouselItems.map((item, index) => (
@@ -70,7 +70,7 @@ export default function Hero() {
                     </h2>
                   </Link>
                   <div>
-                    <Badge className="gap-2 md:my-2 ml-2 md:ml-0 px-2.5">
+                    <Badge className="gap-2 md:my-2 ml-2 md:ml-0 px-2.5 mb-5">
                       <p className="text-xs font-light">{item.category}</p>
                     </Badge>
                   </div>
