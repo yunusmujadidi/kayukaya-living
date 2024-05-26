@@ -30,7 +30,7 @@ export default function Page({ params }: { params: any }) {
           {titleImage}
         </h1>
       </section>
-      {slug}
+       <Title/>{slug}</Title>
     </div>
   );
 }
