@@ -65,7 +65,7 @@ export default function Hero() {
 
                 <div className="block md:absolute bottom-10 left-20 rounded-md p-3 border-b md:border-none">
                   <Link href="/#">
-                    <h2 className="text-xl font-semibold md:text-4xl md:text-white text-black md:bg-black/50 rounded-lg">
+                    <h2 className="text-xl font-semibold md:text-4xl md:text-white text-black md:bg-black/50 rounded-lg p-3">
                       {item.title}
                     </h2>
                   </Link>
