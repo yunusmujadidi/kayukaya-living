@@ -1,5 +1,6 @@
 import { CarouselWrapper } from "@/components/carousel-wrapper";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { CarouselItem, CarouselContent } from "@/components/ui/carousel";
 import Image from "next/image";
 import Link from "next/link";
@@ -14,11 +15,11 @@ const carouselItems = [
   },
 
   {
-    title: "St Thomas condominium, CORO Italy, VONDOM Spain",
-    description: "Outdoor furniture",
+    title: "The Ritz Carlton Maldives",
+    description: "Bespoke Hospitality Furniture Solutions",
     category: "Outdoor furniture",
     image:
-      "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1664112886250-UFD7010O3TA0C4ZIMTJJ/DSCF1242.jpg",
+      "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1664117309470-092XJHMEJT6VCBCJKLD5/Screenshot+2022-09-25+at+12.44.44+PM.png",
   },
   {
     title: "Shangri La - Mauritius - Outdoor furniture ",
@@ -65,15 +66,16 @@ export default function Hero() {
 
                 <div className="block md:absolute bottom-10 left-20 rounded-md p-3 border-b md:border-none">
                   <Link href="/#">
-                    <h2 className="text-xl font-semibold md:text-4xl md:text-white text-black md:bg-black/50 rounded-lg p-3">
+                    <h2 className="text-2xl font-light tracking-tighter sm:text-4xl md:text-white text-black md:bg-black/50 rounded-lg p-2">
                       {item.title}
                     </h2>
                   </Link>
                   <div>
-                    <Badge className="gap-2 md:my-2 ">
+                    <Badge className="gap-2 md:my-2 ml-2 md:ml-0 px-2.5">
                       <p className="text-xs font-light">Outdoor furniture</p>
                     </Badge>
                   </div>
+
                   {/* <p className="text-sm pt-3">{item.description}</p> */}
                 </div>
               </div>
