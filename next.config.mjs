@@ -5,6 +5,7 @@ const nextConfig = {
       "source.unsplash.com",
       "images.squarespace-cdn.com",
       "scontent.cdninstagram.com",
+      "walterswicker.com",
     ],
   },
 };

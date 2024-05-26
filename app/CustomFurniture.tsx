@@ -5,7 +5,7 @@ import React from "react";
 
 const CustomFurniture = () => {
   return (
-    <section className="w-full py-12 md:py-24  px-2 md:px-20 bg-[#2D2D2D]">
+    <section className="w-full py-12 md:py-10  px-2 md:px-20 bg-[#2D2D2D]">
       <div className="container grid gap-8 px-4 md:px-6">
         <div className="space-y-4 md:space-y-6">
           <Link
@@ -13,7 +13,7 @@ const CustomFurniture = () => {
             href="/products/custom-furniture"
           >
             <h2 className="text-2xl font-light tracking-tighter sm:text-3xl md:text-4xl !text-slate-100">
-              Custom Furniture, Unlimited Possibilities*
+              Custom Furniture
               <span>
                 <ArrowUpRight className="inline mb-5 w-4 h-4 text-gray-500" />
               </span>

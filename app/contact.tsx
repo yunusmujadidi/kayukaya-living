@@ -12,7 +12,7 @@ const LazyMap = dynamic(() => import("@/components/map"), {
 
 export default function Contact() {
   return (
-    <section className="w-full py-12 md:py-24 px-2 md:px-20 bg-[#2D2D2D]">
+    <section className="w-full py-12 md:py-10 px-2 md:px-20 bg-[#2d2d2d]">
       <div className="container grid gap-8 px-4 md:px-6">
         <div className="space-y-4 md:space-y-6">
           <Link className="hover:underline" href="/contact/headquarters">

@@ -27,7 +27,8 @@ const images = [
   "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1573459330387-TZ3JXR3O7CSBHS42L2G6/ray3.jpeg?format=2500w",
   "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1664451095051-XEIW4ST1Y4F8IYRVB6R9/IMG_3096.jpeg?format=2500w",
   "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1664450748653-KVUXVWD739GCYZ6CKTTO/alu+smart+capella+284668.jpg?format=2500w",
-  "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1664013434480-N7J232LVDIW5M0Y67V23/2f569f62-4312-48bd-ae38-be477816e2c1.jpg?format=2500w",
+  "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1680184276836-AONLCEBDFOZLW7NK67SQ/0d94fb73-8507-453a-a695-63be63bddc0a.jpg",
+  "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1680184274552-Q38XFWIQRNNE9OSOINKL/b00cd724-36ae-4dc1-87b1-b9736cb4895f.jpg",
 ];
 
 const Column = ({
@@ -107,7 +108,6 @@ const Page = () => {
           </div>
         </div>
       </section>
-      <Contact />
     </>
   );
 };
