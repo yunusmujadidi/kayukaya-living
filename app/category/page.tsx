@@ -1,7 +1,14 @@
-import React from "react";
+import Brands from "../brands";
+import Products from "../products";
+import Title from "../title";
 
-const page = () => {
-  return <div>page</div>;
-};
+function MyPage() {
+  return (
+    <div>
+      <Title>Our Products</Title>
+      <Brands />
+    </div>
+  );
+}
 
-export default page;
+export default MyPage;

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import cards from "@/lib/card";
+import Title from "@/app/title";
 
 export default function Page({ params }: { params: any }) {
   const { slug } = params;
@@ -30,7 +31,7 @@ export default function Page({ params }: { params: any }) {
           {titleImage}
         </h1>
       </section>
-      {slug}
+      <Title>{slug.toUpperCase()}</Title>
     </div>
   );
 }

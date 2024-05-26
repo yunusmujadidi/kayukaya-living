@@ -1,14 +1,14 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 
-const title = () => {
+const Title = ({ children }: { children: ReactNode }) => {
   return (
     <section className="px-4 md:px-20 py-12 md:py-10">
       <div className="space-y-4 md:space-y-6 px-5 py-5">
         <Link className="hover:underline" href="/products">
           <h2 className="text-2xl font-light tracking-tighter sm:text-3xl md:text-4xl">
-            Explore Our Products
+            {children}
             <span>
               <ArrowUpRight className="inline mb-5 w-4 h-4 text-gray-500" />
             </span>
@@ -20,4 +20,4 @@ const title = () => {
   );
 };
 
-export default title;
+export default Title;

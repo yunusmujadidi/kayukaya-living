@@ -90,7 +90,7 @@ const Page = () => {
     <>
       <Hero />
       <About />
-      <Title />
+      <Title>Explore our Products</Title>
 
       <Products />
       <Brands />
@@ -108,6 +108,7 @@ const Page = () => {
           </div>
         </div>
       </section>
+      <Contact />
     </>
   );
 };
