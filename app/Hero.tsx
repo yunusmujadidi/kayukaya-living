@@ -1,6 +1,5 @@
 import { CarouselWrapper } from "@/components/carousel-wrapper";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { CarouselItem, CarouselContent } from "@/components/ui/carousel";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,7 +8,7 @@ const carouselItems = [
   {
     title: "Amanyara - Turks and Caicos ",
     description: "Singapore skyscraper in CBD",
-    category: "Outdoor furniture",
+    category: "Hotels and Resorts",
     image:
       "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1664107542275-YH9U4PLGSVFYU7RCXAU0/ppvilla10+copy.jpg?format=2500w",
   },
@@ -17,28 +16,28 @@ const carouselItems = [
   {
     title: "The Ritz Carlton Maldives",
     description: "Bespoke Hospitality Furniture Solutions",
-    category: "Outdoor furniture",
+    category: "Outdoor Furniture",
     image:
       "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1664117309470-092XJHMEJT6VCBCJKLD5/Screenshot+2022-09-25+at+12.44.44+PM.png",
   },
   {
-    title: "Shangri La - Mauritius - Outdoor furniture ",
+    title: "Shangri La - Mauritius ",
     description: "Unlock your artistic potential.",
-    category: "Outdoor furniture",
+    category: "Hotels and Resorts",
     image:
       "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/f4e1cdad-8bd9-4379-9544-6460e6aa0d19/Screenshot+2022-09-30+at+10.17.11+PM.png",
   },
   {
-    title: "De Castelli sculpto",
+    title: "Royal Atlantis - Dubai ",
     description: "Unlock your artistic potential.",
-    category: "Outdoor furniture",
+    category: "Hotels and Resorts",
     image:
-      "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1677589620343-RXFPRVKO4UTQUWMKUU6R/2cdf9186-b074-470c-be41-b228f5294e8d.jpg",
+      "https://scontent.cdninstagram.com/v/t51.29350-15/332411058_1637788493339546_7613288221633904155_n.jpg?stp=dst-jpg_e15&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi43MjB4NDgwLnNkci5mMjkzNTAifQ&_nc_ht=scontent.cdninstagram.com&_nc_cat=102&_nc_ohc=3KXChTNnKboQ7kNvgH4AjpA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzA0NTM0MTE3OTY0ODExMTIyOQ%3D%3D.2-ccb7-5&oh=00_AYCuO_dVo_ovHQ8yDkfE3s26WmKc3sgS1n2hBWupjWiOUA&oe=6658F30A&_nc_sid=10d13b",
   },
   {
     title: "One & Only Desaru",
     description: "Unlock your artistic potential.",
-    category: "Outdoor furniture",
+    category: "Hotels and Resorts",
     image:
       "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1695222006593-OUAGW9C88MMYS8YPXBY9/IMG_3890.jpeg",
   },
@@ -66,13 +65,13 @@ export default function Hero() {
 
                 <div className="block md:absolute bottom-10 left-20 rounded-md p-3 border-b md:border-none">
                   <Link href="/#">
-                    <h2 className="text-2xl font-light tracking-tighter sm:text-4xl md:text-white text-black md:bg-black/50 rounded-lg p-2">
+                    <h2 className="text-2xl font-light tracking-tighter sm:text-4xl md:text-white text-black md:bg-black/90 rounded-lg p-2">
                       {item.title}
                     </h2>
                   </Link>
                   <div>
                     <Badge className="gap-2 md:my-2 ml-2 md:ml-0 px-2.5">
-                      <p className="text-xs font-light">Outdoor furniture</p>
+                      <p className="text-xs font-light">{item.category}</p>
                     </Badge>
                   </div>
 
