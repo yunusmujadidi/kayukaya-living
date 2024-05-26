@@ -27,7 +27,7 @@ export default function Contact() {
             </h2>
           </Link>
           <hr />
-          <div className="flex flex-row ">
+          <div className="flex flex-col lg:flex-row">
             <LazyMap />
             <h1 className="flex items-center justify-between mt-4 text-2xl text-white text-center ml-10">
               61 Ubi Ave 1, #06-10, UB Point, Singapore 408941{" "}
