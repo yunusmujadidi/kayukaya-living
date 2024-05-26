@@ -7,6 +7,7 @@ import Lenis from "@studio-freight/lenis";
 import About from "./about";
 import Hero from "./Hero";
 import Title from "./title";
+import Contact from "./contact";
 
 import { useEffect, useRef, useState } from "react";
 
@@ -106,6 +107,7 @@ const Page = () => {
           </div>
         </div>
       </section>
+      <Contact />
     </>
   );
 };
