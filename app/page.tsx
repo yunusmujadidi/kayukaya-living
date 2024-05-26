@@ -6,10 +6,14 @@ import Image from "next/image";
 import Lenis from "@studio-freight/lenis";
 import About from "./about";
 import Hero from "./Hero";
+import Title from "./title";
 
 import { useEffect, useRef, useState } from "react";
 
 import { useTransform, useScroll, motion, MotionValue } from "framer-motion";
+import { Link, ArrowUpRight } from "lucide-react";
+import Sustainable from "./sustainable";
+import CustomFurniture from "./CustomFurniture";
 
 const images = [
   "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1664010362273-MZ15A4OO1I3ZG2JTIQOK/IMG_3901.jpg",
@@ -83,10 +87,13 @@ const Page = () => {
   return (
     <>
       <Hero />
+      <About />
+      <Title />
+
       <Products />
       <Brands />
-
-      <About />
+      <Sustainable />
+      <CustomFurniture />
       <section>
         <div className={styles.main}>
           <div className={styles.gallery}>
