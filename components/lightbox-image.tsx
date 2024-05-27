@@ -14,7 +14,7 @@ function isNextJsImage(slide: any) {
   );
 }
 
-export default function NextJsImage({ slide, offset, rect }: any) {
+export default function LightboxImage({ slide, offset, rect }: any) {
   const {
     on: { click },
     carousel: { imageFit },

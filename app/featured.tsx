@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import Lightbox from "yet-another-react-lightbox";
-import NextJsImage from "@/components/nextjs-image";
+import LightboxImage from "@/components/lightbox-image";
 import "yet-another-react-lightbox/styles.css";
 import Title from "./title";
 
@@ -30,18 +30,24 @@ const projects = [
   {
     imgSrc:
       "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1695222006593-OUAGW9C88MMYS8YPXBY9/IMG_3890.jpeg?format=750w",
-    title: "One & Only Desaru 1 ",
+    title: "One & Only Desaru  ",
     src: "outdoor-furniture",
+  },
+  // {
+  //   imgSrc:
+  //     "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1695222025188-TJ6BDYT2CHMLINUAUS0Y/IMG_3889.jpeg?format=750w",
+  //   title: "One & Only Desaru ",
+  //   src: "outdoor-furniture",
+  // },
+  {
+    imgSrc:
+      "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1695222028009-DUNCYZ896HK9KP8PX5B5/725440af-1c71-443d-964d-a372be9706a8.jpg",
+    title: "Exuma PMC Bahama",
+    src: "interior-furniture",
   },
   {
     imgSrc:
-      "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1695222025188-TJ6BDYT2CHMLINUAUS0Y/IMG_3889.jpeg?format=750w",
-    title: "One & Only Desaru 2",
-    src: "outdoor-furniture",
-  },
-  {
-    imgSrc:
-      "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1695222028009-DUNCYZ896HK9KP8PX5B5/725440af-1c71-443d-964d-a372be9706a8.jpg?format=500w",
+      "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/828c7b4c-4126-483b-a1ad-4cb782e29ef3/WhatsApp+Image+2024-02-01+at+19.02.10.jpeg",
     title: "Shangri La - HK",
     src: "interior-furniture",
   },
@@ -79,8 +85,7 @@ const projects = [
   {
     imgSrc:
       "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1579582467486-7AG92F0TSQXJWGA1ZDBC/ST+Thomas+pool+.jpg",
-    title:
-      "Adding bespoke outdoor furniture at St Thomas condominium, CORO Italy, VONDOM Spain",
+    title: "St Thomas condominium, CORO Italy, VONDOM Spain",
     src: "interior-furniture",
   },
 ];
@@ -162,7 +167,7 @@ const Featured = () => {
         close={() => setOpen(false)}
         index={currentIndex} // Set the initial slide based on currentIndex
         slides={projects.map((project) => ({ src: project.imgSrc }))}
-        render={{ slide: NextJsImage }}
+        render={{ slide: LightboxImage }}
       />
     </>
   );
