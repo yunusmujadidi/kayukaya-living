@@ -33,7 +33,7 @@ export default function Page({ params }: { params: any }) {
         </h1>
       </section>
       <Title>{slug.toUpperCase()}</Title>
-      <Products />
+      <Products cards={cards} title="" />
     </div>
   );
 }
