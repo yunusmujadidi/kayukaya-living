@@ -25,103 +25,51 @@ interface NavigationItem {
 
 const navigationItems: NavigationItem[] = [
   {
-    title: "Products",
-    href: "/products",
-    description:
-      "Browse our exclusive range of bespoke furniture and products.",
+    title: "Brands",
+    href: "/brands",
+    description: "Discover our company's mission, values, and practices.",
     children: [
       {
-        title: "Custom Furniture",
-        href: "/products/custom-furniture",
-        description:
-          "Discover our bespoke furniture solutions for luxury projects.",
+        title: "Manutti",
+        href: "/brands/manutti",
+        description: "An introduction to our company and core values.",
       },
       {
-        title: "Umbrellas and Shades",
-        href: "/products/umbrellas-shades",
-        description:
-          "Explore our premium umbrellas and shades for various applications.",
-        children: [
-          {
-            title: "Glatz Swiss",
-            href: "/products/umbrellas-shades/glatz-swiss",
-            description: "Durable, high wind-proof umbrellas by Glatz Swiss.",
-          },
-          {
-            title: "Jardinico Belgium",
-            href: "/products/umbrellas-shades/jardinico-belgium",
-            description: "Elegant resort-style umbrellas by Jardinico Belgium.",
-          },
-          {
-            title: "Coro Italia",
-            href: "/products/umbrellas-shades/coro-italia",
-            description: "Luxury outdoor yacht furniture by Coro Italia.",
-          },
-        ],
-      },
-      {
-        title: "Mill Works",
-        href: "/products/mill-works",
-        description:
-          "Custom millwork services featuring exquisite woodwork and finishes.",
+        title: "ethimo",
+        href: "/brands/ethimo",
+        description: "Explore our mission and vision for a sustainable future.",
       },
     ],
   },
   {
-    title: "Projects",
-    href: "/projects",
-    description:
-      "Explore our portfolio of completed projects showcasing our craftsmanship.",
-    children: [
-      {
-        title: "Hotels and Resorts",
-        href: "/projects/hotels-resorts",
-        description:
-          "View our work in luxury hotels and resorts like The Mulia Bali and One & Only Desaru.",
-      },
-      {
-        title: "Public and Commercial Spaces",
-        href: "/projects/public-commercial",
-        description:
-          "See our projects in public and commercial spaces such as Frasers Tower rooftop and Dubai Jebel Ali Park rooftop.",
-      },
-      {
-        title: "Luxury Condominiums",
-        href: "/projects/luxury-condominiums",
-        description:
-          "Browse our luxury condominium projects like St Thomas and V on Shenton.",
-      },
-    ],
+    title: "Interiors & Mill Works",
+    href: "/interiors-mill-works",
+    description: "Browse our interior design and millwork services.",
   },
   {
-    title: "Materials",
-    href: "/materials",
-    description:
-      "Learn about the premium materials we use and our commitment to sustainability.",
-    children: [
-      {
-        title: "High-Quality Materials",
-        href: "/materials/high-quality",
-        description:
-          "Details on our premium materials, including FSC-certified hardwoods and recyclable metals.",
-      },
-      {
-        title: "Sustainability Efforts",
-        href: "/materials/sustainability",
-        description:
-          "Learn about our practices for reducing waste and minimizing our carbon footprint.",
-      },
-    ],
+    title: "Umbrella",
+    href: "/umbrella",
+    description: "Explore our premium umbrellas and shades.",
+  },
+  {
+    title: "Factory",
+    href: "/factory",
+    description: "Information about our manufacturing facilities.",
+  },
+  {
+    title: "Office",
+    href: "/office",
+    description: "Details about our office locations.",
   },
   {
     title: "About Us",
     href: "/about",
-    description: "Discover KayuKaya Living's mission, values, and practices.",
+    description: "Discover our company's mission, values, and practices.",
     children: [
       {
         title: "Overview",
         href: "/about/overview",
-        description: "An introduction to KayuKaya Living and our core values.",
+        description: "An introduction to our company and core values.",
       },
       {
         title: "Our Mission",
@@ -134,62 +82,7 @@ const navigationItems: NavigationItem[] = [
         description:
           "Learn about our environmental and social responsibility initiatives.",
       },
-      {
-        title: "Manufacturing Facilities",
-        href: "/about/facilities",
-        description:
-          "Get details on our state-of-the-art facilities in Indonesia and beyond.",
-      },
     ],
-  },
-  {
-    title: "Contact",
-    href: "/contact",
-    description: "Reach out to us for any inquiries or support.",
-    children: [
-      {
-        title: "Headquarters",
-        href: "/contact/headquarters",
-        description: "Find contact information for our Singapore headquarters.",
-      },
-      {
-        title: "Regional Offices",
-        href: "/contact/regional-offices",
-        description:
-          "Get in touch with our offices in Semarang, Indonesia, and Karuizawa, Japan.",
-      },
-    ],
-  },
-];
-
-const navigationItemsMobile = [
-  {
-    title: "Products",
-    href: "/products",
-    description:
-      "Browse our exclusive range of bespoke furniture and products.",
-  },
-  {
-    title: "Projects",
-    href: "/projects",
-    description:
-      "Explore our portfolio of completed projects showcasing our craftsmanship.",
-  },
-  {
-    title: "Materials",
-    href: "/materials",
-    description:
-      "Learn about the premium materials we use and our commitment to sustainability.",
-  },
-  {
-    title: "About Us",
-    href: "/about",
-    description: "Discover KayuKaya Living's mission, values, and practices.",
-  },
-  {
-    title: "Contact",
-    href: "/contact",
-    description: "Reach out to us for any inquiries or support.",
   },
 ];
 
@@ -272,17 +165,21 @@ const Navbar: React.FC = () => {
           <div className="hidden lg:flex items-center space-x-4 font-semibold">
             <NavigationMenu>
               <NavigationMenuList>
-                {/* <NavigationMenuItem>
-                  <Link className="hover:underline" href="/docs" legacyBehavior passHref>
-                    <NavigationMenuLink
-                      className={navigationMenuTriggerStyle()}
-                    >
-                      Home
-                    </NavigationMenuLink>
-                  </Link>
-                </NavigationMenuItem> */}
                 {navigationItems.map((item) => (
-                  <CustomNavigationMenuItem key={item.title} item={item} />
+                  <NavigationMenuItem key={item.title}>
+                    <Link
+                      className="hover:underline"
+                      href={item.href}
+                      legacyBehavior
+                      passHref
+                    >
+                      <NavigationMenuLink
+                        className={navigationMenuTriggerStyle()}
+                      >
+                        {item.title}
+                      </NavigationMenuLink>
+                    </Link>
+                  </NavigationMenuItem>
                 ))}
               </NavigationMenuList>
             </NavigationMenu>
@@ -292,7 +189,7 @@ const Navbar: React.FC = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-white shadow-md">
           <div className="flex flex-col items-start space-y-4 p-4">
-            {navigationItemsMobile.map((item) => (
+            {navigationItems.map((item) => (
               <Link
                 key={item.title}
                 href={item.href}
