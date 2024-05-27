@@ -10,6 +10,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "KayuKaya Living",
   description: "KayuKaya",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
