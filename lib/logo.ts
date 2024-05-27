@@ -43,12 +43,13 @@ const Logo = [
   //   imgSrc: "https://source.unsplash.com/random/?furniture?sig=7",
   //   url: "/brands/tww",
   // },
-  // {
-  //   logoTitle:
-  //     "https://walterswicker.com/wp-content/uploads/2022/06/Ethimo-Logo.png",
-  //   imgSrc: "https://source.unsplash.com/random/?furniture?sig=8",
-  //   url: "/brands/ethimo",
-  // },
+  {
+    logoTitle:
+      "https://walterswicker.com/wp-content/uploads/2022/06/Ethimo-Logo.png",
+    imgSrc:
+      "https://walterswicker.com/wp-content/uploads/2022/04/Ethimo-Outdoor-2022-Catalog.png",
+    url: "/brands/ethimo",
+  },
   // {
   //   logoTitle:
   //     "https://walterswicker.com/wp-content/uploads/2022/06/Box-Living-Logo.png",

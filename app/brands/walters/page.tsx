@@ -1,9 +1,11 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import Title from "@/app/title";
-import Logo from "@/lib/logo";
 import Image from "next/image";
+import TextMotion from "@/components/ui/text-motion";
+import Products from "@/app/products";
+import manutti from "@/lib/manutti";
+import TitleNL from "@/app/title-nolink";
 
 export default function Page({ params }: { params: any }) {
   return (
@@ -11,21 +13,25 @@ export default function Page({ params }: { params: any }) {
       <section
         className="w-full h-[40vh] flex items-center justify-center bg-cover bg-center bg-gray-800/70"
         style={{
-          backgroundImage: `url(https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1573459330387-TZ3JXR3O7CSBHS42L2G6/ray3.jpeg?format=2500w)`,
+          backgroundImage: `url(https://walterswicker.com/wp-content/uploads/2022/01/outdoor-sidetable-lava-open-32.webp)`,
         }}
       >
-        <div className="absolute inset-0 flex items-center justify-center !bg-white bg-opacity-100 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-          <span className="text-black text-lg font-semibold">
-            <Image
-              src="https://walterswicker.com/wp-content/uploads/2022/06/Manutti-Logo.png"
-              alt={"logo"}
-              width={200}
-              height={100}
-            />
-          </span>
-        </div>
+        <h1 className="text-white text-4xl font-bold ">
+          <Image
+            src="https://walterswicker.com/wp-content/uploads/2022/06/Walters-Logo-BLACK.png"
+            alt={"logo"}
+            width={200}
+            height={100}
+            className=""
+          />
+        </h1>
       </section>
-      <Title>Walters</Title>
+      <TitleNL>About Walters</TitleNL>
+      <TextMotion
+        className="w-full py-10 px-2 md:px-20 text-xl"
+        paragraph="  For almost two decades, Manutti has focussed on the design and creation of luxury outdoor furniture as distinctive as our customers. All of our iconic tables, chairs, footrests, loungers and sofas incorporate the colors of the natural world and entice people to gather with their friends and families in luxury at any time of the day."
+      />
+      <Products cards={manutti} title="Walters Collections" />
     </div>
   );
 }

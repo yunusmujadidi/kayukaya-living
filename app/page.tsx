@@ -17,6 +17,7 @@ import Visit from "./Visit";
 import Lodging from "./lodging";
 import Custom from "./custom";
 import cards from "@/lib/card";
+import manutti from "@/lib/manutti";
 
 const Page = () => {
   useEffect(() => {
@@ -37,10 +38,10 @@ const Page = () => {
       <About />
       <Sustainable />
       <Custom />
-      <SunLoungers />
-      <Products cards={cards} title="Explore Our Products" />
+      <Products slice={8} cards={manutti} title="Featured Collections" />
       <Brands />
       <Category />
+      <SunLoungers />
       <CustomFurniture />
       <Lodging />
       <Paralax />

@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Title from "./title";
+import TitleNL from "./title-nolink";
+import { Button } from "@/components/ui/button";
 
 interface Card {
   imgSrc: string;
@@ -15,9 +15,10 @@ interface Card {
 interface ProductsProps {
   title: string;
   cards: Card[];
+  slice?: number;
 }
 
-const Products: React.FC<ProductsProps> = ({ title, cards }) => {
+const Products: React.FC<ProductsProps> = ({ title, cards, slice = 50 }) => {
   const [showMore, setShowMore] = useState(false);
 
   const handleToggleShowMore = () => {
@@ -25,9 +26,8 @@ const Products: React.FC<ProductsProps> = ({ title, cards }) => {
   };
 
   const renderCard = (imgSrc: string, src: string, title: string) => (
-    <a className="hover:underline">
+    <a className="hover:underline" href={src} key={src}>
       <motion.div
-        key={src}
         className="relative group overflow-hidden rounded-lg"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -50,21 +50,28 @@ const Products: React.FC<ProductsProps> = ({ title, cards }) => {
     </a>
   );
 
+  const initialCards = cards.slice(0, slice);
+  const additionalCards = cards.slice(slice);
+
   return (
     <>
-      <Title>{title}</Title>
+      <TitleNL>{title}</TitleNL>
       <section className="px-4 md:px-20 md:pb-5">
         <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 md:gap-6">
-          {cards.map((card) => renderCard(card.imgSrc, card.src, card.title))}
+          {initialCards.map((card) =>
+            renderCard(card.imgSrc, card.src, card.title)
+          )}
           <AnimatePresence>
             {showMore &&
-              cards
-                .slice(8)
-                .map((card) => renderCard(card.imgSrc, card.src, card.title))}
+              additionalCards.map((card) =>
+                renderCard(card.imgSrc, card.src, card.title)
+              )}
           </AnimatePresence>
         </div>
         {/* <div className="mt-8 text-center">
-           {!showMore && <Button onClick={handleToggleShowMore}>Show More</Button>} 
+          {!showMore && additionalCards.length > 0 && (
+            <Button onClick={handleToggleShowMore}>Show More</Button>
+          )}
         </div> */}
       </section>
     </>
