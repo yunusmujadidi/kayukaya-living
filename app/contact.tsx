@@ -16,7 +16,7 @@ export default function Contact() {
         <div className="space-y-4 md:space-y-6">
           <Link className="hover:underline " href="/contact/headquarters">
             <h2 className="text-2xl font-light tracking-tighter sm:text-3xl md:text-4xl text-black">
-              Visit our showroom office
+              Visit Out Showroom Office
               <span>
                 <ArrowUpRight className="inline mb-5 w-4 h-4 text-black" />
               </span>
