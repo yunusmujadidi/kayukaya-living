@@ -120,14 +120,19 @@ const Footer = () => {
         ))}
       </div>
 
-      {/* <div className="container mx-auto px-4 md:px-6 mt-8 md:mt-12 text-center  text-sm">
+      <div className="container mx-auto px-4 md:px-6 mt-8 md:mt-12 text-center  text-sm">
         <div>
           KayuKaya Semarang: : No 19 Forest Hill blok A ,Citraland BSB, Semarang
           50212, INDONESIA
         </div>
         KayuKaya Karuizawa : 247-2 , Hotchi, Karuizawa-machi, Kitasaku-gun,
         Nagano 389-0113, JAPAN
-      </div> */}
+      </div>
+      <div className="space-y-4 text-center">
+        <p className="mx-auto   md:text-sm dark:text-gray-400">
+          TEL+65 6203 5585 FAX +65 6203 5525 INFO@KAYUKAYA.COM
+        </p>
+      </div>
       <div className="container mx-auto px-4 md:px-6 mt-8 md:mt-12 text-center  text-sm">
         © 2024 KayuKaya Living. All rights reserved.
       </div>

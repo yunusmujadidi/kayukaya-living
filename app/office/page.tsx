@@ -9,7 +9,7 @@ const page = () => {
       <section
         className="w-full h-[40vh] flex items-center justify-center bg-cover bg-center bg-gray-800/70"
         style={{
-          backgroundImage: `url(https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1573459330387-TZ3JXR3O7CSBHS42L2G6/ray3.jpeg?format=2500w)`,
+          backgroundImage: `url('https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1664118489257-RRLA9G9ANF004387M4IN/IMG_8917.jpeg')`,
         }}
       >
         <h1 className="text-white text-4xl font-bold ">Office</h1>
