@@ -20,8 +20,7 @@ function MyPage() {
           Interiors and Mill Works
         </h1>
       </section>
-      <Featured />
-      <Products title="Explore our Products" cards={Umbrella} />
+      <Featured title="Hotel Beach Resort" />
       <SunLoungers />
       <CustomFurniture bgColor="bg-white" textColor="text-black" />
     </div>
