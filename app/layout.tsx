@@ -4,6 +4,8 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "./Navbar";
 import Footer from "./footer";
+import StickyFooter from "./StickyFooter";
+<link rel="icon" href="/favicon.webp" sizes="any" />;
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,7 +30,7 @@ export default function RootLayout({
         <main>
           <Navbar />
           {children}
-          <Footer />
+          <StickyFooter />
         </main>
       </body>
     </html>

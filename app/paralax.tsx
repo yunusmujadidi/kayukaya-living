@@ -1,7 +1,7 @@
 "use client";
 import styles from "./page.module.scss";
 import Image from "next/image";
-import Lenis from "@studio-freight/lenis";
+import Lenis from "lenis";
 
 import { useEffect, useRef, useState } from "react";
 

@@ -1,3 +1,4 @@
+"use client";
 import Brands from "./brands";
 import Products from "./products";
 import About from "./about";
@@ -9,8 +10,21 @@ import Category from "./category";
 import Sustainable from "./sustainable";
 import CustomFurniture from "./CustomFurniture";
 import Paralax from "./paralax";
+import { useEffect } from "react";
+import Lenis from "lenis";
 
 const Page = () => {
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    function raf(time: number) {
+      lenis.raf(time);
+
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  }, []);
   return (
     <>
       <Hero />
@@ -22,7 +36,6 @@ const Page = () => {
       <CustomFurniture />
       <Sustainable />
       <Paralax />
-      <Contact />
     </>
   );
 };
