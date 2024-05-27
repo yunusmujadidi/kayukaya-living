@@ -1,13 +1,23 @@
 "use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
-import cards from "@/lib/card";
 import Title from "./title";
 
-export default function Products() {
+interface Card {
+  imgSrc: string;
+  src: string;
+  title: string;
+}
+
+interface ProductsProps {
+  title: string;
+  cards: Card[];
+}
+
+const Products: React.FC<ProductsProps> = ({ title, cards }) => {
   const [showMore, setShowMore] = useState(false);
 
   const handleToggleShowMore = () => {
@@ -15,7 +25,7 @@ export default function Products() {
   };
 
   const renderCard = (imgSrc: string, src: string, title: string) => (
-    <Link className="hover:underline" href={`/products/${src}`} key={src}>
+    <a className="hover:underline">
       <motion.div
         key={src}
         className="relative group overflow-hidden rounded-lg"
@@ -37,17 +47,15 @@ export default function Products() {
           </h3>
         </div>
       </motion.div>
-    </Link>
+    </a>
   );
 
   return (
     <>
-      <Title>Explore our Products</Title>
+      <Title>{title}</Title>
       <section className="px-4 md:px-20 md:pb-5">
         <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 md:gap-6">
-          {cards
-            .slice(0, 8)
-            .map((card) => renderCard(card.imgSrc, card.src, card.title))}
+          {cards.map((card) => renderCard(card.imgSrc, card.src, card.title))}
           <AnimatePresence>
             {showMore &&
               cards
@@ -61,4 +69,6 @@ export default function Products() {
       </section>
     </>
   );
-}
+};
+
+export default Products;

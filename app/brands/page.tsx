@@ -5,7 +5,6 @@ import Brands from "../brands";
 const page = () => {
   return (
     <div>
-      <Title>Our Brands</Title>
       <Brands />
     </div>
   );

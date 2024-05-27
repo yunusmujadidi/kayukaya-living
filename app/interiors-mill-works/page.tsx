@@ -1,5 +1,6 @@
 "use client";
 
+import Umbrella from "@/lib/umbrella";
 import CustomFurniture from "../CustomFurniture";
 import Featured from "../featured";
 import Products from "../products";
@@ -20,7 +21,7 @@ function MyPage() {
         </h1>
       </section>
       <Featured />
-      <Products />
+      <Products title="Explore our Products" cards={Umbrella} />
       <SunLoungers />
       <CustomFurniture bgColor="bg-white" textColor="text-black" />
     </div>
