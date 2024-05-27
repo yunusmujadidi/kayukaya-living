@@ -11,7 +11,7 @@ import CustomFurniture from "./CustomFurniture";
 import Paralax from "./paralax";
 import { useEffect } from "react";
 import Lenis from "lenis";
-
+import Featured from "./featured";
 const Page = () => {
   useEffect(() => {
     const lenis = new Lenis();
@@ -27,6 +27,7 @@ const Page = () => {
   return (
     <>
       <Hero />
+      <Featured />
       <About />
       <Title>Explore our Products</Title>
       <Products />
