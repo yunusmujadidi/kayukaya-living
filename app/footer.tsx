@@ -120,14 +120,14 @@ const Footer = () => {
         ))}
       </div>
 
-      <div className="container mx-auto px-4 md:px-6 mt-8 md:mt-12 text-center  text-sm">
+      {/* <div className="container mx-auto px-4 md:px-6 mt-8 md:mt-12 text-center  text-sm">
         <div>
           KayuKaya Semarang: : No 19 Forest Hill blok A ,Citraland BSB, Semarang
           50212, INDONESIA
         </div>
         KayuKaya Karuizawa : 247-2 , Hotchi, Karuizawa-machi, Kitasaku-gun,
         Nagano 389-0113, JAPAN
-      </div>
+      </div> */}
       <div className="container mx-auto px-4 md:px-6 mt-8 md:mt-12 text-center  text-sm">
         © 2024 KayuKaya Living. All rights reserved.
       </div>

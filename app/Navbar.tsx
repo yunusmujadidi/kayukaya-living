@@ -25,6 +25,16 @@ interface NavigationItem {
 
 const navigationItems: NavigationItem[] = [
   {
+    title: "Interiors & Mill Works",
+    href: "/interiors-mill-works",
+    description: "Browse our interior design and millwork services.",
+  },
+  {
+    title: "Umbrella",
+    href: "/umbrella",
+    description: "Explore our premium umbrellas and shades.",
+  },
+  {
     title: "Brands",
     href: "/brands",
     description: "Discover our company's mission, values, and practices.",
@@ -40,16 +50,6 @@ const navigationItems: NavigationItem[] = [
         description: "Explore our mission and vision for a sustainable future.",
       },
     ],
-  },
-  {
-    title: "Interiors & Mill Works",
-    href: "/interiors-mill-works",
-    description: "Browse our interior design and millwork services.",
-  },
-  {
-    title: "Umbrella",
-    href: "/umbrella",
-    description: "Explore our premium umbrellas and shades.",
   },
   {
     title: "Factory",

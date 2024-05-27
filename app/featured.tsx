@@ -7,6 +7,7 @@ import Lightbox from "yet-another-react-lightbox";
 import LightboxImage from "@/components/lightbox-image";
 import "yet-another-react-lightbox/styles.css";
 import Title from "./title";
+import TitleNL from "./title-nolink";
 
 const projects = [
   {
@@ -138,7 +139,7 @@ const Featured = () => {
 
   return (
     <>
-      <Title href="/interiors-mill-works">Project References</Title>
+      <TitleNL>Project References</TitleNL>
       <section className="px-4 md:px-20 md:pb-5">
         <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 md:gap-6">
           <AnimatePresence>

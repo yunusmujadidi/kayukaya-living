@@ -13,6 +13,7 @@ import { useEffect } from "react";
 import Lenis from "lenis";
 import Featured from "./featured";
 import SunLoungers from "./sunloungers";
+import Visit from "./Visit";
 
 const Page = () => {
   useEffect(() => {

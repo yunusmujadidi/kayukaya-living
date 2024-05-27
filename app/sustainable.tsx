@@ -33,12 +33,12 @@ const Sustainable = () => {
             paragraph="  Learn how KayuKaya is leading the way in environmentally responsible
             manufacturing. "
           />
-          <Link
+          {/* <Link
             className={cn("ml-5", buttonVariants({ variant: "default" }))}
             href="/about/sustainability"
           >
             Learn More
-          </Link>
+          </Link> */}
         </div>
       </div>
     </section>

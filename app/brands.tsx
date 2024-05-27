@@ -53,12 +53,12 @@ export default function Brands() {
                 <ArrowUpRight className="inline mb-5 w-4 h-4 text-gray-500" />
               </span>
             </h2>
-            <hr />
           </Link>
-          <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+          <hr />
+          {/* <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
             Discover a curated collection of stunning images that capture the
             essence of our world.
-          </p>
+          </p> */}
         </div>
         <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 md:gap-3 lg:gap-4">
           {Logo.map(({ imgSrc, logoTitle, url }, i) => (
