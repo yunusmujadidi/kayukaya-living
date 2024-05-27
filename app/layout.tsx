@@ -4,8 +4,6 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "./Navbar";
 import Footer from "./footer";
-import StickyFooter from "./StickyFooter";
-<link rel="icon" href="/favicon.webp" sizes="any" />;
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,18 +19,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={cn(
-          "min-h-screen flex flex-col bg-background antialiased ",
-          inter.className
-        )}
-      >
-        <main>
-          <Navbar />
-          {children}
-          <StickyFooter />
-        </main>
-      </body>
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+
+        <body
+          className={cn(
+            "min-h-screen flex flex-col bg-background antialiased ",
+            inter.className
+          )}
+        >
+          <main>
+            <Navbar />
+            {children}
+            <Footer />
+          </main>
+        </body>
+      </head>
     </html>
   );
 }

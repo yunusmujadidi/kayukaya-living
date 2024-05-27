@@ -6,7 +6,6 @@ import Hero from "./Hero";
 import Title from "./title";
 import Contact from "./contact";
 import Category from "./category";
-
 import Sustainable from "./sustainable";
 import CustomFurniture from "./CustomFurniture";
 import Paralax from "./paralax";
@@ -36,6 +35,7 @@ const Page = () => {
       <CustomFurniture />
       <Sustainable />
       <Paralax />
+      <Contact />
     </>
   );
 };
