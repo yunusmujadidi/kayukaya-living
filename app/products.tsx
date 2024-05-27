@@ -26,7 +26,7 @@ const Products: React.FC<ProductsProps> = ({ title, cards, slice = 50 }) => {
   };
 
   const renderCard = (imgSrc: string, src: string, title: string) => (
-    <a className="hover:underline" href={src} key={src}>
+    <a className="hover:underline" href="/brands/manutti" key={src}>
       <motion.div
         className="relative group overflow-hidden rounded-lg"
         initial={{ opacity: 0, y: 20 }}

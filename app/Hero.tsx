@@ -26,7 +26,10 @@ export default function Hero() {
                 />
 
                 <div className="block md:absolute bottom-10 left-20 rounded-md p-3 border-b md:border-none">
-                  <Link className="hover:underline" href={item.url}>
+                  <Link
+                    className="hover:underline"
+                    href="/interiors-mill-works"
+                  >
                     <h2 className="text-2xl font-light tracking-tighter sm:text-4xl md:text-white text-black md:bg-black/90 rounded-lg p-2">
                       {item.title}
                     </h2>
