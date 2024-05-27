@@ -12,15 +12,23 @@ import React from "react";
 import Image from "next/image";
 import furnitureItems from "@/lib/furnitureItems";
 
-const CustomFurniture = () => {
+const CustomFurniture = ({
+  bgColor = "bg-[#6D6B4F]",
+  textColor = "text-white",
+}: {
+  bgColor?: string;
+  textColor?: string;
+}) => {
   return (
-    <section className="w-full py-12 md:py-10 px-2 md:px-20 bg-[#6D6B4F] text-white">
+    <section
+      className={`w-full py-12 md:py-10 px-2 md:px-20 ${bgColor} ${textColor} `}
+    >
       <div className="container ">
         <div className=" grid gap-8 px-4 md:px-6">
           <div className="space-y-4 md:space-y-6">
             <Link className="" href="/interiors-mill-works">
               <h2 className="text-2xl font-light tracking-tighter sm:text-3xl md:text-4xl ">
-                Custom Interior Furniture
+                Interior Custom Furniture
                 <span>
                   <ArrowUpRight className="inline mb-5 w-4 h-4 " />
                 </span>

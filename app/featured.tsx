@@ -148,19 +148,18 @@ const Featured = () => {
               .map((card, index) =>
                 renderCard(card.imgSrc, card.src, card.title, index)
               )}
-            {showMore &&
-              projects
-                .slice(4)
-                .map((card, index) =>
-                  renderCard(card.imgSrc, card.src, card.title, index + 4)
-                )}
+            {projects
+              .slice(4)
+              .map((card, index) =>
+                renderCard(card.imgSrc, card.src, card.title, index + 4)
+              )}
           </AnimatePresence>
         </div>
-        <div className="mt-8 text-center">
+        {/* <div className="mt-8 text-center">
           {!showMore && (
             <Button onClick={handleToggleShowMore}>Show More</Button>
           )}
-        </div>
+        </div> */}
       </section>
 
       <Lightbox
