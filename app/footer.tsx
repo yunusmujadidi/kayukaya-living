@@ -101,7 +101,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gray-100 p-6 md:py-12 w-full dark:bg-gray-800">
+    <footer className="bg-[#40513B] p-6 md:py-12 w-full dark:bg-gray-800 !text-white">
       <div className="container max-w-7xl grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 text-sm">
         {navigationItems.map((item, index) => (
           <div key={index} className="grid gap-1">

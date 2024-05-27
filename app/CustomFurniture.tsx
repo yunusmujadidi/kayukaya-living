@@ -14,20 +14,19 @@ import furnitureItems from "@/lib/furnitureItems";
 
 const CustomFurniture = () => {
   return (
-    <section className="w-full py-12 md:py-10 px-2 md:px-20 bg-slate-100 ">
+    <section className="w-full py-12 md:py-10 px-2 md:px-20 bg-[#6D6B4F] text-white">
       <div className="container ">
         <div className=" grid gap-8 px-4 md:px-6">
           <div className="space-y-4 md:space-y-6">
-            <Link className="hover:underline " href="/interiors-mill-works">
-              <h2 className="text-2xl font-light tracking-tighter sm:text-3xl md:text-4xl text-gray-700">
+            <Link className="" href="/interiors-mill-works">
+              <h2 className="text-2xl font-light tracking-tighter sm:text-3xl md:text-4xl ">
                 Custom Interior Furniture
                 <span>
-                  <ArrowUpRight className="inline mb-5 w-4 h-4 text-gray-500" />
+                  <ArrowUpRight className="inline mb-5 w-4 h-4 " />
                 </span>
               </h2>
-              <hr />
+              <hr className="mb-5" />
             </Link>
-            <hr />
           </div>
         </div>
 
@@ -45,8 +44,8 @@ const CustomFurniture = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          <CarouselPrevious className="bg-white text-black" />
+          <CarouselNext className="bg-white text-black" />
         </CarouselWrapper>
         <p className="pt-5 ">
           From concept to completion, we guide you through every step of the

@@ -55,9 +55,9 @@ export default function Products() {
                 .map((card) => renderCard(card.imgSrc, card.src, card.title))}
           </AnimatePresence>
         </div>
-        <div className="mt-8 text-center">
-          {/* {!showMore && <Button onClick={handleToggleShowMore}>Show More</Button>} */}
-        </div>
+        {/* <div className="mt-8 text-center">
+           {!showMore && <Button onClick={handleToggleShowMore}>Show More</Button>} 
+        </div> */}
       </section>
     </>
   );
