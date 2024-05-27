@@ -14,6 +14,8 @@ import Lenis from "lenis";
 import Featured from "./featured";
 import SunLoungers from "./sunloungers";
 import Visit from "./Visit";
+import Lodging from "./lodging";
+import Custom from "./custom";
 
 const Page = () => {
   useEffect(() => {
@@ -32,12 +34,14 @@ const Page = () => {
       <Hero />
       <Featured />
       <About />
+      <Sustainable />
+      <Custom />
       <SunLoungers />
-      <CustomFurniture />
       <Products />
       <Brands />
       <Category />
-      <Sustainable />
+      <CustomFurniture />
+      <Lodging />
       <Paralax />
       <Contact />
     </>

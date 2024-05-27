@@ -21,19 +21,19 @@ const Sustainable = () => {
             <hr />
           </Link>
           <TextMotion
-            className="relative shadow-sm text-lg  text-gray-700 tracking-tighter"
+            className=""
             paragraph=" For the contract market, KayuKaya operates in an environmentally and socially responsible manner for all our regional operation as well as partners facilities ,we take great care to ensure high standards are maintained from our partner factories and vendors. Our manufacturing facilities continuously reduce waste , recycled materials while minimizing our carbon foot print as we go along . "
           />
           <TextMotion
-            className="relative shadow-sm text-lg  text-gray-700 tracking-tighter"
+            className=""
             paragraph=" The majority of our wood feature FSC certified hardwoods and we are able to supply formaldahyde free substrates with water based options for any customer request for Greenmark certifications. Our aluminium, Steel and iron metal components can be recycled as well . For the powder coat paint overspray, it is also reclaimed for reuse .Same goes to our packaging with corrugated carton material which is recycled."
           />
-          <TextMotion
+          {/* <TextMotion
             className="relative shadow-sm text-lg  text-gray-700 tracking-tighter"
             paragraph="  Learn how KayuKaya is leading the way in environmentally responsible
             manufacturing. "
           />
-          {/* <Link
+          <Link
             className={cn("ml-5", buttonVariants({ variant: "default" }))}
             href="/about/sustainability"
           >

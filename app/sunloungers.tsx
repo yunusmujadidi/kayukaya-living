@@ -86,7 +86,7 @@ const SunLoungers = () => {
           photos={photos}
           renderPhoto={NextJsImage}
           defaultContainerWidth={1200}
-          sizes={{ size: "calc(100vw - 240px)" }}
+          sizes={{ size: "calc(100vw - 500px)" }}
         />
       </section>
     </>

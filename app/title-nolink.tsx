@@ -12,11 +12,11 @@ const TitleNL = ({
   return (
     <section className="px-4 md:px-20 py-12 md:py-10">
       <div className="space-y-4 md:space-y-6 px-5 py-5"></div>
-      <h1 className="hover:underline">
+      <div className="hover:underline">
         <h2 className="text-2xl font-light tracking-tighter sm:text-3xl md:text-4xl">
           {children}
         </h2>
-      </h1>
+      </div>
       <hr />
     </section>
   );

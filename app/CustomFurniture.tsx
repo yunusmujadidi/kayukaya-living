@@ -18,12 +18,9 @@ const CustomFurniture = () => {
       <div className="container ">
         <div className=" grid gap-8 px-4 md:px-6">
           <div className="space-y-4 md:space-y-6">
-            <Link
-              className="hover:underline "
-              href="/products/custom-furniture"
-            >
+            <Link className="hover:underline " href="/interiors-mill-works">
               <h2 className="text-2xl font-light tracking-tighter sm:text-3xl md:text-4xl text-gray-700">
-                Interior Custom Furniture
+                Custom Interior Furniture
                 <span>
                   <ArrowUpRight className="inline mb-5 w-4 h-4 text-gray-500" />
                 </span>
@@ -51,12 +48,12 @@ const CustomFurniture = () => {
           <CarouselPrevious />
           <CarouselNext />
         </CarouselWrapper>
-        <TextMotion
-          className="relative shadow-sm text-lg  text-gray-700 tracking-tighter"
-          paragraph=" From concept to completion, we guide you through every step of the design and manufacturing process. Our expertise in traditional craftsmanship, combined with cutting-edge technology, enables us to produce intricate and complex designs with precision and accuracy.
-        
-        "
-        />
+        <p className="pt-5 ">
+          From concept to completion, we guide you through every step of the
+          design and manufacturing process. Our expertise in traditional
+          craftsmanship, combined with cutting-edge technology, enables us to
+          produce intricate and complex designs with precision and accuracy.
+        </p>
       </div>
     </section>
   );

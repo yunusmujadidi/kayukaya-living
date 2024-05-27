@@ -18,16 +18,16 @@ const about = () => {
             <hr />
           </Link>
           <TextMotion
-            className="relative shadow-sm text-xl   tracking-tighter"
+            className=""
             paragraph=" KayuKaya specializes in bespoke hospitality furniture solutions, catering to the commercial FF&E market with a focus on OEM or VE requirements for both exterior and interior applications. Our expertise lies in large-scale manufacturing with shorter lead times and on-budget delivery. We utilize premium materials to meet the evolving demands of the market, and our flexible approach allows us to work closely with clients' concepts, designs, and briefs.
 "
           />
           <TextMotion
-            className="relative shadow-sm text-xl   tracking-tighter"
+            className=""
             paragraph=" Our impressive portfolio includes collaborations with high-end hotels, resorts, F&B establishments, public spaces, and condominiums worldwide, such as the Ritz Carlton in the Maldives, The Patina Maldives, The Royal Atlantis in Dubai, The Langham in Pasadena, Four Seasons in Bora Bora, Shangri La, HK  and many others across the globe, including Singapore."
           />
           <TextMotion
-            className="relative shadow-sm text-xl  tracking-tighter"
+            className=""
             paragraph=" In response to customer needs, we expanded our offerings in 2008 to include professional shades, umbrellas, and selected furniture brands. As the Sole Authorized Agent for Glatz in Asia, we offer a range of products, including umbrellas from Glatz Swiss (High wind proof Umbrella)   Jardinico Belgium (Resort type Umbrellas) , and Coro Italia. (outdoor yacht furniture )"
           />
         </div>
