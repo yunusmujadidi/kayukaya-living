@@ -19,8 +19,8 @@ const Page = () => {
       <Products />
       <Brands />
       <Category />
-      <Sustainable />
       <CustomFurniture />
+      <Sustainable />
       <Paralax />
       <Contact />
     </>

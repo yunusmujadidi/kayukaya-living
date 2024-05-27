@@ -249,7 +249,7 @@ const Navbar: React.FC = () => {
               <Image
                 alt="Logo"
                 src="https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/cad8ef74-7370-4494-929b-2c62cb4c6d27/Screenshot+2022-09-24+at+6.15.29+PM.jpg?format=1500w"
-                width={200}
+                width={150}
                 height={200}
                 className={cn(
                   "transition-all duration-200 ease-in-out delay-75"
