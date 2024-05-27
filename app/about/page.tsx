@@ -15,7 +15,7 @@ function MyPage() {
           backgroundImage: `url(https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1573459330387-TZ3JXR3O7CSBHS42L2G6/ray3.jpeg?format=2500w)`,
         }}
       >
-        <h1 className="text-white text-4xl font-bold ">About Us</h1>
+        <h1 className="text-white text-4xl font-bold ">Contact Us</h1>
       </section>
 
       <section className="w-full py-12 md:py-24 lg:py-32">

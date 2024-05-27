@@ -62,8 +62,8 @@ const navigationItems: NavigationItem[] = [
     description: "Details about our office locations.",
   },
   {
-    title: "About Us",
-    href: "/about",
+    title: "Contact",
+    href: "/contact",
     description: "Discover our company's mission, values, and practices.",
     children: [
       {
