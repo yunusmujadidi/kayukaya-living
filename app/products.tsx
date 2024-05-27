@@ -5,6 +5,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import cards from "@/lib/card";
+import Title from "./title";
 
 export default function Products() {
   const [showMore, setShowMore] = useState(false);
@@ -40,21 +41,24 @@ export default function Products() {
   );
 
   return (
-    <section className="px-4 md:px-20 md:pb-5">
-      <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 md:gap-6">
-        {cards
-          .slice(0, 8)
-          .map((card) => renderCard(card.imgSrc, card.src, card.title))}
-        <AnimatePresence>
-          {showMore &&
-            cards
-              .slice(8)
-              .map((card) => renderCard(card.imgSrc, card.src, card.title))}
-        </AnimatePresence>
-      </div>
-      <div className="mt-8 text-center">
-        {/* {!showMore && <Button onClick={handleToggleShowMore}>Show More</Button>} */}
-      </div>
-    </section>
+    <>
+      <Title>Explore our Products</Title>
+      <section className="px-4 md:px-20 md:pb-5">
+        <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 md:gap-6">
+          {cards
+            .slice(0, 8)
+            .map((card) => renderCard(card.imgSrc, card.src, card.title))}
+          <AnimatePresence>
+            {showMore &&
+              cards
+                .slice(8)
+                .map((card) => renderCard(card.imgSrc, card.src, card.title))}
+          </AnimatePresence>
+        </div>
+        <div className="mt-8 text-center">
+          {/* {!showMore && <Button onClick={handleToggleShowMore}>Show More</Button>} */}
+        </div>
+      </section>
+    </>
   );
 }
