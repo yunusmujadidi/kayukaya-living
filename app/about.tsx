@@ -15,8 +15,8 @@ const about = () => {
                 <ArrowUpRight className="inline mb-5 w-4 h-4 text-gray-500" />
               </span>
             </h2>
+            <hr />
           </Link>
-          <hr />
           <TextMotion
             className="relative shadow-sm text-xl   tracking-tighter"
             paragraph=" KayuKaya specializes in bespoke hospitality furniture solutions, catering to the commercial FF&E market with a focus on OEM or VE requirements for both exterior and interior applications. Our expertise lies in large-scale manufacturing with shorter lead times and on-budget delivery. We utilize premium materials to meet the evolving demands of the market, and our flexible approach allows us to work closely with clients' concepts, designs, and briefs.

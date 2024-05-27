@@ -18,8 +18,8 @@ const Sustainable = () => {
                 <ArrowUpRight className="inline mb-5 w-4 h-4 text-gray-500" />
               </span>
             </h2>
+            <hr />
           </Link>
-          <hr />
           <TextMotion
             className="relative shadow-sm text-lg  text-gray-700 tracking-tighter"
             paragraph=" For the contract market, KayuKaya operates in an environmentally and socially responsible manner for all our regional operation as well as partners facilities ,we take great care to ensure high standards are maintained from our partner factories and vendors. Our manufacturing facilities continuously reduce waste , recycled materials while minimizing our carbon foot print as we go along . "

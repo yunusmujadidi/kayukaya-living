@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { CarouselItem, CarouselContent } from "@/components/ui/carousel";
 import Image from "next/image";
 import Link from "next/link";
-import { carouselItems } from "../lib/carouselItems";
+import carouselItems from "../lib/carouselItems";
 
 export default function Hero() {
   return (

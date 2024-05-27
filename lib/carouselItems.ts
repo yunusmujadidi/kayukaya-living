@@ -1,4 +1,4 @@
-export const carouselItems = [
+const carouselItems = [
   {
     title: "Amanyara - Turks and Caicos",
     description: "Singapore skyscraper in CBD",
@@ -40,3 +40,5 @@ export const carouselItems = [
     url: "/projects/one-and-only-desaru",
   },
 ];
+
+export default carouselItems;

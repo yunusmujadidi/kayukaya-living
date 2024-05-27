@@ -32,10 +32,10 @@ const Page = () => {
       <Featured />
       <About />
       <SunLoungers />
+      <CustomFurniture />
       <Products />
       <Brands />
       <Category />
-      <CustomFurniture />
       <Sustainable />
       <Paralax />
       <Contact />

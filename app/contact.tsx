@@ -16,13 +16,13 @@ export default function Contact() {
         <div className="space-y-4 md:space-y-6">
           <Link className="hover:underline " href="/contact/headquarters">
             <h2 className="text-2xl font-light tracking-tighter sm:text-3xl md:text-4xl text-black">
-              Visit Out Showroom Office
+              Visit Our Showroom Office
               <span>
                 <ArrowUpRight className="inline mb-5 w-4 h-4 text-black" />
               </span>
             </h2>
+            <hr />
           </Link>
-          <hr />
           <div className="flex flex-col items-center justify-center lg:flex-row">
             <LazyMap />
             <h1 className="flex items-center justify-between mt-4 text-2xl text-black text-center ml-10">

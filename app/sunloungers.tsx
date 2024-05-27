@@ -79,8 +79,8 @@ const photos = [
 const SunLoungers = () => {
   return (
     <>
-      <Title>Sun Loungers</Title>
-      <section className="w-full py-12 md:py-10 px-2 md:px-20  text-black">
+      <Title href="/interiors-mill-works">Sun Loungers</Title>
+      <section className="w-full py-5 px-2 md:px-20  text-black">
         <PhotoAlbum
           layout="rows"
           photos={photos}

@@ -50,8 +50,8 @@ export default function Category() {
                 <ArrowUpRight className="inline mb-5 w-4 h-4 text-gray-500" />
               </span>
             </h2>
+            <hr />
           </Link>
-          <hr />
         </div>
         <div className="grid grid-cols-3 lg:grid-cols-6  gap-2 md:gap-3 lg:gap-4">
           {categoryList.map(({ imgSrc, title, url }, i) => (
