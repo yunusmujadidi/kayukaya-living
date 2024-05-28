@@ -69,7 +69,7 @@ const furnitureItems = [
     description: "Unlock your artistic potential.",
     category: "Hotels and Resorts",
     image:
-      "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1677589620343-RXFPRVKO4UTQUWMKUU6R/2cdf9186-b074-470c-be41-b228f5294e8d.jpg?format=750w",
+      "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1677589620343-RXFPRVKO4UTQUWMKUU6R/2cdf9186-b074-470c-be41-b228f5294e8d.jpgw",
     url: "/projects/shangri-la-mauritius",
   },
 ];

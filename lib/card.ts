@@ -37,7 +37,7 @@ const cards = [
   },
   {
     imgSrc:
-      "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1664118654226-KUWIUYILPWM2TM1L0KO3/Screenshot+2022-09-25+at+12.46.25+PM.png?format=750w",
+      "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1664118654226-KUWIUYILPWM2TM1L0KO3/Screenshot+2022-09-25+at+12.46.25+PM.pngw",
     title: "Resort",
     src: "resort",
   },

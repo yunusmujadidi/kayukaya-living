@@ -28,7 +28,7 @@ const factoryitems = [
     description: "Unlock your artistic potential.",
     category: "Hotels and Resorts",
     image:
-      "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1679922575435-5J0IUW3BDB4D8472Y835/veneer+stock+1.jpg?format=100w",
+      "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1679922575435-5J0IUW3BDB4D8472Y835/veneer+stock+1.jpg",
     url: "/projects/shangri-la-mauritius",
   },
   {
@@ -52,7 +52,7 @@ const factoryitems = [
     description: "Unlock your artistic potential.",
     category: "Hotels and Resorts",
     image:
-      "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1679922584819-PG9UX3FIYX3STRSA6WCR/Veneer+Press+area.jpg?format=100w",
+      "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1679922584819-PG9UX3FIYX3STRSA6WCR/Veneer+Press+area.jpg",
     url: "/projects/shangri-la-mauritius",
   },
 
@@ -61,7 +61,7 @@ const factoryitems = [
     description: "Unlock your artistic potential.",
     category: "Hotels and Resorts",
     image:
-      "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1679922587289-F9AF7C08RITROFZ8B4U9/drying+chamber+.jpg?format=100w",
+      "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1679922587289-F9AF7C08RITROFZ8B4U9/drying+chamber+.jpg",
     url: "/projects/shangri-la-mauritius",
   },
   {
@@ -93,7 +93,7 @@ const factoryitems = [
     description: "Unlock your artistic potential.",
     category: "Hotels and Resorts",
     image:
-      "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1679922593728-6R2JJHIFAB0WIOL67GLX/finished+item+.jpg?format=100w",
+      "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1679922593728-6R2JJHIFAB0WIOL67GLX/finished+item+.jpg",
     url: "/projects/shangri-la-mauritius",
   },
   {
@@ -101,7 +101,7 @@ const factoryitems = [
     description: "Unlock your artistic potential.",
     category: "Hotels and Resorts",
     image:
-      "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1679922599458-Q47ORUUKV5UQDS6STM2W/IMG_2340.jpg?format=100w",
+      "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1679922599458-Q47ORUUKV5UQDS6STM2W/IMG_2340.jpg",
     url: "/projects/shangri-la-mauritius",
   },
 ];

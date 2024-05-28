@@ -134,7 +134,7 @@ const Navbar: React.FC = () => {
             {isScrolled ? (
               <Image
                 alt="Logo"
-                src="https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1585542631378-98UBWDIV711MR3CNJLRJ/favicon.ico?format=100w"
+                src="https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1585542631378-98UBWDIV711MR3CNJLRJ/favicon.ico"
                 width={50}
                 height={50}
               />

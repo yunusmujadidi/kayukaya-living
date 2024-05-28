@@ -13,19 +13,19 @@ const projects = [
   },
   {
     imgSrc:
-      "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1664117324539-S7HC5TBNQLB9XSOL1LYR/IMG_8037.jpg?format=1000w",
+      "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1664117324539-S7HC5TBNQLB9XSOL1LYR/IMG_8037.jpgw",
     title: "Parc Komo ",
     src: "mill-works",
   },
   {
     imgSrc:
-      "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1695222006593-OUAGW9C88MMYS8YPXBY9/IMG_3890.jpeg?format=750w",
+      "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1695222006593-OUAGW9C88MMYS8YPXBY9/IMG_3890.jpegw",
     title: "One & Only Desaru  ",
     src: "outdoor-furniture",
   },
   // {
   //   imgSrc:
-  //     "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1695222025188-TJ6BDYT2CHMLINUAUS0Y/IMG_3889.jpeg?format=750w",
+  //     "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1695222025188-TJ6BDYT2CHMLINUAUS0Y/IMG_3889.jpegw",
   //   title: "One & Only Desaru ",
   //   src: "outdoor-furniture",
   // },

@@ -24,14 +24,14 @@ const Visit = () => {
             alt="Office Image 3"
             className="aspect-[4/3] rounded-lg object-cover"
             height={400}
-            src="https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1680184275721-EVIEEE7EYCNJ3X624OL2/8e4f74f1-b400-40b8-a8dc-a897d821dc5c.jpg?format=300w"
+            src="https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1680184275721-EVIEEE7EYCNJ3X624OL2/8e4f74f1-b400-40b8-a8dc-a897d821dc5c.jpg"
             width={400}
           />
           <Image
             alt="Office Image 3"
             className="aspect-[4/3] rounded-lg object-cover"
             height={400}
-            src="https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1680184393283-Q051XG0QBWU0QRQ6P9EG/ce4e35b9-c363-4407-8dc5-e887a7e7ffc5.jpg?format=300w"
+            src="https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1680184393283-Q051XG0QBWU0QRQ6P9EG/ce4e35b9-c363-4407-8dc5-e887a7e7ffc5.jpg"
             width={400}
           />
         </div>
