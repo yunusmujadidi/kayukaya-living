@@ -5,20 +5,17 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
+import Header from "@/components/ui/header";
 
 function MyPage() {
   return (
     <div>
-      <section
-        className="w-full h-[40vh] flex items-center justify-center bg-cover bg-center bg-gray-800/70"
-        style={{
-          backgroundImage: `url(https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1573459330387-TZ3JXR3O7CSBHS42L2G6/ray3.jpeg?format=2500w)`,
-        }}
-      >
-        <h1 className="text-white text-4xl font-bold ">Contact Us</h1>
-      </section>
+      <Header
+        url="https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1677589336876-FR0WE6TTLGAA2N9HE25Q/2cdf9186-b074-470c-be41-b228f5294e8d.jpg?format=2500w"
+        title="Contact Us"
+      />
 
-      <section className="w-full py-12 md:py-24 lg:py-32">
+      <section className="w-full py-12 md:py-12 lg:py-12 bg-slate-59">
         <div className="container px-4 md:px-6">
           <div className="mx-auto max-w-2xl space-y-4 text-center">
             <p className="text-gray-500 dark:text-gray-400">

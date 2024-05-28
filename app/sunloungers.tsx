@@ -80,7 +80,7 @@ const SunLoungers = () => {
   return (
     <>
       <Title href="/interiors-mill-works">Sun Loungers</Title>
-      <section className="w-full py-5 px-2 md:px-20  text-black">
+      <section className="w-full py-10 px-2 md:px-20 text-black">
         <PhotoAlbum
           layout="rows"
           photos={photos}

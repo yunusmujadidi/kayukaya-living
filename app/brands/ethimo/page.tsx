@@ -28,7 +28,7 @@ export default function Page({ params }: { params: any }) {
       </section>
       <TitleNL>About Ethimo</TitleNL>
       <TextMotion
-        className="w-full py-10 px-2 md:px-20 text-xl"
+        className="w-full py-10 px-2 md:px-20 text-md md:text-xl"
         paragraph=" Pure and authentic values inspired by Mediterranean culture, by the timeless architecture, the environment, its enchanting fragrances and the everyday customs combined with the savoir faire of artisans with sophisticated tastes. A well-balanced mix of beauty, nature, culture and tradition."
       />
       <Products cards={manutti} title="Ethimo Collections" />

@@ -42,7 +42,7 @@ const FactoryCarousel = ({
           <CarouselNext className="bg-white text-black" />
         </CarouselWrapper>
         <TextMotion
-          className="w-full py-10 px-2 md:px-20 text-xl"
+          className="w-full py-10 px-2 md:px-20 text-md md:text-xl"
           paragraph="Our partner facility here in Indonesia has a state of the art facility Being committed to the improvement of furniture craftsmanship technology and quality, we have a large-scale technical research and development team with more than 400 professionals to cater to your brief from veneer to a dedicated CNC area with 10 machines, special finishes and custom area"
         />
       </div>

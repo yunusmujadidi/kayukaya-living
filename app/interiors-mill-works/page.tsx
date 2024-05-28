@@ -6,20 +6,16 @@ import Featured from "../featured";
 import Products from "../products";
 import SunLoungers from "../sunloungers";
 import Title from "../title";
+import Header from "@/components/ui/header";
 
 function MyPage() {
   return (
     <div>
-      <section
-        className="w-full h-[40vh] flex items-center justify-center bg-cover bg-center bg-gray-800/70"
-        style={{
-          backgroundImage: `url(https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1578576733880-5KGFWPIB1A2A6LUV2M3U/IMG_0080.jpeg?format=2500w)`,
-        }}
-      >
-        <h1 className="text-white text-4xl font-bold ">
-          Interiors and Mill Works
-        </h1>
-      </section>
+      <Header
+        title="Interiors and Mill Works"
+        url="https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1579583477916-947SK1VTPGW6F7VEWUFA/flexform+skyline.jpg?format=2500w"
+      />
+
       <Featured title="Hotel Beach Resort" />
       <SunLoungers />
       <CustomFurniture bgColor="bg-white" textColor="text-black" />

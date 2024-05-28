@@ -28,7 +28,7 @@ export default function Page({ params }: { params: any }) {
       </section>
       <TitleNL>About Walters</TitleNL>
       <TextMotion
-        className="w-full py-10 px-2 md:px-20 text-xl"
+        className="w-full py-10 px-2 md:px-20 text-md md:text-xl"
         paragraph="  For almost two decades, Manutti has focussed on the design and creation of luxury outdoor furniture as distinctive as our customers. All of our iconic tables, chairs, footrests, loungers and sofas incorporate the colors of the natural world and entice people to gather with their friends and families in luxury at any time of the day."
       />
       <Products cards={manutti} title="Walters Collections" />

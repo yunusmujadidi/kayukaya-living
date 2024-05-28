@@ -38,6 +38,7 @@ const Featured = ({ title = "Featured Projects " }: { title?: string }) => {
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: 20 }}
         transition={{ duration: 1 }}
+        onClick={() => handleImageClick(index)}
       >
         <Image
           alt={title}
@@ -45,10 +46,9 @@ const Featured = ({ title = "Featured Projects " }: { title?: string }) => {
           height={300}
           src={imgSrc}
           width={700}
-          onClick={() => handleImageClick(index)}
         />
         <div className="bg-white p-3 dark:bg-gray-950">
-          <h3 className="font-semibold text-base group-hover:underline text-md">
+          <h3 className="font-semibold text-base group-hover:underline text-md tracking-tight">
             {title}
           </h3>
         </div>
