@@ -1,53 +1,40 @@
 import React from "react";
 import Link from "next/link";
+import { MapPin, Phone, Mail } from "lucide-react";
 
 const Footer = () => {
   const navigationItems = [
     {
-      title: "Products",
+      title: "Interiors and Mill Works",
       children: [
         {
           title: "Custom Furniture",
-          href: "/products/custom-furniture",
+          href: "/interiors-mill-works",
         },
         {
           title: "Umbrellas and Shades",
-          href: "/products/umbrellas-shades",
-          children: [
-            {
-              title: "Glatz Swiss",
-              href: "/products/umbrellas-shades/glatz-swiss",
-            },
-            {
-              title: "Jardinico Belgium",
-              href: "/products/umbrellas-shades/jardinico-belgium",
-            },
-            {
-              title: "Coro Italia",
-              href: "/products/umbrellas-shades/coro-italia",
-            },
-          ],
+          href: "/interiors-mill-works",
         },
         {
           title: "Mill Works",
-          href: "/products/mill-works",
+          href: "/interiors-mill-works",
         },
       ],
     },
     {
-      title: "Projects",
+      title: "Umbrella",
       children: [
         {
-          title: "Hotels and Resorts",
-          href: "/projects/hotels-resorts",
+          title: "Glatz Swiss",
+          href: "/products/umbrellas-shades/glatz-swiss",
         },
         {
-          title: "Public and Commercial Spaces",
-          href: "/projects/public-commercial",
+          title: "Jardinico Belgium",
+          href: "/products/umbrellas-shades/jardinico-belgium",
         },
         {
-          title: "Luxury Condominiums",
-          href: "/projects/luxury-condominiums",
+          title: "Coro Italia",
+          href: "/products/umbrellas-shades/coro-italia",
         },
       ],
     },
@@ -66,6 +53,7 @@ const Footer = () => {
     },
     {
       title: "About Us",
+      href: "/about",
       children: [
         {
           title: "Overview",
@@ -87,6 +75,7 @@ const Footer = () => {
     },
     {
       title: "Contact",
+      href: "/contact",
       children: [
         {
           title: "Headquarters",
@@ -100,40 +89,56 @@ const Footer = () => {
     },
   ];
 
+  interface NavigationItem {
+    title: string;
+    href?: string;
+    children?: NavigationItem[];
+  }
+
+  const renderNavigationItems = (items: NavigationItem[]): JSX.Element => (
+    <div className="grid gap-1">
+      {items.map((item, index) => (
+        <div key={index}>
+          <Link className="hover:underline " href={item.href || "#"}>
+            {item.title}
+          </Link>
+          {item.children && (
+            <div className="pl-4">{renderNavigationItems(item.children)}</div>
+          )}
+        </div>
+      ))}
+    </div>
+  );
+
   return (
-    <footer className="bg-[#40513B] p-6 md:py-12 w-full dark:bg-gray-800 !text-white">
+    <footer className="bg-[#40513B] p-6 md:py-12 w-full dark:bg-gray-800 text-white">
       <div className="container max-w-7xl grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 text-sm">
         {navigationItems.map((item, index) => (
-          <div key={index} className="grid gap-1">
-            <h3 className="font-semibold">{item.title}</h3>
-            {item.children &&
-              item.children.map((child, childIndex) => (
-                <Link
-                  key={childIndex}
-                  className="hover:underline"
-                  href={child.href}
-                >
-                  {child.title}
-                </Link>
-              ))}
+          <div key={index}>
+            <Link
+              className="font-semibold hover:underline"
+              href={item.href || "#"}
+            >
+              {item.title}
+            </Link>
+            {item.children && <div>{renderNavigationItems(item.children)}</div>}
           </div>
         ))}
       </div>
-
-      <div className="container mx-auto px-4 md:px-6 mt-8 md:mt-12 text-center  text-sm">
+      <div className="container mx-auto px-4 md:px-6 mt-8 md:mt-12 text-center text-sm">
         <div>
-          KayuKaya Semarang: : No 19 Forest Hill blok A ,Citraland BSB, Semarang
+          KayuKaya Semarang: No 19 Forest Hill blok A, Citraland BSB, Semarang
           50212, INDONESIA
         </div>
-        KayuKaya Karuizawa : 247-2 , Hotchi, Karuizawa-machi, Kitasaku-gun,
-        Nagano 389-0113, JAPAN
+        KayuKaya Karuizawa: 247-2, Hotchi, Karuizawa-machi, Kitasaku-gun, Nagano
+        389-0113, JAPAN
       </div>
       <div className="space-y-4 text-center">
-        <p className="mx-auto   md:text-sm dark:text-gray-400">
-          TEL+65 6203 5585 FAX +65 6203 5525 INFO@KAYUKAYA.COM
+        <p className="mx-auto md:text-sm dark:text-gray-400">
+          TEL +65 6203 5585 FAX +65 6203 5525 INFO@KAYUKAYA.COM
         </p>
       </div>
-      <div className="container mx-auto px-4 md:px-6 mt-8 md:mt-12 text-center  text-sm">
+      <div className="container mx-auto px-4 md:px-6 mt-8 md:mt-12 text-center text-sm">
         © 2024 KayuKaya Living. All rights reserved.
       </div>
     </footer>
