@@ -9,7 +9,7 @@ import Logo from "@/lib/logo";
 import zendoSense from "@/lib/zendoSense";
 import TextMotion from "@/components/ui/text-motion";
 
-export default function Page({ product }: { product: string }) {
+export default function Page() {
   const controls = useAnimation();
   const [ref, inView] = useInView({
     triggerOnce: true,
