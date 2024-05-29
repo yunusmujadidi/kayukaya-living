@@ -7,84 +7,13 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import Image from "next/image";
-
-interface NavigationItem {
-  title: string;
-  href: string;
-  description: string;
-  children?: NavigationItem[];
-}
-
-const navigationItems: NavigationItem[] = [
-  {
-    title: "Interiors & Mill Works",
-    href: "/interiors-mill-works",
-    description: "Browse our interior design and millwork services.",
-  },
-  {
-    title: "Umbrella",
-    href: "/umbrella",
-    description: "Explore our premium umbrellas and shades.",
-  },
-  {
-    title: "Brands",
-    href: "/brands",
-    description: "Discover our company's mission, values, and practices.",
-    children: [
-      {
-        title: "Manutti",
-        href: "/brands/manutti",
-        description: "An introduction to our company and core values.",
-      },
-      {
-        title: "ethimo",
-        href: "/brands/ethimo",
-        description: "Explore our mission and vision for a sustainable future.",
-      },
-    ],
-  },
-  {
-    title: "Factory",
-    href: "/factory",
-    description: "Information about our manufacturing facilities.",
-  },
-  {
-    title: "Office",
-    href: "/office",
-    description: "Details about our office locations.",
-  },
-  {
-    title: "Contact",
-    href: "/contact",
-    description: "Discover our company's mission, values, and practices.",
-    children: [
-      {
-        title: "Overview",
-        href: "/about/overview",
-        description: "An introduction to our company and core values.",
-      },
-      {
-        title: "Our Mission",
-        href: "/about/mission",
-        description: "Explore our mission and vision for a sustainable future.",
-      },
-      {
-        title: "Sustainability Practices",
-        href: "/about/sustainability",
-        description:
-          "Learn about our environmental and social responsibility initiatives.",
-      },
-    ],
-  },
-];
+import navigationItems from "@/lib/navigationItems";
+import { useSelectedLayoutSegment } from "next/navigation";
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -112,6 +41,13 @@ const Navbar: React.FC = () => {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const segment = useSelectedLayoutSegment();
+
+  const isActive = (href: string) => {
+    const activeSegment = href === "/" ? null : href.split("/")[1];
+    return activeSegment === segment;
   };
 
   return (
@@ -174,7 +110,10 @@ const Navbar: React.FC = () => {
                       passHref
                     >
                       <NavigationMenuLink
-                        className={navigationMenuTriggerStyle()}
+                        className={cn(
+                          buttonVariants({ variant: "link" }),
+                          isActive(item.href) && "underline"
+                        )}
                       >
                         {item.title}
                       </NavigationMenuLink>
@@ -205,73 +144,5 @@ const Navbar: React.FC = () => {
     </div>
   );
 };
-
-interface ListItemProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
-  title: string;
-  href: string;
-  children: React.ReactNode;
-}
-
-const CustomNavigationMenuItem: React.FC<{ item: NavigationItem }> = ({
-  item,
-}) => (
-  <NavigationMenuItem>
-    <Link className="hover:underline" href={item.href} passHref>
-      <NavigationMenuTrigger>{item.title}</NavigationMenuTrigger>
-    </Link>
-    {item.children && (
-      <NavigationMenuContent>
-        <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-          {item.children.map((child) => (
-            <ListItem
-              className="font-bold text-emerald-800"
-              key={child.title}
-              title={child.title}
-              href={child.href}
-            >
-              <p className="font-normal">{child.description}</p>
-              {child.children && (
-                <ul>
-                  {child.children.map((subChild) => (
-                    <ListItem
-                      key={subChild.title}
-                      title={subChild.title}
-                      href={subChild.href}
-                    >
-                      {subChild.description}
-                    </ListItem>
-                  ))}
-                </ul>
-              )}
-            </ListItem>
-          ))}
-        </ul>
-      </NavigationMenuContent>
-    )}
-  </NavigationMenuItem>
-);
-
-const ListItem = React.forwardRef<HTMLAnchorElement, ListItemProps>(
-  ({ className, title, children, ...props }, ref) => (
-    <li>
-      <NavigationMenuLink asChild>
-        <a
-          ref={ref}
-          className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-            className
-          )}
-          {...props}
-        >
-          <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-            {children}
-          </p>
-        </a>
-      </NavigationMenuLink>
-    </li>
-  )
-);
-ListItem.displayName = "ListItem";
 
 export default Navbar;
