@@ -81,7 +81,7 @@ export default function Page() {
 
             <hr />
           </div>
-          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-2 ">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-1 md:gap-2 ">
             {zendoSense.map(({ imgSrc, title, src }, i) => (
               <Link key={i} href={src}>
                 <motion.div
@@ -103,15 +103,20 @@ export default function Page() {
                     }}
                     width={400}
                   />
+                  <h1 className="block md:hidden font-bold text-center text-sm md:text-xl">
+                    {title}
+                  </h1>
                   <div className="absolute inset-0 flex items-center justify-center !bg-white bg-opacity-100 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                    <span className="text-black text-lg font-semibold">
+                    <span className="text-black font-semibold">
                       <Image
                         src={imgSrc}
                         alt={`Logo ${i + 1}`}
                         width={200}
                         height={100}
                       />
-                      <h1 className="text-center">{title}</h1>
+                      <h1 className="hidden md:block text-center text-sm md:text-xl">
+                        {title}
+                      </h1>
                     </span>
                   </div>
                 </motion.div>
