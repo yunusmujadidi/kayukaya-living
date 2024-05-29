@@ -69,7 +69,7 @@ const Featured = ({ title = "Featured Projects " }: { title?: string }) => {
               )}
             {showMore &&
               projects
-                .slice(3)
+                .slice(4)
                 .map((card, index) =>
                   renderCard(card.imgSrc, card.src, card.title, index + 4)
                 )}

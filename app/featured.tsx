@@ -62,11 +62,9 @@ const Featured = ({ title = "Featured Projects " }: { title?: string }) => {
       <section className="px-4 md:px-20 md:pb-5">
         <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 md:gap-6">
           <AnimatePresence>
-            {projects
-              .slice(13)
-              .map((card, index) =>
-                renderCard(card.imgSrc, card.src, card.title, index)
-              )}
+            {projects.map((card, index) =>
+              renderCard(card.imgSrc, card.src, card.title, index)
+            )}
           </AnimatePresence>
         </div>
         {/* <div className="mt-8 text-center">
