@@ -33,7 +33,7 @@ const Featured = ({ title = "Featured Projects " }: { title?: string }) => {
     <a className="hover:underline" key={src}>
       <motion.div
         key={src}
-        className="relative group overflow-hidden rounded-lg"
+        className="relative group overflow-hidden "
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: 20 }}
@@ -42,7 +42,7 @@ const Featured = ({ title = "Featured Projects " }: { title?: string }) => {
       >
         <Image
           alt={title}
-          className="object-cover w-full aspect-[6/4] transition-transform duration-300 ease-in-out group-hover:scale-105 cursor-pointer"
+          className="object-cover w-full aspect-[6/4] transition-transform duration-300 ease-in-out group-hover:scale-105 cursor-pointer rounded-sm "
           height={300}
           src={imgSrc}
           width={700}
@@ -60,7 +60,7 @@ const Featured = ({ title = "Featured Projects " }: { title?: string }) => {
     <>
       <TitleNL>{title}</TitleNL>
       <section className="px-4 md:px-20 md:pb-5">
-        <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 md:gap-6">
+        <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 md:gap-2">
           <AnimatePresence>
             {projects
               .slice(0, 4)

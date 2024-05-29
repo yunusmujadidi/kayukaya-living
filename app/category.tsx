@@ -45,7 +45,7 @@ export default function Category() {
         <div className="space-y-4 md:space-y-6">
           <Link className="hover:underline" href="/umbrella">
             <h2 className="text-2xl font-light tracking-tighter sm:text-3xl md:text-4xl">
-              Our Product Category
+              Product Category
               <span>
                 <ArrowUpRight className="inline mb-5 w-4 h-4 text-gray-500" />
               </span>
