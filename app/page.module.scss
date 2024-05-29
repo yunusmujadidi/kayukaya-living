@@ -1,7 +1,8 @@
 .gallery {
   height: 175vh;
   overflow: hidden;
-  background: rgb(45, 45, 45);
+  background: #6d6b4f;
+  // background: rgb(45, 45, 45);
   .galleryWrapper {
     position: relative;
     top: -12.5vh;
@@ -15,14 +16,14 @@
       }
 
       &:nth-of-type(2) {
-        top: -120%;
+        top: -130%;
       }
 
       &:nth-of-type(3) {
-        top: -40%;
+        top: -50%;
       }
       &:nth-of-type(4) {
-        top: -110%;
+        top: -120%;
       }
 
       position: relative;

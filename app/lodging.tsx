@@ -28,21 +28,21 @@ const photos = [
 
 const Lodging = () => {
   return (
-    <section className="w-full  bg-[#6D6B4F] text-white">
+    <section className="w-full  bg-[#6D6B4F] text-white border-b-8">
       <div className="container">
         <h1 className="text-2xl font-light tracking-tighter sm:text-3xl md:text-4xl hover:underline mb-5">
           Glamping the New Luxury in Nature
           <hr />
         </h1>
         <TextMotion
-          className="my-5 "
+          className="py-5 "
           paragraph="Unique lodging inspired by Nature and Tradition. Designed to bring the most intimate bond to nature."
         />
         <TextMotion
-          className="my-5 "
+          className="py-5 "
           paragraph="
-        
-        Our distinctive wooden Eco lodging solutions are as big as the view. They come with everything you need - nothing more, nothing less – but give the most space to glamorous experience of nature. Email us for more info and pricing at info@kayukaya.com"
+
+Our distinctive wooden Eco lodging solutions are as big as the view. They come with everything you need - nothing more, nothing less – but give the most space to glamorous experience of nature. Email us for more info and pricing at info@kayukaya.com"
         />
         <div className="grid grid-cols-1 gap-4 pt-8 sm:grid-cols-2 md:grid-cols-4 py-10">
           <Image

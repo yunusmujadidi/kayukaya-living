@@ -1,13 +1,5 @@
 const carouselItems = [
   {
-    title: "Amanyara - Turks and Caicos",
-    description: "Singapore skyscraper in CBD",
-    category: "Hotels and Resorts",
-    image:
-      "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1664107542275-YH9U4PLGSVFYU7RCXAU0/ppvilla10+copy.jpg?format=2500w",
-    url: "/projects/amanyara-turks-and-caicos",
-  },
-  {
     title: "The Ritz Carlton Maldives",
     description: "Bespoke Hospitality Furniture Solutions",
     category: "Outdoor Furniture",
@@ -30,6 +22,14 @@ const carouselItems = [
     image:
       "https://scontent.cdninstagram.com/v/t51.29350-15/332411058_1637788493339546_7613288221633904155_n.jpg?stp=dst-jpg_e15&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi43MjB4NDgwLnNkci5mMjkzNTAifQ&_nc_ht=scontent.cdninstagram.com&_nc_cat=102&_nc_ohc=3KXChTNnKboQ7kNvgH4AjpA&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=MzA0NTM0MTE3OTY0ODExMTIyOQ%3D%3D.2-ccb7-5&oh=00_AYCuO_dVo_ovHQ8yDkfE3s26WmKc3sgS1n2hBWupjWiOUA&oe=6658F30A&_nc_sid=10d13b",
     url: "/projects/royal-atlantis-dubai",
+  },
+  {
+    title: "Amanyara - Turks and Caicos",
+    description: "Singapore skyscraper in CBD",
+    category: "Hotels and Resorts",
+    image:
+      "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1664107542275-YH9U4PLGSVFYU7RCXAU0/ppvilla10+copy.jpg?format=2500w",
+    url: "/projects/amanyara-turks-and-caicos",
   },
   {
     title: "One & Only Desaru",
