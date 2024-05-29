@@ -10,9 +10,9 @@ export default function Page({ params }: { params: any }) {
   return (
     <div>
       <section
-        className="w-full h-[40vh] flex items-center justify-center bg-cover bg-center bg-gray-800/70"
+        className="w-full h-[40vh] flex items-center justify-center bg-cover  bg-gray-800/70"
         style={{
-          backgroundImage: `url(https://walterswicker.com/wp-content/uploads/2023/05/Radoc-Featured-Image.jpg)`,
+          backgroundImage: `url(https://walterswicker.com/wp-content/uploads/2023/05/Prato-Featured-Image.jpg)`,
         }}
       >
         <h1 className="text-white text-4xl font-bold ">

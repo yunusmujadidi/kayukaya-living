@@ -8,15 +8,12 @@ const about = () => {
     <section className="w-full py-12 md:py-10 px-2 md:px-20 bg-slate-100 text-black">
       <div className=" grid gap-8 px-4 md:px-6">
         <div className="space-y-4 md:space-y-6">
-          <Link className="hover:underline" href="/about">
+          <div className="hover:underline">
             <h2 className="text-2xl font-light tracking-tighter sm:text-3xl md:text-4xl ">
               About KayuKaya Living
-              <span>
-                <ArrowUpRight className="inline mb-5 w-4 h-4 text-gray-500" />
-              </span>
             </h2>
             <hr />
-          </Link>
+          </div>
           <TextMotion
             className=""
             paragraph=" KayuKaya specializes in bespoke hospitality furniture solutions, catering to the commercial FF&E market with a focus on OEM or VE requirements for both exterior and interior applications. Our expertise lies in large-scale manufacturing with shorter lead times and on-budget delivery. We utilize premium materials to meet the evolving demands of the market, and our flexible approach allows us to work closely with clients' concepts, designs, and briefs.

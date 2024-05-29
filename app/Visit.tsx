@@ -5,7 +5,7 @@ const Visit = () => {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100">
       <div className="container px-4 md:px-6">
-        <div className="grid grid-cols-1 gap-4 pt-8 sm:grid-cols-2 md:grid-cols-4">
+        <div className="grid grid-cols-1 gap-4 pt-8 sm:grid-cols-2 md:grid-cols- justify-items-center items-center">
           <Image
             alt="Office Image 1"
             className="aspect-[4/3] rounded-lg object-cover"

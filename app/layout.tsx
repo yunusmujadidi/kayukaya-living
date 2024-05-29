@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "KayuKaya Living",
   description: "KayuKaya",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/icon.ico",
   },
 };
 
