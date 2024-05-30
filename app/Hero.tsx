@@ -7,7 +7,7 @@ import carouselItems from "../lib/carouselItems";
 
 export default function Hero() {
   return (
-    <section className="w-full px-[-4px]">
+    <section className="z-40 w-full px-[-4px]">
       <CarouselWrapper>
         <CarouselContent>
           {carouselItems.map((item, index) => (
@@ -15,7 +15,7 @@ export default function Hero() {
               <div className="relative">
                 <Image
                   alt="Carousel Image"
-                  className="h-[400px] w-full object-cover object-center md:h-[800px] "
+                  className="h-[300px] w-full object-cover object-center md:h-[800px] "
                   height={1080}
                   src={item.image}
                   style={{
@@ -30,7 +30,7 @@ export default function Hero() {
                     className="hover:underline"
                     href="/interiors-mill-works"
                   >
-                    <h2 className="text-2xl font-light tracking-tighter sm:text-4xl md:text-white text-black md:bg-black/90 rounded-lg p-2">
+                    <h2 className="text-2xl font-semibold tracking-tighter sm:text-4xl md:text-white text-black md:bg-black/10 rounded-lg p-2">
                       {item.title}
                     </h2>
                   </Link>

@@ -16,28 +16,20 @@ import navigationItems from "@/lib/navigationItems";
 import { useSelectedLayoutSegment } from "next/navigation";
 
 const Navbar: React.FC = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isVisible, setIsVisible] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      if (currentScrollY > lastScrollY) {
-        setIsVisible(false); // Scrolling down
-      } else {
-        setIsVisible(true); // Scrolling up
-      }
-      setLastScrollY(currentScrollY);
-      setIsScrolled(currentScrollY > 0);
+      const isScrolled = window.scrollY > 0;
+      setIsScrolled(isScrolled);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    document.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      document.removeEventListener("scroll", handleScroll);
     };
-  }, [lastScrollY]);
+  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -51,40 +43,31 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <div
-      className={cn(
-        "z-50 sticky h-24 w-full inset-x-0 items-center transition-all top-0 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 backdrop-blur-md shadow-md",
-        isScrolled && "h-20 bg-white backdrop-blur-md shadow-md block",
-        !isVisible && "-top-24 block"
-      )}
+    <nav
+      className={`z-50 fixed w-full top-0 duration-200 transition-all ${
+        isScrolled
+          ? "bg-white text-black h-16"
+          : "group hover:bg-white bg-black/7 delay-75 text-white h-24"
+      }`}
     >
       <div className="h-full w-full mx-auto max-w-7xl px-2.5">
         <div className="flex h-full items-center justify-between">
           <Link
             href="/"
             className={cn(
-              "flex font-bold tracking-tight transition-all duration-300 ease-in-out text-xl md:text-3xl text-emerald-800 ",
-              isScrolled && "text-xl md:text-2xl"
+              "flex font-bold tracking-tight transition-all duration-300 ease-in-out text-xl md:text-3xl",
+              isScrolled
+                ? "text-emerald-800"
+                : "text-white group-hover:text-black"
             )}
           >
-            {isScrolled ? (
-              <Image
-                alt="Logo"
-                src="https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1585542631378-98UBWDIV711MR3CNJLRJ/favicon.ico"
-                width={50}
-                height={50}
-              />
-            ) : (
-              <Image
-                alt="Logo"
-                src="https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/cad8ef74-7370-4494-929b-2c62cb4c6d27/Screenshot+2022-09-24+at+6.15.29+PM.jpg?format=1500w"
-                width={150}
-                height={200}
-                className={cn(
-                  "transition-all duration-200 ease-in-out delay-75"
-                )}
-              />
-            )}
+            <Image
+              alt="Logo"
+              src="https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/cad8ef74-7370-4494-929b-2c62cb4c6d27/Screenshot+2022-09-24+at+6.15.29+PM.jpg?format=1500w"
+              width={150}
+              height={200}
+              className="transition-all duration-200 ease-in-out delay-75"
+            />
           </Link>
           <div className="flex items-center lg:hidden">
             <button
@@ -104,7 +87,7 @@ const Navbar: React.FC = () => {
                 {navigationItems.map((item) => (
                   <NavigationMenuItem key={item.title}>
                     <Link
-                      className="hover:underline"
+                      className="transition-all hover:underline"
                       href={item.href}
                       legacyBehavior
                       passHref
@@ -112,6 +95,9 @@ const Navbar: React.FC = () => {
                       <NavigationMenuLink
                         className={cn(
                           buttonVariants({ variant: "link" }),
+                          isScrolled
+                            ? "text-black"
+                            : "text-white group-hover:text-black",
                           isActive(item.href) && "underline"
                         )}
                       >
@@ -141,7 +127,7 @@ const Navbar: React.FC = () => {
           </div>
         </div>
       )}
-    </div>
+    </nav>
   );
 };
 

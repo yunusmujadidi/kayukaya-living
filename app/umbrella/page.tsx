@@ -22,7 +22,6 @@ function MyPage() {
         className="w-full py-10 px-2 md:px-20 text-md md:text-xl tracking-tight mt-10"
         paragraph="We carry a wide range of professional umbrellas, each series is wind tunnel tested according to usage. The maximum wind speed is about 110km/h with the largest size being 800cm or 800x600cm across All fabrics are highly UV and water resistance with 99% cut."
       />
-      <Products title=" Umbrella Collection " cards={Umbrella} />
       <section className="py-5">
         <TitleNL>Official Partner</TitleNL>
         <div className="flex justify-center items-center">
@@ -35,6 +34,7 @@ function MyPage() {
           />
         </div>
       </section>
+      <Products title=" Umbrella Collection " cards={Umbrella} />
     </div>
   );
 }

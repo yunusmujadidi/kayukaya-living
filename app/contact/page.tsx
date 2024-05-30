@@ -47,7 +47,7 @@ function MyPage() {
                   placeholder="Write your message here..."
                 />
               </div>
-              <Button className="w-full" variant={"ghost"} type="submit">
+              <Button className="w-full" type="submit">
                 Submit
               </Button>
             </form>

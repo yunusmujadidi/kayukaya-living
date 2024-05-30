@@ -57,17 +57,17 @@ const Products = ({ title, cards, slice = 50 }: ProductsProps) => {
     <>
       <TitleNL>{title}</TitleNL>
       <section className="px-4 md:px-20 md:pb-5">
-        <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 md:gap-6">
-          {initialCards.map((card) =>
-            renderCard(card.imgSrc, card.src, card.title)
-          )}
-          <AnimatePresence>
+        <AnimatePresence>
+          <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 md:gap-6">
+            {initialCards.map((card) =>
+              renderCard(card.imgSrc, card.src, card.title)
+            )}
             {showMore &&
               additionalCards.map((card) =>
                 renderCard(card.imgSrc, card.src, card.title)
               )}
-          </AnimatePresence>
-        </div>
+          </div>
+        </AnimatePresence>
         {/* <div className="mt-8 text-center">
           {!showMore && additionalCards.length > 0 && (
             <Button onClick={handleToggleShowMore}>Show More</Button>

@@ -1,13 +1,5 @@
 const factoryitems = [
   {
-    title: "Amanyara - Turks and Caicos",
-    description: "Singapore skyscraper in CBD",
-    category: "Hotels and Resorts",
-    image:
-      "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1716089749554-46QZGBFEHBPJ7EM1INXY/IMG_9742+copy.jpg",
-    url: "/projects/amanyara-turks-and-caicos",
-  },
-  {
     title: "The Ritz Carlton Maldives",
     description: "Bespoke Hospitality Furniture Solutions",
     category: "Outdoor Furniture",

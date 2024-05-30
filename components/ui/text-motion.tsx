@@ -15,6 +15,7 @@ export default function TextMotion({
   const { scrollYProgress } = useScroll({
     target: container,
     offset: ["start 0.9", "start 0.5"],
+    layoutEffect: false,
   });
 
   return (

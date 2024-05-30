@@ -62,6 +62,7 @@ const Page = () => {
   const { scrollYProgress } = useScroll({
     target: gallery,
     offset: ["start end", "end start"],
+    layoutEffect: false,
   });
   const { height } = dimension;
   const y = useTransform(scrollYProgress, [0, 1], [0, height * 2]);
