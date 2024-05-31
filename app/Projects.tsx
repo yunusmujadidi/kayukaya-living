@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import Lightbox from "yet-another-react-lightbox";
 import LightboxImage from "@/components/lightbox-image";
 import "yet-another-react-lightbox/styles.css";
-import Title from "./title";
 import TitleNL from "./title-nolink";
 import projects from "@/lib/projects";
 

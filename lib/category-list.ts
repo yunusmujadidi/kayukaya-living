@@ -8,19 +8,19 @@ const categoryList = [
   {
     title: "Mill Works",
     imgSrc:
-      "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1664119055986-HLJLCZCVGEC1JXCK5URA/IMG_9315.jpeg",
+      "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1579583477916-947SK1VTPGW6F7VEWUFA/flexform+skyline.jpg",
     url: "/interiors-mill-works",
   },
   {
     title: "Sun Lounger",
     imgSrc:
-      "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1664110453740-HEVHWBUM4DA9A17O22TF/THE+PALETTE+.jpg",
+      "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1664112892184-NMFL6X4LUC3CGT7HTRYW/Pines+Kettal+lounger+low.jpg",
     url: "/interiors-mill-works",
   },
   {
     title: "Custom Interior",
     imgSrc:
-      "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1664118487794-KYTZ23MGYA1J3BFTFZXD/IMG_8924.jpeg",
+      "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1715700279334-O1ACBXH7UL0RODEZEA04/oodc-dining-dusky-monkey-bar-seating-detail%2Bcopy%2B3.jpg",
     url: "/interiors-mill-works",
   },
 ];
