@@ -62,7 +62,7 @@ const Navbar: React.FC = () => {
 
   const navClassName = `sticky lg:fixed z-50 w-full duration-200 transition-all lg:bg-black/5 bg-[#40513B]  ${
     isScrolled
-      ? " h-16"
+      ? " h-16 lg:bg-[#40513B]"
       : isHome
       ? "group hover:bg-[#40513B] delay-75 h-24 "
       : "group bg-[#40513B] delay-75 h-16 sticky"
@@ -131,7 +131,7 @@ const Navbar: React.FC = () => {
         </div>
       </div>
       {isMenuOpen && (
-        <div className="md:hidden bg-white shadow-md">
+        <div className="lg:hidden bg-white shadow-md">
           <div className="flex flex-col items-start space-y-4 p-4">
             {navigationItems.map((item) => (
               <Link
