@@ -4,7 +4,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { MenuIcon, X } from "lucide-react";
 import Link from "next/link";
-import React, { useEffect, useState, useCallback } from "react";
+import React, { useEffect, useState } from "react";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -14,37 +14,30 @@ import {
 import Image from "next/image";
 import navigationItems from "@/lib/navigationItems";
 import { useSelectedLayoutSegment } from "next/navigation";
-import { usePathname } from "next/navigation";
 
 const Navbar: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
-  const handleScroll = useCallback(() => {
-    const currentScrollY = window.scrollY;
-    if (currentScrollY > lastScrollY) {
-      setIsVisible(false); // Scrolling down
-    } else {
-      setIsVisible(true); // Scrolling up
-    }
-    setLastScrollY(currentScrollY);
-    setIsScrolled(currentScrollY > 0);
-  }, [lastScrollY]);
-
   useEffect(() => {
-    const throttledHandleScroll = () => {
-      setTimeout(() => {
-        handleScroll();
-      }, 200);
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY) {
+        setIsVisible(false); // Scrolling down
+      } else {
+        setIsVisible(true); // Scrolling up
+      }
+      setLastScrollY(currentScrollY);
+      setIsScrolled(currentScrollY > 0);
     };
 
-    window.addEventListener("scroll", throttledHandleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener("scroll", throttledHandleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
-  }, [handleScroll]);
+  }, [lastScrollY]);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -57,34 +50,41 @@ const Navbar: React.FC = () => {
     return activeSegment === segment;
   };
 
-  const pathName = usePathname();
-  const isHome = pathName === "/";
-
-  const navClassName = `fixed z-50 w-full duration-200 transition-all ${
-    isScrolled
-      ? "bg-[#40513B] h-16"
-      : isHome
-      ? "group hover:bg-[#40513B] bg-black/7 delay-75 h-24 "
-      : "group bg-[#40513B] delay-75 h-16 sticky"
-  } ${isVisible ? "top-0" : "-top-24"}`;
-
   return (
-    <nav className={cn(navClassName)}>
+    <div
+      className={cn(
+        "z-50 sticky h-24 w-full inset-x-0 items-center transition-all top-0 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 backdrop-blur-md shadow-md",
+        isScrolled && "h-20 bg-white backdrop-blur-md shadow-md block",
+        !isVisible && "-top-24 block"
+      )}
+    >
       <div className="h-full w-full mx-auto max-w-7xl px-2.5">
         <div className="flex h-full items-center justify-between">
           <Link
             href="/"
             className={cn(
-              "flex font-bold tracking-tight transition-all duration-300 ease-in-out text-xl md:text-3xl"
+              "flex font-bold tracking-tight transition-all duration-300 ease-in-out text-xl md:text-3xl text-emerald-800 ",
+              isScrolled && "text-xl md:text-2xl"
             )}
           >
-            <Image
-              alt="Logo"
-              src="/assets/logo/logo.png"
-              width={150}
-              height={200}
-              className={cn("transition-all duration-200 ease-in-out delay-75")}
-            />
+            {isScrolled ? (
+              <Image
+                alt="Logo"
+                src="https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1585542631378-98UBWDIV711MR3CNJLRJ/favicon.ico"
+                width={50}
+                height={50}
+              />
+            ) : (
+              <Image
+                alt="Logo"
+                src="https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/cad8ef74-7370-4494-929b-2c62cb4c6d27/Screenshot+2022-09-24+at+6.15.29+PM.jpg?format=1500w"
+                width={150}
+                height={200}
+                className={cn(
+                  "transition-all duration-200 ease-in-out delay-75"
+                )}
+              />
+            )}
           </Link>
           <div className="flex items-center lg:hidden">
             <button
@@ -104,7 +104,7 @@ const Navbar: React.FC = () => {
                 {navigationItems.map((item) => (
                   <NavigationMenuItem key={item.title}>
                     <Link
-                      className="transition-all hover:underline"
+                      className="hover:underline"
                       href={item.href}
                       legacyBehavior
                       passHref
@@ -112,11 +112,6 @@ const Navbar: React.FC = () => {
                       <NavigationMenuLink
                         className={cn(
                           buttonVariants({ variant: "link" }),
-                          isScrolled
-                            ? "text-white"
-                            : !isHome
-                            ? "text-white"
-                            : "text-black group-hover:text-white",
                           isActive(item.href) && "underline"
                         )}
                       >
@@ -146,7 +141,7 @@ const Navbar: React.FC = () => {
           </div>
         </div>
       )}
-    </nav>
+    </div>
   );
 };
 
