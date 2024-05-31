@@ -60,11 +60,11 @@ const Navbar: React.FC = () => {
   const pathName = usePathname();
   const isHome = pathName === "/";
 
-  const navClassName = `fixed z-50 w-full duration-200 transition-all ${
+  const navClassName = `sticky lg:fixed z-50 w-full duration-200 transition-all lg:bg-black/5 bg-[#40513B]  ${
     isScrolled
-      ? "bg-[#40513B] h-16"
+      ? " h-16"
       : isHome
-      ? "group hover:bg-[#40513B] bg-black/7 delay-75 h-24 "
+      ? "group hover:bg-[#40513B] delay-75 h-24 "
       : "group bg-[#40513B] delay-75 h-16 sticky"
   } ${isVisible ? "top-0" : "-top-24"}`;
 
@@ -89,7 +89,7 @@ const Navbar: React.FC = () => {
           <div className="flex items-center lg:hidden">
             <button
               onClick={toggleMenu}
-              className="text-slate-700 focus:outline-none"
+              className="text-white focus:outline-none"
             >
               {isMenuOpen ? (
                 <X className="h-6 w-6" />
