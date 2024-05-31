@@ -7,6 +7,21 @@ import Products from "../products";
 import SunLoungers from "../sunloungers";
 import Title from "../title";
 import Header from "@/components/ui/header";
+import NextJsImage from "@/components/album-image";
+import React from "react";
+import PhotoAlbum from "react-photo-album";
+import { CarouselWrapper } from "@/components/carousel-wrapper";
+import {
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+} from "@/components/ui/carousel";
+import TextMotion from "@/components/ui/text-motion";
+import factoryitems from "@/lib/factoryitems";
+import Image from "next/image";
+import sunLoungers from "@/lib/sun-loungers";
+import TitleNL from "../title-nolink";
 
 function MyPage() {
   return (
@@ -18,7 +33,16 @@ function MyPage() {
 
       <CustomFurniture bgColor="bg-white" textColor="text-black" />
       <Featured title="Hotel Beach Resort" />
-      <SunLoungers />
+      <TitleNL>Sun Loungers</TitleNL>
+      <section className="w-full py-10 px-2 md:px-20 text-black">
+        <PhotoAlbum
+          layout="rows"
+          photos={sunLoungers}
+          renderPhoto={NextJsImage}
+          defaultContainerWidth={1200}
+          sizes={{ size: "calc(100vw - 240px)" }}
+        />
+      </section>
     </div>
   );
 }

@@ -21,7 +21,7 @@ const CustomFurniture = ({
 }) => {
   return (
     <section
-      className={`w-full py-12 md:py-10 px-2 md:px-20 ${bgColor} ${textColor} `}
+      className={`w-full py-12 md:py-12 px-2 md:px-20 ${bgColor} ${textColor} `}
     >
       <div className="container ">
         <div className=" grid gap-8 px-4 md:px-6">
@@ -33,7 +33,7 @@ const CustomFurniture = ({
                   <ArrowUpRight className="inline mb-5 w-4 h-4 " />
                 </span>
               </h2>
-              <hr className="mb-5" />
+              <hr className="mb-12" />
             </Link>
           </div>
         </div>
