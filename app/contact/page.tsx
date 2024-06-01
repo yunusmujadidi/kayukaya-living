@@ -47,7 +47,10 @@ function MyPage() {
                   placeholder="Write your message here..."
                 />
               </div>
-              <Button className="w-full" type="submit">
+              <Button
+                className="w-full bg-white text-black hover:border hover:text-white"
+                type="submit"
+              >
                 Submit
               </Button>
             </form>

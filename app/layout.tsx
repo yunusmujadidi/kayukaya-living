@@ -6,6 +6,11 @@ import Navbar from "./Navbar";
 import Footer from "./footer";
 import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
+import localFont from "next/font/local";
+
+const myFont = localFont({
+  src: "/font.ttf",
+});
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,7 +33,7 @@ export default function RootLayout({
         <body
           className={cn(
             "min-h-screen flex flex-col antialiased text-white bg-[#353929]",
-            GeistMono.className
+            myFont.className
           )}
         >
           <main>
