@@ -131,15 +131,15 @@ const Navbar: React.FC = () => {
         </div>
       </div>
       {isMenuOpen && (
-        <div className="lg:hidden  shadow-md">
+        <div className="lg:hidden bg-white shadow-md text-black">
           <div className="flex flex-col items-start space-y-4 p-4">
             {navigationItems.map((item) => (
               <Link
                 key={item.title}
                 href={item.href}
                 className={cn(
-                  buttonVariants({ variant: "link" }),
-                  "flex w-full hover:bg-"
+                  buttonVariants({ variant: "ghost" }),
+                  "flex w-full hover:bg-[#2c3929] hover:text-white"
                 )}
               >
                 {item.title}

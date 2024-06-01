@@ -20,10 +20,10 @@ const CustomFurniture = ({
   textColor?: string;
 }) => {
   return (
-    <section
-      className={`w-full py-12 md:py-12 px-2 md:px-20 ${bgColor} ${textColor} `}
-    >
-      <div className="container ">
+    <div className="container ">
+      <section
+        className={`w-full py-12 md:py-12 px-2 md:px-20 ${bgColor} ${textColor} `}
+      >
         <div className=" grid gap-8 px-4 md:px-6">
           <div className="space-y-4 md:space-y-6">
             <Link className="" href="/interiors-mill-works">
@@ -61,8 +61,8 @@ const CustomFurniture = ({
           craftsmanship, combined with cutting-edge technology, enables us to
           produce intricate and complex designs with precision and accuracy.
         </p>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 
