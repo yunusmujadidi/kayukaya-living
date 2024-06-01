@@ -1,5 +1,9 @@
 .gallery {
-  height: 175vh;
+  display: none;
+  @media (min-width: 992px) {
+    display: block;
+    height: 100vh;
+  }
   overflow: hidden;
   // background: #6d6b4f;
   // background: rgb(45, 45, 45);
@@ -16,14 +20,14 @@
       }
 
       &:nth-of-type(2) {
-        top: -130%;
+        top: -150%;
       }
 
       &:nth-of-type(3) {
         top: -50%;
       }
       &:nth-of-type(4) {
-        top: -120%;
+        top: -150%;
       }
 
       position: relative;

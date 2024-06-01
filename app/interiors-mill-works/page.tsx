@@ -22,6 +22,8 @@ import factoryitems from "@/lib/factoryitems";
 import Image from "next/image";
 import sunLoungers from "@/lib/sun-loungers";
 import TitleNL from "../title-nolink";
+import furnitureItems from "@/lib/furnitureItems";
+import FurnitureCard from "./furniturecard";
 
 function MyPage() {
   return (
@@ -31,7 +33,6 @@ function MyPage() {
         url="https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1579583477916-947SK1VTPGW6F7VEWUFA/flexform+skyline.jpg?format=2500w"
       />
 
-      <CustomFurniture bgColor="" textColor="text-white" />
       <Featured title="Hotel Beach Resort" />
       <TitleNL>Sun Loungers</TitleNL>
       <section className="w-full py-10 px-2 md:px-20 text-white">
@@ -43,6 +44,7 @@ function MyPage() {
           sizes={{ size: "calc(100vw - 240px)" }}
         />
       </section>
+      <FurnitureCard title="Custom Interior" />
     </div>
   );
 }

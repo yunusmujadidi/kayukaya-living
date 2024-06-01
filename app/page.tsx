@@ -21,7 +21,9 @@ import Custom from "./custom";
 import manutti from "@/lib/manutti";
 import Projects from "./Projects";
 import BrandProduct from "./BrandProducts";
-import Navbar from "./Navbar";
+import AboutSection from "./aboutsection";
+import SustainableSection from "./sustainablesection";
+import CustomSection from "./customsection";
 
 const images = [
   "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1664010362273-MZ15A4OO1I3ZG2JTIQOK/IMG_3901.jpg",
@@ -97,17 +99,20 @@ const Page = () => {
   return (
     <>
       <Hero />
+      <AboutSection />
+      <SustainableSection />
+      <CustomSection />
       <Projects />
-      <About />
+      {/* <About />
       <Sustainable />
-      <Custom />
+      <Custom /> */}
       <Products slice={8} cards={manutti} title="Featured Collections" />
       <Brands />
       <BrandProduct />
-      <Category />
+      <Lodging />
+      {/* <Category /> */}
       <SunLoungers />
       <CustomFurniture />
-      <Lodging />
       <section>
         <div className={styles.main}>
           <div className={styles.gallery}>

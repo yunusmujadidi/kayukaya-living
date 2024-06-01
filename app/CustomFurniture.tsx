@@ -20,49 +20,57 @@ const CustomFurniture = ({
   textColor?: string;
 }) => {
   return (
-    <div className="container ">
-      <section
-        className={`w-full py-12 md:py-12 px-2 md:px-20 ${bgColor} ${textColor} `}
-      >
-        <div className=" grid gap-8 px-4 md:px-6">
-          <div className="space-y-4 md:space-y-6">
-            <Link className="" href="/interiors-mill-works">
-              <h2 className="text-2xl font-light tracking-tighter sm:text-3xl md:text-4xl ">
-                Interior Custom Furniture
-                <span>
-                  <ArrowUpRight className="inline mb-5 w-4 h-4 " />
-                </span>
+    <>
+      <section className="w-full py-12 md:py-24 ">
+        <div className="container grid gap-8 px-4 md:px-6 max-w-6xl">
+          <div className="grid gap-4">
+            <div className="text-left">
+              <h2 className="text-2xl font-light tracking-tighter sm:text-3xl md:text-4xl">
+                Crafting Bespoke Interiors
               </h2>
-              <hr className="mb-12" />
-            </Link>
+              <p className=" mx-auto  md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-gray-400">
+                Discover our expertise in custom furniture design and
+                manufacturing.
+              </p>
+            </div>
+            <div className="rounded-lg overflow-hidden">
+              <CarouselWrapper>
+                <CarouselContent>
+                  {furnitureItems.map((item, index) => (
+                    <CarouselItem key={index}>
+                      <Image
+                        alt="Carousel Image"
+                        className="h-[400px] w-full object-cover object-center md:h-[700px] "
+                        src={item.image}
+                        width={1000}
+                        height={1000}
+                      />
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+              </CarouselWrapper>
+            </div>
+          </div>
+          <div className="grid gap-4 text-left">
+            <p className="  md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-gray-400">
+              At KayuKaya Living, we take great pride in guiding our clients
+              through the entire design and manufacturing process. Blending
+              traditional craftsmanship with modern technology, we create
+              intricate and precise custom furniture that seamlessly integrates
+              into any interior.
+            </p>
+            <p className=" md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-gray-400">
+              Our team of skilled designers and artisans work closely with you
+              to understand your unique vision and requirements, ensuring that
+              every piece we create is a true reflection of your personal style
+              and the character of your space. From initial concept to final
+              delivery, we are committed to delivering exceptional quality and
+              an unparalleled customer experience.
+            </p>
           </div>
         </div>
-
-        <CarouselWrapper>
-          <CarouselContent>
-            {furnitureItems.map((item, index) => (
-              <CarouselItem key={index}>
-                <Image
-                  alt="Carousel Image"
-                  className="h-[200px] w-full object-cover object-center md:h-[700px] "
-                  src={item.image}
-                  width={1000}
-                  height={1000}
-                />
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious className="bg-[#353929] text-white" />
-          <CarouselNext className="bg-[#353929] text-white" />
-        </CarouselWrapper>
-        <p className="pt-5 ">
-          From concept to completion, we guide you through every step of the
-          design and manufacturing process. Our expertise in traditional
-          craftsmanship, combined with cutting-edge technology, enables us to
-          produce intricate and complex designs with precision and accuracy.
-        </p>
       </section>
-    </div>
+    </>
   );
 };
 

@@ -18,7 +18,7 @@ function MyPage() {
         <h1 className="text-white text-4xl font-bold ">Contact Us</h1>
       </section>
 
-      <section className="w-full py-12 md:py-24 lg:py-32">
+      <section className="w-full py-12 md:py-24 ">
         <div className="container px-4 md:px-6">
           <div className="mx-auto max-w-2xl space-y-4 text-center">
             <p className="text-white font-semibold">

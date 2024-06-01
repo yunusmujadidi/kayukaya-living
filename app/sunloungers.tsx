@@ -16,41 +16,44 @@ import sunLoungers from "@/lib/sun-loungers";
 
 const SunLoungers = () => {
   return (
-    <div className="container">
-      {/* <section className="w-full py-10 px-2 md:px-20 text-white">
-        <PhotoAlbum
-          layout="rows"
-          photos={photos}
-          renderPhoto={NextJsImage}
-          defaultContainerWidth={1200}
-          sizes={{ size: "calc(100vw - 240px)" }}
-        />
-      </section> */}
-      <Title href="/interiors-mill-works">Sun Loungers</Title>
-      <div className="w-full py-12 md:py-12 px-2 md:px-20">
-        <CarouselWrapper>
-          <CarouselContent>
-            {sunLoungers.map((item, index) => (
-              <CarouselItem key={index}>
-                <Image
-                  alt="Carousel Image"
-                  className="h-[200px] w-full object-cover object-center md:h-[700px] "
-                  src={item.src}
-                  width={1000}
-                  height={1000}
-                />
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious className="bg-[#353929] text-white" />
-          <CarouselNext className="bg-[#353929] text-white" />
-        </CarouselWrapper>
-        <TextMotion
-          className="w-full py-10 px-2 text-md md:text-xl"
-          paragraph="Our partner facility here in Indonesia has a state of the art facility Being committed to the improvement of furniture craftsmanship technology and quality, we have a large-scale technical research and development team with more than 400 professionals to cater to your brief from veneer to a dedicated CNC area with 10 machines, special finishes and custom area"
-        />
-      </div>
-    </div>
+    <>
+      <section className="w-full py-12 md:py-24 ">
+        <div className="container grid gap-8 px-4 md:px-6 max-w-6xl">
+          <div className="grid gap-4">
+            <div className="text-left">
+              <h2 className="text-2xl font-light tracking-tighter sm:text-3xl md:text-4xl">
+                Sun Loungers by KayuKaya Contract
+              </h2>
+            </div>
+            <div className="rounded-lg overflow-hidden">
+              <CarouselWrapper>
+                <CarouselContent>
+                  {sunLoungers.map((item, index) => (
+                    <CarouselItem key={index}>
+                      <Image
+                        alt="Carousel Image"
+                        className="h-[400px] w-full object-cover object-center md:h-[700px] "
+                        src={item.src}
+                        width={1000}
+                        height={1000}
+                      />
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+              </CarouselWrapper>
+            </div>
+          </div>
+          <div className="grid gap-4 text-left">
+            <p className="  md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-gray-400">
+              Discover our stunning sun loungers, designed to elevate your
+              outdoor living experience. Explore the versatility of our
+              collections, showcased in various residential and commercial
+              projects.
+            </p>
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
 

@@ -47,13 +47,13 @@ export default function Category() {
             <h2 className="text-2xl font-light tracking-tighter sm:text-3xl md:text-4xl">
               Product Category
               <span>
-                <ArrowUpRight className="inline mb-5 w-4 h-4 text-gray-500" />
+                <ArrowUpRight className="inline mb-5 w-4 h-4 text-white" />
               </span>
             </h2>
             <hr />
           </Link>
         </div>
-        <div className="grid grid-cols-3 lg:grid-cols-6  gap-2 md:gap-3 lg:gap-4">
+        <div className="grid grid-cols-3 lg:grid-cols-6 gap-2 md:gap-3 lg:gap-4">
           {categoryList.map(({ imgSrc, title, url }, i) => (
             <Link key={i} href={url}>
               <motion.div

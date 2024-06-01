@@ -17,7 +17,7 @@ export default function BrandProduct() {
             <h2 className="text-2xl font-light tracking-tighter sm:text-3xl md:text-4xl">
               Product Collection
               <span>
-                <ArrowUpRight className="inline mb-5 w-4 h-4 text-gray-500" />
+                <ArrowUpRight className="inline mb-5 w-4 h-4 text-white" />
               </span>
             </h2>
             <hr />

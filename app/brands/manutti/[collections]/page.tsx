@@ -27,25 +27,22 @@ export default function Page() {
       <section className="w-full py-12 px-2 md:px-20 md:py-10 ">
         <div className="grid gap-8 px-4 md:px-6">
           <div className="space-y-4 md:space-y-6  ">
-            <div className="flex flex-col md:flex-row">
-              <h2 className="text-2xl font-light tracking-tighter sm:text-3xl md:text-3xl hover:underline py-5">
-                Zendo Sense by Stephane De Winter
-              </h2>
-              <TextMotion
-                className="mt-7"
-                paragraph=" A sleek frame, sophisticated upholstery fabrics, exceptional
-              seating comfort and endless combination possibilities are only a
-              few features of Zendo Sense, a new take on a timeless Manutti
-              icon. Carefully selected materials are crafted into durable,
-              weatherproof pieces that emanate luxury and show no distinction
-              between interior and exterior design. Offering modular and
-              freestanding sofas, club sofas, daybeds and coffee tables, the
+            <TextMotion
+              className="mt-7 text-lg md:text-3xl tracking-tighter font-extralight "
+              paragraph=" A sleek frame, sophisticated upholstery fabrics, exceptional
+                  seating comfort and endless combination possibilities are only a
+                  few features of Zendo Sense, a new take on a timeless Manutti
+                  icon. Carefully selected materials are crafted into durable,
+                  weatherproof pieces that emanate luxury and show no distinction
+                  between interior and exterior design. Offering modular and
+                  freestanding sofas, club sofas, daybeds and coffee tables, the
               versatility of Zendo Sense makes it the perfect fit for settings
               of all shapes and sizes : from intimate urban balconies to lavish
               terraces with infinite views."
-              />
-            </div>
-
+            />
+            <h2 className="text-md font-light tracking-tighter ">
+              Zendo Sense by Stephane De Winter
+            </h2>
             <hr />
           </div>
           <BrandProductsGrid />

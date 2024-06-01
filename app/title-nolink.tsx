@@ -5,7 +5,7 @@ import { ArrowUpRight } from "lucide-react";
 const TitleNL = ({
   children,
   href = "/",
-  className = "hover:underline",
+  className = "",
 }: {
   children: ReactNode;
   href?: string;

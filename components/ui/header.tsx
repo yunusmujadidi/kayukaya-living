@@ -14,7 +14,7 @@ const Header = ({
         backgroundImage: `url(${url})`,
       }}
     >
-      <div className="absolute inset-0 bg-black opacity-50 border-b"></div>
+      <div className="absolute inset-0 bg-black/60 "></div>
       <h1 className="relative text-white text-xl tracking-widest md:text-4xl font-light">
         {title}
       </h1>
