@@ -12,15 +12,17 @@ import TitleNL from "../title-nolink";
 
 export default function Page({ params }: { params: any }) {
   return (
-    <div>
+    <>
       <Header
         title="Factory"
         url="https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1664118843605-JN5QN4UNQJ40HNU6Y3XE/games+room+.JPG"
       />
 
-      <TitleNL>Hotel Furniture Manufacturing Plant </TitleNL>
+      <div className="container">
+        <TitleNL>Hotel Furniture Manufacturing Plant </TitleNL>
 
-      <FactoryCarousel bgColor="" textColor="text-white" />
-    </div>
+        <FactoryCarousel bgColor="" textColor="text-white" />
+      </div>
+    </>
   );
 }

@@ -135,6 +135,7 @@ const Navbar: React.FC = () => {
           <div className="flex flex-col items-start space-y-4 p-4">
             {navigationItems.map((item) => (
               <Link
+                onClick={() => setIsMenuOpen(false)}
                 key={item.title}
                 href={item.href}
                 className={cn(

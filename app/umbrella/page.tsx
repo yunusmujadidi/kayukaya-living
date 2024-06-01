@@ -26,7 +26,7 @@ function MyPage() {
         <TitleNL>Official Partner</TitleNL>
         <div className="flex justify-center items-center">
           <Image
-            src="https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/8eba3cc3-6690-493d-9a1c-396a9b2c3493/03_glatz_logo_pos_rgb_l.jpg"
+            src="/assets/logo/glatz.png"
             alt="Official Partner"
             width={500}
             height={500}
