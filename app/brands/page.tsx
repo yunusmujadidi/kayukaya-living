@@ -16,7 +16,7 @@ const page = () => {
       <Brands />
       <TextMotion
         className="w-full py-10 px-2 md:px-20 text-md md:text-xl "
-        paragraph="Catering heavily to the outdoor space, we offer a vast selection of styles from our 8 different brands. Our pieces range from traditional to contemporary, with many materials to choose from."
+        paragraph="Catering heavily to the outdoor space, we offer a vast selection of styles from our 3 different brands. Our pieces range from traditional to contemporary, with many materials to choose from."
       />
     </div>
   );

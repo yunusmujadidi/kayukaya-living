@@ -18,7 +18,7 @@ export default function Page({ params }: { params: any }) {
       >
         <h1 className="text-white text-4xl font-bold ">
           <Image
-            src="https://walterswicker.com/wp-content/uploads/2022/06/Ethimo-Logo.png"
+            src="/logo/ethimo.png"
             alt={"logo"}
             width={200}
             height={100}

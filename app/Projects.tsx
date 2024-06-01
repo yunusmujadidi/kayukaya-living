@@ -76,7 +76,13 @@ const Featured = ({ title = "Featured Projects " }: { title?: string }) => {
         </div>
         <div className="my-8 text-center">
           {!showMore && (
-            <Button onClick={handleToggleShowMore}>Show More</Button>
+            <Button
+              variant={"link"}
+              className="font-bold tracking-tight text-gray-700 hover:text-gray-900"
+              onClick={handleToggleShowMore}
+            >
+              Show More
+            </Button>
           )}
         </div>
       </section>

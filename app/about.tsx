@@ -5,7 +5,7 @@ import React from "react";
 
 const about = () => {
   return (
-    <section className="w-full py-12 md:py-10 px-2 md:px-20 bg-[#3b5148] text-white">
+    <section className="w-full py-12 md:py-10 px-2 md:px-20 bg-slate-100 text-black">
       <div className=" grid gap-8 px-4 md:px-6">
         <div className="space-y-4 md:space-y-6">
           <div className="hover:underline">
