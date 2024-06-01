@@ -44,7 +44,7 @@ const projects = [
   {
     imgSrc:
       "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1e0c8c78-0e9b-48c2-9dcb-e5d84b75726e/Dubai-+Jebel+Ali+.jpg",
-    title: "Dubai Jebel Ali Park - rooftop, pool and F&B , Umbrella.",
+    title: "Dubai Jebel Ali Park ",
     src: "interior-furniture",
   },
   {
@@ -56,14 +56,13 @@ const projects = [
   {
     imgSrc:
       "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/34766c4b-f7e3-46be-8def-7a5bf5233524/Screenshot+2021-01-13+at+1.10.45+PM.png",
-    title:
-      "Sofitel City Centre - Singapore- Outdoor furniture, Outdoor soft furnishings , Sunbrella fabrics and quick dry cushion on custom aluminium daybed",
+    title: "Sofitel City Centre - Singapore",
     src: "interior-furniture",
   },
   {
     imgSrc:
       "https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/f4e1cdad-8bd9-4379-9544-6460e6aa0d19/Screenshot+2022-09-30+at+10.17.11+PM.png",
-    title: "Shangri La - Mauritius - Outdoor furniture ,Objet",
+    title: "Shangri La - Mauritius - Outdoor furniture ",
     src: "interior-furniture",
   },
   {

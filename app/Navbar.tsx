@@ -65,7 +65,7 @@ const Navbar: React.FC = () => {
       ? " h-16 lg:bg-[#2c3929]"
       : isHome
       ? "group hover:bg-[#2c3929] delay-75 h-24 "
-      : "group lg:bg-[#2c3929] delay-75 h-16 lg:sticky"
+      : "group lg:bg-[#2c3929] delay-75 h-24 lg:sticky"
   } ${isVisible ? "top-0" : "-top-24"}`;
 
   return (
