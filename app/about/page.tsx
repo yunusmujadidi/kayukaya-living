@@ -21,7 +21,7 @@ function MyPage() {
       <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
           <div className="mx-auto max-w-2xl space-y-4 text-center">
-            <p className="text-gray-500 dark:text-gray-400">
+            <p className="text-white font-semibold">
               Have a question or need help? Fill out the form and we&apos;ll get
               back to you as soon as possible.
             </p>

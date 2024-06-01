@@ -20,7 +20,7 @@ export default function Page({ params }: { params: any }) {
 
       <TitleNL>Hotel Furniture Manufacturing Plant </TitleNL>
 
-      <FactoryCarousel bgColor="bg-white" textColor="text-black" />
+      <FactoryCarousel bgColor="" textColor="text-white" />
     </div>
   );
 }

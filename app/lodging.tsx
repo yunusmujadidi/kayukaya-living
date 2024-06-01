@@ -28,7 +28,7 @@ const photos = [
 
 const Lodging = () => {
   return (
-    <section className="w-full  bg-[#6D6B4F] text-white border-b-8">
+    <section className="w-full  bg-[#353929] text-white border-b-8">
       <div className="container">
         <h1 className="text-2xl font-light tracking-tighter sm:text-3xl md:text-4xl hover:underline mb-5">
           Glamping the New Luxury in Nature

@@ -53,8 +53,8 @@ const Navbar: React.FC = () => {
   return (
     <div
       className={cn(
-        "z-50 sticky h-24 w-full inset-x-0 items-center transition-all top-0 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 backdrop-blur-md shadow-md",
-        isScrolled && "h-20 bg-white backdrop-blur-md shadow-md block",
+        "z-50 sticky h-24 w-full inset-x-0 items-center transition-all top-0 border-b border-gray-200 dark:border-gray-800  dark:bg-gray-900 backdrop-blur-md shadow-md",
+        isScrolled && "h-20  backdrop-blur-md shadow-md block",
         !isVisible && "-top-24 block"
       )}
     >
@@ -126,7 +126,7 @@ const Navbar: React.FC = () => {
         </div>
       </div>
       {isMenuOpen && (
-        <div className="md:hidden bg-white shadow-md">
+        <div className="md:hidden  shadow-md">
           <div className="flex flex-col items-start space-y-4 p-4">
             {navigationItems.map((item) => (
               <Link

@@ -46,7 +46,7 @@ const Featured = ({ title = "Featured Projects " }: { title?: string }) => {
           src={imgSrc}
           width={700}
         />
-        <div className="bg-white p-3 dark:bg-gray-950">
+        <div className=" text-white p-3 dark:bg-gray-950">
           <h3 className="font-semibold text-base group-hover:underline text-md tracking-tight">
             {title}
           </h3>
@@ -56,8 +56,8 @@ const Featured = ({ title = "Featured Projects " }: { title?: string }) => {
   );
 
   return (
-    <>
-      <TitleNL>{title}</TitleNL>
+    <div className="bg-[#353929] !text-white">
+      <TitleNL className="">{title}</TitleNL>
       <section className="px-4 md:px-20 md:pb-5">
         <div className="grid grid-cols-2 xl:grid-cols-4 gap-4 md:gap-2">
           <AnimatePresence>
@@ -78,7 +78,7 @@ const Featured = ({ title = "Featured Projects " }: { title?: string }) => {
           {!showMore && (
             <Button
               variant={"link"}
-              className="font-bold tracking-tight text-gray-700 hover:text-gray-900"
+              className="font-bold tracking-tight text-white"
               onClick={handleToggleShowMore}
             >
               Show More
@@ -94,7 +94,7 @@ const Featured = ({ title = "Featured Projects " }: { title?: string }) => {
         slides={projects.map((project) => ({ src: project.imgSrc }))}
         render={{ slide: LightboxImage }}
       />
-    </>
+    </div>
   );
 };
 

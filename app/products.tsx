@@ -41,7 +41,7 @@ const Products = ({ title, cards, slice = 50 }: ProductsProps) => {
           src={imgSrc}
           width={700}
         />
-        <div className="bg-white p-3 dark:bg-gray-950">
+        <div className=" p-3 dark:bg-gray-950">
           <h3 className="font-semibold text-base group-hover:underline text-md">
             {title}
           </h3>

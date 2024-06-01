@@ -17,7 +17,7 @@ import sunLoungers from "@/lib/sun-loungers";
 const SunLoungers = () => {
   return (
     <>
-      {/* <section className="w-full py-10 px-2 md:px-20 text-black">
+      {/* <section className="w-full py-10 px-2 md:px-20 text-white">
         <PhotoAlbum
           layout="rows"
           photos={photos}
@@ -26,8 +26,8 @@ const SunLoungers = () => {
           sizes={{ size: "calc(100vw - 240px)" }}
         />
       </section> */}
+      <Title href="/interiors-mill-works">Sun Loungers</Title>
       <div className="container ">
-        <Title href="/interiors-mill-works">Sun Loungers</Title>
         <CarouselWrapper>
           <CarouselContent>
             {sunLoungers.map((item, index) => (

@@ -13,7 +13,7 @@ import Image from "next/image";
 export function CarouselContact() {
   return (
     <>
-      <Carousel className="w-full max-w-xs text-black">
+      <Carousel className="w-full max-w-xs text-white">
         <CarouselContent>
           {Array.from({ length: 5 }).map((_, index) => (
             <CarouselItem key={index}>

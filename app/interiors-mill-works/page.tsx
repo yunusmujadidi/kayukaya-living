@@ -31,10 +31,10 @@ function MyPage() {
         url="https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1579583477916-947SK1VTPGW6F7VEWUFA/flexform+skyline.jpg?format=2500w"
       />
 
-      <CustomFurniture bgColor="bg-white" textColor="text-black" />
+      <CustomFurniture bgColor="" textColor="text-white" />
       <Featured title="Hotel Beach Resort" />
       <TitleNL>Sun Loungers</TitleNL>
-      <section className="w-full py-10 px-2 md:px-20 text-black">
+      <section className="w-full py-10 px-2 md:px-20 text-white">
         <PhotoAlbum
           layout="rows"
           photos={sunLoungers}

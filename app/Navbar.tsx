@@ -60,18 +60,18 @@ const Navbar: React.FC = () => {
   const pathName = usePathname();
   const isHome = pathName === "/";
 
-  const navClassName = `sticky lg:fixed z-50 w-full duration-200 transition-all lg:bg-transparent bg-[#40513B]  ${
+  const navClassName = `sticky lg:fixed z-50 w-full duration-200 transition-all lg:bg-transparent bg-[#2c3929]  ${
     isScrolled
-      ? " h-16 lg:bg-[#40513B]"
+      ? " h-16 lg:bg-[#2c3929]"
       : isHome
-      ? "group hover:bg-[#40513B] delay-75 h-24 "
-      : "group lg:bg-[#40513B] delay-75 h-16 lg:sticky"
+      ? "group hover:bg-[#2c3929] delay-75 h-24 "
+      : "group lg:bg-[#2c3929] delay-75 h-16 lg:sticky"
   } ${isVisible ? "top-0" : "-top-24"}`;
 
   return (
     <nav className={cn(navClassName)}>
       <div className="h-full w-full mx-auto max-w-7xl px-2.5">
-        <div className="flex h-full items-center justify-between">
+        <div className="flex h-full items-center mx-10 justify-between">
           <Link
             href="/"
             className={cn(
@@ -116,7 +116,7 @@ const Navbar: React.FC = () => {
                             ? "text-white"
                             : !isHome
                             ? "text-white"
-                            : "text-black group-hover:text-white",
+                            : "text-white group-hover:text-white",
                           isActive(item.href) && "underline"
                         )}
                       >
@@ -131,7 +131,7 @@ const Navbar: React.FC = () => {
         </div>
       </div>
       {isMenuOpen && (
-        <div className="lg:hidden bg-white shadow-md">
+        <div className="lg:hidden  shadow-md">
           <div className="flex flex-col items-start space-y-4 p-4">
             {navigationItems.map((item) => (
               <Link
@@ -139,7 +139,7 @@ const Navbar: React.FC = () => {
                 href={item.href}
                 className={cn(
                   buttonVariants({ variant: "link" }),
-                  "flex w-full"
+                  "flex w-full hover:bg-"
                 )}
               >
                 {item.title}

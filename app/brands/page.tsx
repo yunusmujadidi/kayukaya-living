@@ -7,7 +7,7 @@ import Header from "@/components/ui/header";
 
 const page = () => {
   return (
-    <div className="bg-slate-100">
+    <div className="">
       <Header
         title="Brands"
         url="https://images.squarespace-cdn.com/content/v1/5dbfb66232cd095744bc5bdb/1585285634115-B6OEW1X268G7D221HK8V/Main+page+-+de+castelli_.jpg?format=1500w"

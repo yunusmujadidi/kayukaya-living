@@ -25,9 +25,9 @@ export default function Hero() {
                   width={1920}
                 />
 
-                <div className="block md:absolute bottom-10 left-20 rounded-md p-3 border-b md:border-none">
+                <div className="block md:absolute bottom-10 left-20 rounded-md p-3 ">
                   <Link href="/interiors-mill-works">
-                    <h2 className="text-2xl font-semibold tracking-tighter sm:text-4xl md:text-white text-black md:bg-black/10 rounded-lg p-2">
+                    <h2 className="text-2xl font-semibold tracking-tighter sm:text-3xl lg:text-4xl md:text-white text-white md:bg-black/10 rounded-lg p-2">
                       {item.title}
                     </h2>
                   </Link>

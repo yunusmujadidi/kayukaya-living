@@ -69,7 +69,7 @@ const BrandProductsGrid = ({
               }}
               width={400}
             />
-            <h1 className="mb-5 block lg:hidden font-bold text-center text-sm md:text-xl">
+            <h1 className="pb-5 block bg-white text-black lg:hidden font-bold text-center text-sm md:text-xl">
               {title}
             </h1>
             <div className="absolute inset-0 flex items-center justify-center !bg-white bg-opacity-100 opacity-0 transition-opacity duration-300 group-hover:opacity-100">

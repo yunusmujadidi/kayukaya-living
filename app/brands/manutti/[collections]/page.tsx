@@ -24,7 +24,7 @@ export default function Page() {
           Zendo Sense Collection
         </h1>
       </section>
-      <section className="w-full py-12 px-2 md:px-20 md:py-10 bg-slate-100">
+      <section className="w-full py-12 px-2 md:px-20 md:py-10 ">
         <div className="grid gap-8 px-4 md:px-6">
           <div className="space-y-4 md:space-y-6  ">
             <div className="flex flex-col md:flex-row">

@@ -28,8 +28,8 @@ export default function Page({ params }: { params: any }) {
           backgroundImage: `url(${bgImage})`,
         }}
       >
-        <div className="absolute inset-0 flex items-center justify-center !bg-white bg-opacity-100 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-          <span className="text-black text-lg font-semibold">
+        <div className="absolute inset-0 flex items-center justify-center ! bg-opacity-100 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+          <span className="text-white text-lg font-semibold">
             <Image
               src="https://walterswicker.com/wp-content/uploads/2022/06/Manutti-Logo.png"
               alt={"logo"}

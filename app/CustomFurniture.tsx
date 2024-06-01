@@ -13,7 +13,7 @@ import Image from "next/image";
 import furnitureItems from "@/lib/furnitureItems";
 
 const CustomFurniture = ({
-  bgColor = "bg-[#6D6B4F]",
+  bgColor = "",
   textColor = "text-white",
 }: {
   bgColor?: string;
@@ -52,8 +52,8 @@ const CustomFurniture = ({
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="bg-white text-black" />
-          <CarouselNext className="bg-white text-black" />
+          <CarouselPrevious className="bg-[#353929] text-white" />
+          <CarouselNext className="bg-[#353929] text-white" />
         </CarouselWrapper>
         <p className="pt-5 ">
           From concept to completion, we guide you through every step of the

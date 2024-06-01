@@ -5,11 +5,11 @@ import TitleNL from "./title-nolink";
 const Visit = () => {
   return (
     <>
-      <div className="bg-gray-100">
+      <div className="">
         <TitleNL>Showroom Office Gallery</TitleNL>
       </div>
 
-      <section className="w-full py-12 md:py-12 lg:py-32 bg-gray-100">
+      <section className="w-full py-12 md:py-12 lg:py-32">
         <div className="px-4 md:px-6">
           <div className="grid grid-cols-1 gap-2 pt-8 sm:grid-cols-2 md:grid-cols- justify-items-center items-center">
             <Image

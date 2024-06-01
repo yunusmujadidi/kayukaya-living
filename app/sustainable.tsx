@@ -8,11 +8,11 @@ import { cn } from "@/lib/utils";
 
 const Sustainable = () => {
   return (
-    <section className=" w-full py-12 md:py-10 px-2 md:px-20 bg-slate-50">
+    <section className=" w-full py-12 md:py-10 px-2 md:px-20 ">
       <div className=" gap-8 px-4 md:px-6">
         <div className="space-y-4 md:space-y-6">
           <div className="hover:underline ">
-            <h2 className="text-2xl font-light tracking-tighter sm:text-3xl md:text-4xl text-gray-700">
+            <h2 className="text-2xl font-light tracking-tighter sm:text-3xl md:text-4xl">
               Sustainable
             </h2>
             <hr />

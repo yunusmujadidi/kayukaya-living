@@ -38,8 +38,8 @@ const FactoryCarousel = ({
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="bg-white text-black" />
-          <CarouselNext className="bg-white text-black" />
+          <CarouselPrevious className=" text-white" />
+          <CarouselNext className=" text-white" />
         </CarouselWrapper>
         <TextMotion
           className="w-full py-10 px-2 md:px-20 text-md md:text-xl"
