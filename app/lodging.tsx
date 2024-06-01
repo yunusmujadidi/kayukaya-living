@@ -46,7 +46,7 @@ const Lodging = () => {
             </p>
             <Link
               href="/contact"
-              className="inline-flex h-10 items-center justify-center rounded-md  px-8 text-sm font-medium  shadow transition-colors focus-visible:outline-none focus-visible:ring-1  disabled:pointer-events-none disabled:opacity-50 bg-gray-50 text-gray-900 hover:bg-gray-50/90 focus-visible:ring-gray-300"
+              className="hidden md:inline-flex h-10 items-center justify-center rounded-md  px-8 text-sm font-medium  shadow transition-colors focus-visible:outline-none focus-visible:ring-1  disabled:pointer-events-none disabled:opacity-50 bg-gray-50 text-gray-900 hover:bg-gray-50/90 focus-visible:ring-gray-300"
               prefetch={false}
             >
               Contact Us
@@ -75,6 +75,13 @@ const Lodging = () => {
               className="rounded-xl object-cover"
             />
           </div>
+          <Link
+            href="/contact"
+            className="flex md:hidden h-10 items-center justify-center rounded-md  px-8 text-sm font-medium  shadow transition-colors focus-visible:outline-none focus-visible:ring-1  disabled:pointer-events-none disabled:opacity-50 bg-gray-50 text-gray-900 hover:bg-gray-50/90 focus-visible:ring-gray-300"
+            prefetch={false}
+          >
+            Contact Us
+          </Link>
         </div>
       </div>
     </section>
