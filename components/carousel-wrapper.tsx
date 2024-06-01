@@ -17,7 +17,7 @@ export function CarouselWrapper({
         Autoplay({
           delay: autoplaySpeed,
           loop: true,
-          waitForUser: true,
+          disableOnInteraction: false,
         }),
       ]}
     >

@@ -44,7 +44,7 @@ function MyPage() {
           sizes={{ size: "calc(100vw - 240px)" }}
         />
       </section>
-      <FurnitureCard title="Custom Interior" />
+      <FurnitureCard title="Interior Custom Furniture" />
     </div>
   );
 }

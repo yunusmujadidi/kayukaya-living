@@ -27,7 +27,7 @@ export default function Hero() {
 
                 <div className="block md:absolute bottom-10 left-20 rounded-md p-3 bg-transparent lg:bg-black/50">
                   <Link href="/interiors-mill-works">
-                    <h2 className="text-2xl font-semibold tracking-tighter sm:text-3xl lg:text-4xl md:text-white text-white rounded-lg p-2">
+                    <h2 className=" font-semibold tracking-tighter text-3xl lg:text-4xl md:text-white text-white rounded-lg p-2">
                       {item.title}
                     </h2>
                   </Link>
