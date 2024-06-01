@@ -34,16 +34,6 @@ const Lodging = () => {
           Glamping the New Luxury in Nature
           <hr />
         </h1>
-        <TextMotion
-          className="py-5 "
-          paragraph="Unique lodging inspired by Nature and Tradition. Designed to bring the most intimate bond to nature."
-        />
-        <TextMotion
-          className="py-5 "
-          paragraph="
-
-Our distinctive wooden Eco lodging solutions are as big as the view. They come with everything you need - nothing more, nothing less – but give the most space to glamorous experience of nature. Email us for more info and pricing at info@kayukaya.com"
-        />
         <div className="grid grid-cols-1 gap-4 pt-8 sm:grid-cols-2 md:grid-cols-4 py-10">
           <Image
             alt="Office Image 1"
@@ -74,6 +64,16 @@ Our distinctive wooden Eco lodging solutions are as big as the view. They come w
             width={400}
           />
         </div>
+        <TextMotion
+          className="py-5 "
+          paragraph="Unique lodging inspired by Nature and Tradition. Designed to bring the most intimate bond to nature."
+        />
+        <TextMotion
+          className="py-5 "
+          paragraph="
+
+Our distinctive wooden Eco lodging solutions are as big as the view. They come with everything you need - nothing more, nothing less – but give the most space to glamorous experience of nature. Email us for more info and pricing at info@kayukaya.com"
+        />
       </div>
     </section>
   );

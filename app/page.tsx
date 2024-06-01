@@ -106,8 +106,8 @@ const Page = () => {
       <BrandProduct />
       <Category />
       <SunLoungers />
-      <Lodging />
       <CustomFurniture />
+      <Lodging />
       <section>
         <div className={styles.main}>
           <div className={styles.gallery}>

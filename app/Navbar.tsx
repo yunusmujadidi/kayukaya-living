@@ -60,7 +60,7 @@ const Navbar: React.FC = () => {
   const pathName = usePathname();
   const isHome = pathName === "/";
 
-  const navClassName = `sticky lg:fixed z-50 w-full duration-200 transition-all lg:bg-black/5 bg-[#40513B]  ${
+  const navClassName = `sticky lg:fixed z-50 w-full duration-200 transition-all lg:bg-transparent bg-[#40513B]  ${
     isScrolled
       ? " h-16 lg:bg-[#40513B]"
       : isHome
@@ -137,8 +137,10 @@ const Navbar: React.FC = () => {
               <Link
                 key={item.title}
                 href={item.href}
-                className={buttonVariants({ variant: "ghost" })}
-                onClick={toggleMenu}
+                className={cn(
+                  buttonVariants({ variant: "link" }),
+                  "flex w-full"
+                )}
               >
                 {item.title}
               </Link>
