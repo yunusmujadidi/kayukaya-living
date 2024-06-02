@@ -12,10 +12,10 @@ const SustainableSection = () => {
     <section className="py-12 md:py-20">
       <div className="container mx-auto px-4 md:px-6">
         <div className="mb-12">
-          <h2 className="text-3xl font-bold tracking-tight text-white md:text-4xl">
+          <h2 className="text-3xl font-light tracking-tight text-white md:text-4xl">
             Sustainable Practices
           </h2>
-          <p className="mt-4 text-gray-400 md:text-xl lg:text-base xl:text-xl">
+          <p className="mt-4 text-gray-300 md:text-xl lg:text-base xl:text-xl">
             At KayuKaya, we&apos;re committed to minimizing our environmental
             impact through sustainable manufacturing.
           </p>
@@ -26,7 +26,7 @@ const SustainableSection = () => {
             <h3 className="text-xl font-semibold text-white">
               Environmentally Responsible
             </h3>
-            <p className="text-gray-400">
+            <p className="text-gray-300">
               We use only FSC certified hardwoods and formaldehyde-free
               substrates in our furniture production, ensuring the materials we
               source are responsibly harvested and processed. Additionally, our
@@ -40,7 +40,7 @@ const SustainableSection = () => {
             <h3 className="text-xl font-semibold text-white">
               Socially Responsible
             </h3>
-            <p className="text-gray-400">
+            <p className="text-gray-300">
               We support local communities by providing fair wages to our
               workers. Our manufacturing facilities are located in regions with
               strong labor laws and worker protections, and we regularly audit
@@ -52,7 +52,7 @@ const SustainableSection = () => {
             <h3 className="text-xl font-semibold text-white">
               Minimizing Carbon Footprint
             </h3>
-            <p className="text-gray-400">
+            <p className="text-gray-300">
               Our sustainable practices significantly reduce our carbon
               footprint and waste throughout the manufacturing process. We are
               continually exploring new ways to innovate and improve our
@@ -69,7 +69,7 @@ const SustainableSection = () => {
               <h3 className="text-lg font-semibold text-white">
                 Responsible Partner Factories
               </h3>
-              <p className="text-gray-400">
+              <p className="text-gray-300">
                 We uphold high standards at our partner factories and vendors to
                 ensure ethical and environmentally responsible practices.
               </p>
@@ -82,7 +82,7 @@ const SustainableSection = () => {
               <h3 className="text-lg font-semibold text-white">
                 Sustainable Materials and Certifications
               </h3>
-              <p className="text-gray-400">
+              <p className="text-gray-300">
                 Our use of FSC certified hardwoods and formaldehyde-free,
                 water-based substrates helps us achieve Greenmark
                 certifications.
@@ -96,7 +96,7 @@ const SustainableSection = () => {
               <h3 className="text-lg font-semibold text-white">
                 Recycling and Reusing Materials
               </h3>
-              <p className="text-gray-400">
+              <p className="text-gray-300">
                 We recycle aluminum, steel, and iron components and reclaim and
                 reuse powder coat paint overspray. Our packaging uses recycled
                 corrugated carton material.

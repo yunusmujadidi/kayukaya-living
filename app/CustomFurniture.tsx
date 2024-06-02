@@ -28,7 +28,7 @@ const CustomFurniture = ({
               <h2 className="text-2xl font-light tracking-tighter sm:text-3xl md:text-4xl">
                 Crafting Bespoke Interiors
               </h2>
-              <p className=" mx-auto  md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-gray-400">
+              <p className=" mx-auto  md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-gray-300">
                 Discover our expertise in custom furniture design and
                 manufacturing.
               </p>
@@ -52,14 +52,14 @@ const CustomFurniture = ({
             </div>
           </div>
           <div className="grid gap-4 text-left">
-            <p className="  md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-gray-400">
+            <p className="  md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-gray-300">
               At KayuKaya Living, we take great pride in guiding our clients
               through the entire design and manufacturing process. Blending
               traditional craftsmanship with modern technology, we create
               intricate and precise custom furniture that seamlessly integrates
               into any interior.
             </p>
-            <p className=" md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-gray-400">
+            <p className=" md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-gray-300">
               Our team of skilled designers and artisans work closely with you
               to understand your unique vision and requirements, ensuring that
               every piece we create is a true reflection of your personal style

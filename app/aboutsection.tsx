@@ -7,10 +7,10 @@ const AboutSection = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid lg:grid-cols-2 gap-8 md:gap-12">
           <div className="grid gap-6">
-            <h1 className="text-3xl md:text-4xl font-bold tracking-tight">
+            <h1 className="text-3xl md:text-4xl font-light tracking-tight">
               KayuKaya Living
             </h1>
-            <p className="text-gray-400 text-lg leading-relaxed">
+            <p className="text-gray-300 text-lg leading-relaxed">
               KayuKaya is a bespoke hospitality furniture solutions provider,
               catering to the commercial FF&E market with a focus on OEM or VE
               requirements for both exterior and interior applications. The
@@ -18,7 +18,7 @@ const AboutSection = () => {
               times and on-budget delivery, utilizing premium materials to meet
               the evolving demands of the market.
             </p>
-            <p className="text-gray-400 text-lg leading-relaxed">
+            <p className="text-gray-300 text-lg leading-relaxed">
               KayuKaya&apos;s flexible approach allows them to work closely with
               clients&apos; concepts, designs, and briefs. The company has an
               impressive portfolio of collaborations with high-end hotels,
@@ -28,7 +28,7 @@ const AboutSection = () => {
               Four Seasons in Bora Bora, Shangri La in Hong Kong, and many
               others across the globe, including Singapore.
             </p>
-            <p className="text-gray-400 text-lg leading-relaxed">
+            <p className="text-gray-300 text-lg leading-relaxed">
               In response to customer needs, KayuKaya expanded its offerings in
               2008 to include professional shades, umbrellas, and selected
               furniture.

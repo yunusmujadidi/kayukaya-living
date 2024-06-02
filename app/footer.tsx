@@ -135,7 +135,7 @@ const Footer = () => {
         389-0113, JAPAN
       </div>
       <div className="space-y-4 text-center">
-        <p className="mx-auto md:text-sm dark:text-gray-400">
+        <p className="mx-auto md:text-sm dark:text-gray-300">
           TEL +65 6203 5585 FAX +65 6203 5525 INFO@KAYUKAYA.COM
         </p>
       </div>

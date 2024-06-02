@@ -44,7 +44,7 @@ const SunLoungers = () => {
             </div>
           </div>
           <div className="grid gap-4 text-left">
-            <p className="  md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-gray-400">
+            <p className="  md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-gray-300">
               Discover our stunning sun loungers, designed to elevate your
               outdoor living experience. Explore the versatility of our
               collections, showcased in various residential and commercial

@@ -52,7 +52,7 @@ export default function Brands() {
             </h2>
           </Link>
           <hr />
-          {/* <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+          {/* <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-300">
             Discover a curated collection of stunning images that capture the
             essence of our world.
           </p> */}

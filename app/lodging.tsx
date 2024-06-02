@@ -36,10 +36,10 @@ const Lodging = () => {
             <div className="inline-block rounded-lg px-3 py-1 text-sm font-medium bg-white text-black">
               Glamping
             </div>
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+            <h2 className="text-3xl font-light tracking-tighter sm:text-4xl md:text-5xl">
               The New Luxury in Nature
             </h2>
-            <p className="max-w-[600px]  md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-gray-400">
+            <p className="max-w-[600px]  md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-gray-300">
               Discover the unique and intimate bond with nature that our Eco
               lodging solutions provide. Immerse yourself in the beauty of the
               great outdoors while enjoying the comforts of a luxury retreat.
