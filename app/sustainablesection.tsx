@@ -77,7 +77,7 @@ const SustainableSection = () => {
           </div>
 
           <div className="flex items-start gap-4">
-            <LeafyGreenIcon className="h-6 w-6 flex-shrink-0 text-green-500" />
+            <TreesIcon className="h-6 w-6 flex-shrink-0 text-green-500" />
             <div>
               <h3 className="text-lg font-semibold text-white">
                 Sustainable Materials and Certifications

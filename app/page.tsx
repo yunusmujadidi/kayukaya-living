@@ -65,7 +65,6 @@ const Page = () => {
   const { scrollYProgress } = useScroll({
     target: gallery,
     offset: ["start end", "end start"],
-    layoutEffect: false,
   });
   const { height } = dimension;
   const y = useTransform(scrollYProgress, [0, 1], [0, height * 2]);
@@ -81,8 +80,6 @@ const Page = () => {
       requestAnimationFrame(raf);
     };
 
-    requestAnimationFrame(raf);
-
     const resize = () => {
       setDimension({ width: window.innerWidth, height: window.innerHeight });
     };
@@ -95,7 +92,6 @@ const Page = () => {
       window.removeEventListener("resize", resize);
     };
   }, []);
-
   return (
     <>
       <Hero />
