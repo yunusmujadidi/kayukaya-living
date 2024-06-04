@@ -74,7 +74,7 @@ const Featured = ({ title = "Featured Projects " }: { title?: string }) => {
                 )}
           </AnimatePresence>
         </div>
-        <div className="my-8 text-center">
+        <div className="my-8 text-center md:text-right">
           {!showMore && (
             <Button
               variant={"link"}
