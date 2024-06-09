@@ -10,7 +10,7 @@ const AboutSection = () => {
             <h1 className="text-3xl md:text-4xl font-light tracking-tight">
               KayuKaya Living
             </h1>
-            <p className="text-gray-300 text-lg leading-relaxed">
+            <p className="text-gray-300 lg:text-lg leading-relaxed">
               KayuKaya specializes in bespoke hospitality furniture solutions,
               catering to the commercial FF&E market with a focus on OEM or VE
               requirements for both exterior and interior applications. Our
@@ -20,7 +20,7 @@ const AboutSection = () => {
               allows us to work closely with clients&apos; concepts, designs,
               and briefs.
             </p>
-            <p className="text-gray-300 text-lg leading-relaxed">
+            <p className="text-gray-300 lg:text-lg leading-relaxed">
               Our impressive portfolio includes collaborations with high-end
               hotels, resorts, F&B establishments, public spaces, and
               condominiums worldwide, such as the Ritz Carlton in the Maldives,
@@ -28,7 +28,7 @@ const AboutSection = () => {
               Pasadena, Four Seasons in Bora Bora, Shangri La, HK and many
               others across the globe, including Singapore.
             </p>
-            <p className="text-gray-300 text-lg leading-relaxed">
+            <p className="text-gray-300 lg:text-lg leading-relaxed">
               In response to customer needs, we expanded our offerings in 2008
               to include professional shades, umbrellas, and selected furniture
               brands. As the Sole Authorized Agent for Glatz in Asia, we offer a

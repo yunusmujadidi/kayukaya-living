@@ -5,7 +5,7 @@ import Autoplay from "embla-carousel-autoplay";
 
 export function CarouselWrapper({
   children,
-  autoplaySpeed = 1500,
+  autoplaySpeed = 3000,
 }: {
   children: React.ReactNode;
   autoplaySpeed?: number;
