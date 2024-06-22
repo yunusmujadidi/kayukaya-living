@@ -1,12 +1,4 @@
 "use client";
-import Link from "next/link";
-import Image from "next/image";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
-import { ArrowUpRight } from "lucide-react";
-import Logo from "@/lib/logo";
-import zendoSense from "@/lib/zendoSense";
 import TextMotion from "@/components/ui/text-motion";
 import BrandProductsGrid from "@/components/brands/brand-products";
 

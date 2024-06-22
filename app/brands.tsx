@@ -57,7 +57,7 @@ export default function Brands() {
             essence of our world.
           </p> */}
         </div>
-        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 md:gap-3 lg:gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2 md:gap-3 lg:gap-4">
           {Logo.map(({ imgSrc, logoTitle, url }, i) => (
             <Link key={i} href={url}>
               <motion.div
